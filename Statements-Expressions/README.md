@@ -4,7 +4,7 @@ feedbackID: conceptos-Expressions-vs-Statements
 permalink: /Conceptos/
 eleventyNavigation:
   key: Conceptos
-  order: 1
+  order: 6.5
 ---
 
 ![HenryLogo](/_src/assets/logo.png)
