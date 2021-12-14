@@ -25,13 +25,6 @@ eleventyNavigation:
 
 #### Preparando tu compu
 
-<!-- Acá vas a encontrar todo lo que necesitas para arrancar el Curso de Preparación.
-
-* [Editor de Texto](./editorTexto.md)
-* [Github](./github.md)
-* [Git](./git.md)
-* [Instalar Node](./node.md) -->
-
 <div class="iframeContainer">
 <iframe src="https://player.vimeo.com/video/638636752" title="Instructivo de Primeros Pasos" allow="autoplay; fullscreen"></iframe>
 </div>
