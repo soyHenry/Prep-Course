@@ -32,8 +32,6 @@ eleventyNavigation:
 * [Git](./git.md)
 * [Instalar Node](./node.md) -->
 
-## Instructivo de Primeros Pasos
-
 <div class="iframeContainer">
 <iframe src="https://player.vimeo.com/video/638636752" title="Instructivo de Primeros Pasos" allow="autoplay; fullscreen"></iframe>
 </div>
