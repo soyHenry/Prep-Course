@@ -9,12 +9,6 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-:target:before {
-  content: "";
-  display: block;
-  height: 85px;
-}
-
 body {
   /* border: 2px dashed; */
   margin: auto;

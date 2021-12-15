@@ -231,7 +231,7 @@ Es una red para almacenar tus repositorios, sería un repositorio de repositorio
 
 ### Comenzando
 
-1. Para comenzar nos creamos una cuenta --- > <https://github.com>  🚀
+1. Para comenzar nos creamos una cuenta --- > <https://github.com> 🚀
 
 ![GitHub-Register](/_src/assets/00-PrimerosPasos/github_register.png)
 
@@ -259,11 +259,11 @@ Si accedemos a la pestaña de arriba que dice `repositorios` veremos una lista d
 
 ![GitHub-repo](/_src/assets/00-PrimerosPasos/github_repo.png)
 
-Así se ve un repositorio. Arriba a la izquierda tenemos el `nombre de usuario/nombre del repo`.  
+Así se ve un repositorio. Arriba a la izquierda tenemos el `nombre de usuario/nombre del repo`.
 
-En el centro podemos ver todos los archivos que tiene dentro el repo. El botón verde que dice `Code` es importante, si clickeamos ahí vamos a poder obtener la url del repo, para así poder ***clonarlo*** (esto lo veremos más adelante).
+En el centro podemos ver todos los archivos que tiene dentro el repo. El botón verde que dice `Code` es importante, si clickeamos ahí vamos a poder obtener la url del repo, para así poder **_clonarlo_** (esto lo veremos más adelante).
 
-Arriba a la derecha encontramos tres botones. `Watch` nos permite seguir un repositorio, mientras que con `Star` podemos marcar como favorito un repo que nos guste. Por último tenemos `Fork`, este es **muy** importante, lo vamos a necesitar cuando hagamos el ***Challenge!***
+Arriba a la derecha encontramos tres botones. `Watch` nos permite seguir un repositorio, mientras que con `Star` podemos marcar como favorito un repo que nos guste. Por último tenemos `Fork`, este es **muy** importante, lo vamos a necesitar cuando hagamos el **_Challenge!_**
 
 Ya tenemos todo para empezar... Éxitos!!! 🍀
 

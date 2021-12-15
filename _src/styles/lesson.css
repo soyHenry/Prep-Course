@@ -1,6 +1,6 @@
 .lesson {
   /* border: 2px dashed green; */
-  font-family: "Avenir-Roman";
+  font-family: 'Avenir-Roman';
   font-size: 16px;
   line-height: 18px;
   text-align: justify;
@@ -10,8 +10,14 @@
   max-width: 98vw;
 }
 
+.lesson :target:before {
+  content: '';
+  display: block;
+  height: 85px;
+}
+
 .lesson .readingTime {
-  font-family: "Avenir-Book";
+  font-family: 'Avenir-Book';
   font-size: 14px;
   line-height: 119.6%;
   display: flex;
@@ -30,13 +36,13 @@
   display: none;
 }
 
-.lesson img[alt~="HenryLogo"] {
+.lesson img[alt~='HenryLogo'] {
   display: none;
 }
 
 .lesson h1 {
   display: inline-block;
-  font-family: "Avenir-Black";
+  font-family: 'Avenir-Black';
   font-size: 48px;
   line-height: 66px;
   color: #2e2e2e;
@@ -51,9 +57,21 @@
 
 .lesson h1 + h4 {
   margin: -40px 0 3rem 0;
-  font-family: "Avenir-Black";
+  font-family: 'Avenir-Black';
   font-size: 32px;
   line-height: 32px;
+}
+
+.lesson #homework {
+  display: inline-block;
+  font-family: 'Avenir-Black';
+  font-size: 48px;
+  line-height: 66px;
+  color: #24b124;
+  /* border-bottom-style: solid;
+  border-bottom-width: 25px;
+  border-bottom-color: #f5bc38; */
+  height: 64px;
 }
 
 .lesson h1 + h2 {
@@ -61,7 +79,7 @@
 }
 
 .lesson h2 {
-  font-family: "Avenir-Black";
+  font-family: 'Avenir-Black';
   font-weight: 900;
   font-size: 32px;
   line-height: 32px;
@@ -72,7 +90,7 @@
 }
 
 .lesson h3 {
-  font-family: "Avenir-Black";
+  font-family: 'Avenir-Black';
   font-weight: 900;
   font-size: 24px;
   line-height: 24px;
@@ -83,7 +101,7 @@
 }
 
 .lesson h4 {
-  font-family: "Avenir-Black";
+  font-family: 'Avenir-Black';
   font-weight: 900;
   font-size: 18px;
   line-height: 18px;
@@ -111,13 +129,13 @@
 }
 
 .lesson li {
-  font-family: "Avenir-Heavy";
+  font-family: 'Avenir-Heavy';
   font-size: 16px;
   line-height: 22px;
 }
 
 .lesson a {
-  font-family: "Avenir-Black";
+  font-family: 'Avenir-Black';
   font-size: 16px;
 }
 
