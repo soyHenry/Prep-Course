@@ -9,7 +9,7 @@ eleventyNavigation:
 
 ![HenryLogo](/_src/assets/logo.png)
 
-<table class="feedback" width="100%" style='table-layout:fixed;'>
+<table class="hide" width="100%" style='table-layout:fixed;'>
   <tr>
     <td>
       <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=06-JS-V">
@@ -222,7 +222,7 @@ Vamos a solucionar ese problema agregando al prototipo los métodos de Persona, 
 
 Completa la tarea descrita en el archivo [README](https://github.com/atralice/Curso.Prep.Henry/tree/master/06-JS-V/homework)
 
-<table class="feedback" width="100%" style='table-layout:fixed;'>
+<table class="hide" width="100%" style='table-layout:fixed;'>
   <tr>
     <td>
       <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=06-JS-V">

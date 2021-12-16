@@ -9,7 +9,7 @@ eleventyNavigation:
 
 ![HenryLogo](/_src/assets/logo.png)
 
-<table class="feedback" width="100%" style='table-layout:fixed;'>
+<table class="hide" width="100%" style='table-layout:fixed;'>
   <tr>
     <td>
       <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=07-JS-VI">
@@ -146,7 +146,7 @@ console.log(triple); // [ 6, 9, 12, 15 ]
 
 Completa la tarea descrita en el archivo [README](https://github.com/atralice/Curso.Prep.Henry/tree/master/07-JS-VI/homework)
 
-<table class="feedback" width="100%" style='table-layout:fixed;'>
+<table class="hide" width="100%" style='table-layout:fixed;'>
   <tr>
     <td>
       <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=07-JS-VI">

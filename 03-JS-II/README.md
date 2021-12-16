@@ -9,7 +9,7 @@ eleventyNavigation:
 
 ![HenryLogo](/_src/assets/logo.png)
 
-<table class="feedback" width="100%" style='table-layout:fixed;'>
+<table class="hide" width="100%" style='table-layout:fixed;'>
   <tr>
     <td>
       <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=03-JS-II">

@@ -9,7 +9,7 @@ eleventyNavigation:
 
 ![HenryLogo](/_src/assets/logo.png)
 
-<table class="feedback" width="100%" style='table-layout:fixed;'>
+<table class="hide" width="100%" style='table-layout:fixed;'>
   <tr>
     <td>
       <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=02-JS-I">
@@ -354,7 +354,7 @@ _Node.js_ es un entorno de tiempo de ejecución desarrollado originalmente para 
 
 Completa la tarea descrita en el archivo [README](https://github.com/atralice/Curso.Prep.Henry/tree/master/02-JS-I/homework)
 
-<table class="feedback" width="100%" style='table-layout:fixed;'>
+<table class="hide" width="100%" style='table-layout:fixed;'>
   <tr>
     <td>
       <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=02-JS-I">
