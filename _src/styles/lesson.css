@@ -62,18 +62,6 @@
   line-height: 32px;
 }
 
-.lesson #homework {
-  display: inline-block;
-  font-family: 'Avenir-Black';
-  font-size: 48px;
-  line-height: 66px;
-  color: #24b124;
-  /* border-bottom-style: solid;
-  border-bottom-width: 25px;
-  border-bottom-color: #f5bc38; */
-  height: 64px;
-}
-
 .lesson h1 + h2 {
   margin-top: 0;
 }
@@ -87,6 +75,14 @@
   color: #2e2e2e;
   margin-top: 3rem;
   margin-bottom: 1rem;
+}
+
+.lesson h2#homework {
+  display: inline-block;
+  font-family: 'Avenir-Black';
+  font-size: 48px;
+  line-height: 66px;
+  color: #1fa32a;
 }
 
 .lesson h3 {
@@ -127,6 +123,10 @@
 .lesson img[alt~='logo'] {
   box-shadow: none;
   width: 350px;
+}
+
+.lesson img[alt~='no-box'] {
+  box-shadow: none;
 }
 
 .lesson ul {
