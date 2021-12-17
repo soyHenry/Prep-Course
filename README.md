@@ -1,6 +1,7 @@
 ---
 title: Introducción
 permalink: "/index.html"
+layout: intro
 eleventyNavigation:
   key: Intro
   order: 0
@@ -8,7 +9,9 @@ eleventyNavigation:
 
 ![HenryLogo](/_src/assets/logo.png)
 
-# Introducción
+# Prep Course
+
+#### Introducción
 
 <!-- # Modulo 0 - Prep
 
