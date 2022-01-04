@@ -102,7 +102,7 @@ Existen muchas otras configuraciones de Git que puedes encontrar en el comando g
 - `git show`: nos muestra los cambios que han existido sobre un archivo y es muy útil para detectar cuando se produjeron ciertos cambios, qué se rompió y cómo lo podemos solucionar. Pero podemos ser mas detallados.
 - `git diff`: nos muestra la diferencia entre una version y otra, no necesariamente todos los cambios desde la creación. (Gif diff commitA commitB).
 
-## Volver en el tiempo en nuestro repositorio utilizando reset y checkout
+## Reset y checkout
 
 - `git checkout + Id del commit`: podemos volver a cualquier versión anterior de un archivo específico o incluso
   de nuestro proyecto entero. Esta es también es la forma de movernos entre ramas.
@@ -115,7 +115,7 @@ Existen muchas otras configuraciones de Git que puedes encontrar en el comando g
 
 - `git checkout master 'archivo.txt'`: volvemos a la versión madre.
 
-## Introducción a las ramas o branches
+## Ramas o branches
 
 Las ramas son la forma de hacer cambios en nuestro proyecto sin afectar el flujo de trabajo de la rama principal. Esto porque queremos trabajar una parte muy específica de la aplicación o simplemente experimentar.
 
