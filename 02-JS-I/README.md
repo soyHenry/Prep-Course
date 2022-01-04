@@ -338,12 +338,6 @@ Aquí estamos tomando un número (`edad`) y verificando si la declaración es `t
 
 El símbolo "mayor que" (`>`) que ve en el último ejemplo se llama _Operador de comparación_. Los operadores de comparación evalúan dos elementos y devuelven ***verdadero*** o ***falso***. Estos operadores son: `<`, `<=`, `>`, `> =`, `===`, `! ==`. Aprenderemos más sobre estos operadores en la próxima lección.
 
-<!-- ESTO NO ESTA REPETIDO DE LA CLASE DE NODE? -->
-
-<!-- ## Introducción a Node y NPM
-
-_Node.js_ es un entorno de tiempo de ejecución desarrollado originalmente para su uso en servidores/back-end. Tendremos que instalarlo en nuestras máquinas para completar los próximos ejercicios. Para instalar Node, haga clic aquí: [Descargar e instalar Node.js](https://nodejs.org/en/download/). Node viene con "NPM" incluido. NPM es un administrador de paquetes ("package manager") para paquetes Javascript y lo usaremos a lo largo de nuestro aprendizaje en Henry. Una vez que hayas instalado Node.js, no necesitas hacer nada más para instalar NPM. -->
-
 ## Recursos adicionales
 
 * [Codecademy: Learn Javascript](https://www.codecademy.com/learn/learn-javascript)
