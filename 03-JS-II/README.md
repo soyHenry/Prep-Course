@@ -307,4 +307,4 @@ Te invitamos a buscar en Google información de estos conceptos para poder desar
 
 ## Homework
 
-Abre la carpeta "homework" y completa la tarea descripta en el archivo [README](https://github.com/atralice/Curso.Prep.Henry/tree/master/03-JS-II/homework)
+Abre la carpeta "homework" y completa la tarea descripta en el archivo [README](https://github.com/soyHenry/Prep-Course/tree/main/03-JS-II/homework)

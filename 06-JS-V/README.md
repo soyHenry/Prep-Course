@@ -220,7 +220,7 @@ Vamos a solucionar ese problema agregando al prototipo los métodos de Persona, 
 
 ## Homework
 
-Completa la tarea descrita en el archivo [README](https://github.com/atralice/Curso.Prep.Henry/tree/master/06-JS-V/homework)
+Completa la tarea descrita en el archivo [README](https://github.com/soyHenry/Prep-Course/tree/main/06-JS-V/homework)
 
 <table class="hide" width="100%" style='table-layout:fixed;'>
   <tr>

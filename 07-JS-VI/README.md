@@ -144,7 +144,7 @@ console.log(triple); // [ 6, 9, 12, 15 ]
 
 ## Homework
 
-Completa la tarea descrita en el archivo [README](https://github.com/atralice/Curso.Prep.Henry/tree/master/07-JS-VI/homework)
+Completa la tarea descrita en el archivo [README](https://github.com/soyHenry/Prep-Course/tree/main/07-JS-VI/homework)
 
 <table class="hide" width="100%" style='table-layout:fixed;'>
   <tr>

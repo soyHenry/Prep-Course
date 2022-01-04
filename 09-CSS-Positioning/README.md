@@ -188,7 +188,7 @@ Por último, cubriremos una propiedad más avanzada llamada "align-self". La mis
 
 ## Homework
 
-Abre una nueva ventana en el navegador y completa "homework.html"
+Abre una nueva ventana en el navegador y completa [homework.html](https://github.com/soyHenry/Prep-Course/tree/main/09-CSS-Positioning/homework)
 
 <table class="hide" width="100%" style='table-layout:fixed;'>
   <tr>

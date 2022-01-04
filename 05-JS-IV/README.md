@@ -302,7 +302,7 @@ En esta lección aprendimos qué son los Objetos y las muchas formas que existen
 
 ## Homework
 
-Completa la tarea descrita en el archivo [README](https://github.com/atralice/Curso.Prep.Henry/tree/master/05-JS-IV/homework)
+Completa la tarea descrita en el archivo [README](https://github.com/soyHenry/Prep-Course/tree/main/05-JS-IV/homework)
 
 <table class="hide" width="100%" style='table-layout:fixed;'>
   <tr>

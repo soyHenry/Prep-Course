@@ -157,4 +157,4 @@ for (let i = 0; i < nombresEstudiantes.length; i++) {
 
 ## Homework
 
-Completa la tarea descrita en el archivo [README](https://github.com/atralice/Curso.Prep.Henry/tree/master/04-JS-III/homework)
+Completa la tarea descrita en el archivo [README](https://github.com/soyHenry/Prep-Course/tree/main/04-JS-III/homework)
