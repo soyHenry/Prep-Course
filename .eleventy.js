@@ -62,8 +62,6 @@ module.exports = function (eleventyConfig) {
     }
   )
 
-  eleventyConfig.addLayoutAlias('intro', 'https://henry-11ty-resources.s3.sa-east-1.amazonaws.com/Layouts/intro.njk')
-
   return {
     dir: {
       includes: '/_src/layouts',

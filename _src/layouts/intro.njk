@@ -1,3 +1,9 @@
+---js
+{
+  repoTitle: 'Henry Prep Course',
+}
+---
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,13 +23,13 @@
     <link rel="stylesheet" href="{{ 'https://henry-11ty-resources.s3.sa-east-1.amazonaws.com/Styles/code.css' | url }}">
     <link rel="stylesheet" href="{{ 'https://henry-11ty-resources.s3.sa-east-1.amazonaws.com/Styles/footer.css' | url }}">
     <link rel="stylesheet" href="{{ 'https://henry-11ty-resources.s3.sa-east-1.amazonaws.com/Styles/responsive.css' | url }}">
-    <title>{{ title }} | Prep Course</title>
+    <title>{{ lessonTitle }} | {{ repoTitle }} </title>
   </head>
 
   <body>
     <div class="headerResponsive">
       <div class="leftContent">
-        <span><img src="{{ '/_src/assets/logo-white.png' | url }}" alt='logo Henry' height=22px class="d-inline-block align-text-top"></span><span>{{ title }}</span>
+        <span><img src="{{ '/_src/assets/logo-white.png' | url }}" alt='logo Henry' height=22px class="d-inline-block align-text-top"></span><span>{{ lessonTitle }}</span>
       </div>
       <div class="menuDiv">
         <input type="checkbox">
@@ -39,7 +45,7 @@
       <div class="headerContained">
         <img src="{{ '/_src/assets/logo-white.png' | url }}" alt='logo Henry' height=27px class="d-inline-block align-text-top">
         <div>
-          <span class="lessonTitle">{{ title }}</span> | <span>Prep Course</span>
+          <span class="lessonTitle">{{ lessonTitle }}</span> | <span>{{ repoTitle }}</span>
         </div>
       </div>
     </div>

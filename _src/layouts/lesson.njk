@@ -1,3 +1,14 @@
+---js
+{
+  repoTitle: 'Henry Prep Course',
+  airtableFormId: 'shrSzEYT4idEFGB8d',
+  currentDate: function() {
+    // You can have a JavaScript function here!
+    return (new Date()).toLocaleString();
+  }
+}
+---
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +28,7 @@
     <link rel="stylesheet" href="{{ 'https://henry-11ty-resources.s3.sa-east-1.amazonaws.com/Styles/code.css' | url }}">
     <link rel="stylesheet" href="{{ 'https://henry-11ty-resources.s3.sa-east-1.amazonaws.com/Styles/footer.css' | url }}">
     <link rel="stylesheet" href="{{ 'https://henry-11ty-resources.s3.sa-east-1.amazonaws.com/Styles/responsive.css' | url }}">
-    <title>{{ title }} | Henry Prep Course </title>
+    <title>{{ lessonTitle }} | {{ repoTitle }}</title>
   </head>
 
   <body>
@@ -25,7 +36,7 @@
 
       <div class="headerResponsive">
         <div class="leftContent">
-          <span><img src="{{ '/_src/assets/logo-white.png' | url }}" alt='logo Henry' height=22px class="d-inline-block align-text-top"></span><span>{{ title }}</span>
+          <span><img src="{{ '/_src/assets/logo-white.png' | url }}" alt='logo Henry' height=22px class="d-inline-block align-text-top"></span><span>{{ lessonTitle }}</span>
         </div>
         <div class="menuDiv">
           <input type="checkbox">
@@ -41,7 +52,7 @@
         <div class="headerContained">
           <img src="{{ '/_src/assets/logo-white.png' | url }}" alt='logo Henry' height=27px class="d-inline-block align-text-top">
           <div>
-            <span class="lessonTitle">{{ title }}</span> | <span>Prep Course</span>
+            <span class="lessonTitle">{{ lessonTitle }}</span> | <span>{{ repoTitle }}</span>
           </div>
         </div>
       </div>
@@ -82,7 +93,7 @@
       </main>
 
       <div class="feedback">
-        <a href='https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase={{feedbackID}}' target="_blank">
+        <a href='https://airtable.com/{{airtableFormId}}?prefill_clase={{feedbackID}}' target="_blank">
           Dejanos tu feedback!👍
         </a>
       </div>

@@ -1,5 +1,5 @@
 ---
-title: 'JavaScript IV'
+lessonTitle: 'JavaScript IV'
 feedbackID: 05-JS-IV
 permalink: /JavaScript_IV/
 eleventyNavigation:

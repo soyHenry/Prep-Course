@@ -1,5 +1,5 @@
 ---
-title: 'HTML/CSS'
+lessonTitle: 'HTML/CSS'
 feedbackID: 08-HTML
 permalink: /HTML/
 eleventyNavigation:

@@ -1,5 +1,5 @@
 ---
-title: Introducción
+lessonTitle: Introducción
 permalink: "/index.html"
 layout: intro
 eleventyNavigation:

@@ -1,5 +1,5 @@
 ---
-title: JavaScript II
+lessonTitle: JavaScript II
 feedbackID: 03-JS-II
 permalink: /JavaScript_II/
 eleventyNavigation:
