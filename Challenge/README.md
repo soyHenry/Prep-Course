@@ -1,5 +1,5 @@
 ---
-title: Challenge
+lessonTitle: Challenge
 permalink: false
 eleventyNavigation:
   key: Challenge

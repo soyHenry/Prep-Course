@@ -1,5 +1,5 @@
 ---
-title: 'JavaScript V'
+lessonTitle: 'JavaScript V'
 feedbackID: 06-JS-V
 permalink: /JavaScript_V/
 eleventyNavigation:

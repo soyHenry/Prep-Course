@@ -1,5 +1,5 @@
 ---
-title: Git
+lessonTitle: Git
 feedbackID: 01-Git
 permalink: /Git/
 eleventyNavigation:

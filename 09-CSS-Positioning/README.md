@@ -1,5 +1,5 @@
 ---
-title: 'CSS'
+lessonTitle: 'CSS'
 feedbackID: 09-CSS-Positioning
 permalink: /CSS/
 eleventyNavigation:

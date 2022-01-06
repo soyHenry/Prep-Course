@@ -1,5 +1,5 @@
 ---
-title: Primeros Pasos
+lessonTitle: Primeros Pasos
 feedbackID: 00-PrimerosPasos
 permalink: /Primeros_Pasos/
 eleventyNavigation:
