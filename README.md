@@ -1,4 +1,4 @@
-![HenryLogo](/_src/assets/logo.png)
+![HenryLogo](https://henry-social-resources.s3.sa-east-1.amazonaws.com/logos/LOGO-HENRY-04_w.png)
 
 # Prep Course
 
