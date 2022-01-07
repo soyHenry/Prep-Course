@@ -1,12 +1,3 @@
----
-lessonTitle: JavaScript II
-feedbackID: 03-JS-II
-permalink: /JavaScript_II/
-eleventyNavigation:
-  key: JS II
-  order: 8
----
-
 ![HenryLogo](/_src/assets/logo.png)
 
 <table class="hide" width="100%" style='table-layout:fixed;'>

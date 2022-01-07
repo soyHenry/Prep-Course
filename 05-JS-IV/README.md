@@ -1,12 +1,3 @@
----
-lessonTitle: 'JavaScript IV'
-feedbackID: 05-JS-IV
-permalink: /JavaScript_IV/
-eleventyNavigation:
-  key: 'JS IV'
-  order: 10
----
-
 ![HenryLogo](/_src/assets/logo.png)
 
 <table class="hide" width="100%" style='table-layout:fixed;'>
@@ -21,7 +12,7 @@ eleventyNavigation:
   </tr>
 </table>
 
-# JavaScript IV 
+# JavaScript IV
 
 #### Objetos
 

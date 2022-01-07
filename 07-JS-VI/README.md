@@ -1,12 +1,3 @@
----
-lessonTitle: "JavaScript VI"
-feedbackID: 07-JS-VI
-permalink: /JavaScript_VI/
-eleventyNavigation:
-  key: "JS VI"
-  order: 12
----
-
 ![HenryLogo](/_src/assets/logo.png)
 
 <table class="hide" width="100%" style='table-layout:fixed;'>

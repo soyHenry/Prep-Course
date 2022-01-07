@@ -1,12 +1,3 @@
----
-lessonTitle: 'CSS'
-feedbackID: 09-CSS-Positioning
-permalink: /CSS/
-eleventyNavigation:
-  key: 'CSS'
-  order: 14
----
-
 ![HenryLogo](/_src/assets/logo.png)
 
 <table class="hide" width="100%" style='table-layout:fixed;'>

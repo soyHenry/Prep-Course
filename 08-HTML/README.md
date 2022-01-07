@@ -1,12 +1,3 @@
----
-lessonTitle: 'HTML/CSS'
-feedbackID: 08-HTML
-permalink: /HTML/
-eleventyNavigation:
-  key: HTML
-  order: 13
----
-
 ![HenryLogo](/_src/assets/logo.png)
 
 <table class="hide" width="100%" style='table-layout:fixed;'>
