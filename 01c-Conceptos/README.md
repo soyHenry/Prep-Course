@@ -1,4 +1,4 @@
-![HenryLogo](/_src/assets/logo.png)
+![HenryLogo](https://assets.soyhenry.com/henry-landing/assets/Henry/logo-white.png)
 
 <table class="hide" width="100%" style='table-layout:fixed;'>
   <tr>
