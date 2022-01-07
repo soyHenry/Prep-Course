@@ -21,8 +21,7 @@ favicon: 'https://henry-11ty-resources.s3.sa-east-1.amazonaws.com/Assets/favicon
     <link rel="stylesheet" href="{{ 'https://henry-11ty-resources.s3.sa-east-1.amazonaws.com/Styles/code.css' | url }}">
     <link rel="stylesheet" href="{{ 'https://henry-11ty-resources.s3.sa-east-1.amazonaws.com/Styles/footer.css' | url }}">
     <link rel="stylesheet" href="{{ 'https://henry-11ty-resources.s3.sa-east-1.amazonaws.com/Styles/responsive.css' | url }}">
-    <title>{{ lessonTitle }} | {{ config.repoTitle }}
-    </title>
+    <title>{{ config.repoTitle }}</title>
   </head>
 
   <body>
@@ -44,7 +43,7 @@ favicon: 'https://henry-11ty-resources.s3.sa-east-1.amazonaws.com/Assets/favicon
       <div class="headerContained">
         <img src="{{ logoNav | url }}" alt='logo Henry' height=27px class="d-inline-block align-text-top">
         <div>
-          <span class="lessonTitle">{{ lessonTitle }}</span> | <span>{{ config.repoTitle }}</span>
+          <span>{{ config.repoTitle }}</span>
         </div>
       </div>
     </div>
