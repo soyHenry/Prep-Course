@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="{{ 'https://henry-11ty-resources.s3.sa-east-1.amazonaws.com/Styles/code.css' | url }}">
     <link rel="stylesheet" href="{{ 'https://henry-11ty-resources.s3.sa-east-1.amazonaws.com/Styles/footer.css' | url }}">
     <link rel="stylesheet" href="{{ 'https://henry-11ty-resources.s3.sa-east-1.amazonaws.com/Styles/responsive.css' | url }}">
-    <title>{{ lessonTitle }} | {{ repoTitle }}</title>
+    <title>{{ lessonTitle }} | {{ config.repoTitle }}</title>
   </head>
 
   <body>
@@ -41,7 +41,7 @@
         <div class="headerContained">
           <img src="{{ 'https://henry-11ty-resources.s3.sa-east-1.amazonaws.com/Assets/logo-henry-white-sm.png' | url }}" alt='logo Henry' height=27px class="d-inline-block align-text-top">
           <div>
-            <span class="lessonTitle">{{ lessonTitle }}</span> | <span>{{ repoTitle }}</span>
+            <span class="lessonTitle">{{ lessonTitle }}</span> | <span>{{ config.repoTitle }}</span>
           </div>
         </div>
       </div>
@@ -82,7 +82,7 @@
       </main>
 
       <div class="feedback">
-        <a href='https://airtable.com/{{airtableFormId}}?prefill_clase={{feedbackID}}' target="_blank">
+        <a href='https://airtable.com/{{config.airtableFormId}}?prefill_clase={{feedbackID}}' target="_blank">
           Dejanos tu feedback!👍
         </a>
       </div>
