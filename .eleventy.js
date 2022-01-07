@@ -63,7 +63,7 @@ module.exports = function (eleventyConfig) {
 
   return {
     dir: {
-      includes: '/_src/layouts',
+      layouts: '/_src/layouts',
       data: '/_src/data',
       output: '_dist',
       pathPrefix: '/Prep-Course/',
