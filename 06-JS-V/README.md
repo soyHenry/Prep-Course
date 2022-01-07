@@ -1,12 +1,3 @@
----
-lessonTitle: 'JavaScript V'
-feedbackID: 06-JS-V
-permalink: /JavaScript_V/
-eleventyNavigation:
-  key: 'JS V'
-  order: 11
----
-
 ![HenryLogo](/_src/assets/logo.png)
 
 <table class="hide" width="100%" style='table-layout:fixed;'>

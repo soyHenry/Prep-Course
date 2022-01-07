@@ -1,12 +1,3 @@
----
-lessonTitle: JavaScript I
-feedbackID: 02-JS-I
-permalink: /JavaScript_I/
-eleventyNavigation:
-  key: JS I
-  order: 7
----
-
 ![HenryLogo](/_src/assets/logo.png)
 
 <table class="hide" width="100%" style='table-layout:fixed;'>

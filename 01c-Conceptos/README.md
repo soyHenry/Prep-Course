@@ -1,12 +1,3 @@
----
-lessonTitle: Conceptos
-feedbackID: conceptos-Expressions-vs-Statements
-permalink: /Conceptos/
-eleventyNavigation:
-  key: Conceptos
-  order: 6.5
----
-
 ![HenryLogo](/_src/assets/logo.png)
 
 <table class="hide" width="100%" style='table-layout:fixed;'>

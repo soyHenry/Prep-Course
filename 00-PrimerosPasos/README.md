@@ -1,12 +1,3 @@
----
-lessonTitle: Primeros Pasos
-feedbackID: 00-PrimerosPasos
-permalink: /Primeros_Pasos/
-eleventyNavigation:
-  key: Primeros Pasos
-  order: 1
----
-
 ![HenryLogo](/_src/assets/logo.png)
 
 <table class="hide" width="100%" style='table-layout:fixed;'>

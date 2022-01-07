@@ -1,12 +1,3 @@
----
-lessonTitle: Git
-feedbackID: 01-Git
-permalink: /Git/
-eleventyNavigation:
-  key: Git
-  order: 2
----
-
 ![HenryLogo](/_src/assets/logo.png)
 
 <table class="hide" width="100%" style='table-layout:fixed;'>

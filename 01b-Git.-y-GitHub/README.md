@@ -1,12 +1,3 @@
----
-lessonTitle: Git y GitHub
-feedbackID: 01-Git
-permalink: /Git_y_GitHub/
-eleventyNavigation:
-  key: Git y GitHub
-  order: 6
----
-
 ![HenryLogo](/_src/assets/logo.png)
 
 <table class="hide" width="100%" style='table-layout:fixed;'>

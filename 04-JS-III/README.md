@@ -1,12 +1,3 @@
----
-lessonTitle: JavaScript III
-feedbackID: 04-JS-III
-permalink: /JavaScript_III/
-eleventyNavigation:
-  key: JS III
-  order: 9
----
-
 ![HenryLogo](/_src/assets/logo.png)
 
 <table class="hide" width="100%" style='table-layout:fixed;'>
