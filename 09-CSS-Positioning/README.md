@@ -1,4 +1,4 @@
-![HenryLogo](/_src/assets/logo.png)
+![HenryLogo](https://henry-11ty-resources.s3.sa-east-1.amazonaws.com/Assets/logo-henry-white-lg.png)
 
 <table class="hide" width="100%" style='table-layout:fixed;'>
   <tr>

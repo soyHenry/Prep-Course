@@ -1,4 +1,4 @@
-![HenryLogo](/_src/assets/logo.png)
+![HenryLogo](https://henry-11ty-resources.s3.sa-east-1.amazonaws.com/Assets/logo-henry-white-lg.png)
 
 # Prep Course
 

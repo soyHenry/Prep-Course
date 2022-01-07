@@ -1,4 +1,4 @@
-![HenryLogo](/_src/assets/logo.png)
+![HenryLogo](https://henry-11ty-resources.s3.sa-east-1.amazonaws.com/Assets/logo-henry-white-lg.png)
 
 <table class="hide" width="100%" style='table-layout:fixed;'>
   <tr>
@@ -12,7 +12,9 @@
   </tr>
 </table>
 
-# Expresiones vs Statements
+# Conceptos
+
+#### Expresiones vs Statements
 
 <div class="iframeContainer">
   <iframe src="https://player.vimeo.com/video/480856050" allow="autoplay; fullscreen"></iframe>
@@ -48,7 +50,7 @@ if (condicion) {
 }
 ```
 
-En este ejemplo, vemos que el `if` "hace algo", es decir, escribimos el if para que bifurque le ejecución del código según el valor de `condicion`. Como ya sabemos, si `condicion` tiene un valor *verdaderoso* entonces se ejecutará el bloque de código de arriba, y si no, el de abajo.
+En este ejemplo, vemos que el `if` "hace algo", es decir, escribimos el if para que bifurque le ejecución del código según el valor de `condicion`. Como ya sabemos, si `condicion` tiene un valor *verdadero* entonces se ejecutará el bloque de código de arriba, y si no, el de abajo.
 Fijensé que acá es importante discriminar lo que está *adentro* de los bloques de código, ya que ahí adentro podriamos escribir **expresiones** que sí devuelvan algo.
 
 Nos podemos dar cuenta que algo es un statement, porque si lo *pegamos* en la consola del intérprete -por ejemplo, en la consola del Firefox o Chrome- vamos a ver que no produce ningún resultado:
