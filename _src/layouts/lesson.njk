@@ -75,7 +75,9 @@ favicon: 'https://henry-11ty-resources.s3.sa-east-1.amazonaws.com/Assets/favicon
         <div class='lesson'>
           <div class='rightBox'>
             {% if homeworkLink %}
-              <div class='homeworkBox'><a href={{homeworkLink}} target='blank'>Homework 📝</a></div>
+              <div class='homeworkBox'>
+                <a href={{homeworkLink}} target='blank'>Homework 📝</a>
+              </div>
             {% endif %}
             <div class="readingTime">
                     Tiempo de lectura {{ content | readingTime }}
@@ -89,11 +91,13 @@ favicon: 'https://henry-11ty-resources.s3.sa-east-1.amazonaws.com/Assets/favicon
 
       </main>
 
-      <div class="feedback">
-        <a href='https://airtable.com/{{config.airtableFormId}}?prefill_clase={{feedbackID}}' target="_blank">
+      {% if feedbackID %}
+        <div class="feedback">
+          <a href='https://airtable.com/{{config.airtableFormId}}?prefill_clase={{feedbackID}}' target="_blank">
           Dejanos tu feedback!👍
         </a>
-      </div>
+        </div>
+      {% endif %}
 
       <div class="footerContainer">
         <div class="footerContained">
