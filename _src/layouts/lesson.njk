@@ -21,6 +21,7 @@ favicon: 'https://henry-11ty-resources.s3.sa-east-1.amazonaws.com/Assets/favicon
     <link rel="stylesheet" href="{{ 'https://henry-11ty-resources.s3.sa-east-1.amazonaws.com/Styles/code.css' | url }}">
     <link rel="stylesheet" href="{{ 'https://henry-11ty-resources.s3.sa-east-1.amazonaws.com/Styles/footer.css' | url }}">
     <link rel="stylesheet" href="{{ 'https://henry-11ty-resources.s3.sa-east-1.amazonaws.com/Styles/responsive.css' | url }}">
+
     <title>{{ lessonTitle }} | {{ config.repoTitle }}</title>
   </head>
 
@@ -72,7 +73,10 @@ favicon: 'https://henry-11ty-resources.s3.sa-east-1.amazonaws.com/Assets/favicon
         </div>
 
         <div class='lesson'>
-          <div style="display:flex; justify-content: right; right: 0; width: 100%;">
+          <div class='rightBox'>
+            {% if homeworkLink %}
+              <div class='homeworkBox'><a href={{homeworkLink}} target='blank'>Homework 📝</a></div>
+            {% endif %}
             <div class="readingTime">
                     Tiempo de lectura {{ content | readingTime }}
             </div>
