@@ -45,29 +45,11 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addNunjucksFilter('bootstrapNav', toBootstrapNav)
 
-  eleventyConfig.addLinter(
-    'Spelling check',
-    function (content, inputPath, outputPath) {
-      let words = 'lenght, .lenght, .rigth'.split(',')
-
-      // Eleventy 1.0+: use this.inputPath and this.outputPath instead
-      if (inputPath.endsWith('.md')) {
-        for (let word of words) {
-          let regexp = new RegExp('\\b(' + word + ')\\b', 'gi')
-          if (content.match(regexp)) {
-            console.warn(`Spelling check (${inputPath}) Found: ${word}`)
-          }
-        }
-      }
-    }
-  )
-
   return {
     dir: {
       layouts: '/_src/layouts',
       data: '/_src/data',
       output: '_dist',
-      pathPrefix: '/Prep-Course/',
     },
   }
 }
