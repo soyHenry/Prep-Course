@@ -15,15 +15,15 @@ favicon: 'https://henry-11ty-resources.s3.sa-east-1.amazonaws.com/Assets/favicon
     <title>{{ lessonTitle }} | {{ config.repoTitle }}</title>
 
     {% set css %}
-    {{ fonts | safe }}
-    {{ header | safe }}
-    {{ main | safe }}
-    {{ topbar | safe }}
-    {{ sidebar | safe }}
-    {{ lesson | safe }}
-    {{ code | safe }}
-    {{ footer | safe }}
-    {{ responsive | safe }}
+    {{ styles.fonts | safe }}
+    {{ styles.header | safe }}
+    {{ styles.main | safe }}
+    {{ styles.topbar | safe }}
+    {{ styles.sidebar | safe }}
+    {{ styles.lesson | safe }}
+    {{ styles.code | safe }}
+    {{ styles.footer | safe }}
+    {{ styles.responsive | safe }}
     {% endset %}
 
     <style>
