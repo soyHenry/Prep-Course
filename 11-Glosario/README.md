@@ -1,99 +1,134 @@
-# Definiciones.
 
-Argumento: valor real pasado como input (valor de entrada) a una función.
+# Definiciones
 
-Array (Arreglo): es un tipo especial de variable que se utiliza para almacenar múltiples elementos. A su vez es un tipo de objeto.
+## A
 
-Asignar: Dar un valor a una variable, es decir guardar algo (dato) en un contenedor.
+**Argumento:** valor real pasado como input (valor de entrada) a una función.
 
-Bloque de código: es la agrupación de statements(sentencias) dentro de un par de llaves con el fin de que se ejecuten juntas.
+**Array (Arreglo):** es un tipo especial de variable que se utiliza para almacenar múltiples elementos. A su vez es un tipo de objeto.
 
-Booleano: es un tipo de dato que solo puede tener dos posibles valores: verdadero o falso.
+**Asignar:** Dar un valor a una variable, es decir guardar algo (dato) en un contenedor.
 
-Bucle (loop): es una herramienta de programación que permite repetir un set de instrucciones hasta llegar a una condición de corte.
+## B
 
-Callbacks: es una función que se pasa como argumento a otra función para ser invocada por la última.
+**Bloque de código:** es la agrupación de statements(sentencias) dentro de un par de llaves con el fin de que se ejecuten juntas.
 
-Clases (class): son una plantilla para crear objetos. Un tipo especial de funciones.
+**Booleano**: es un tipo de dato que solo puede tener dos posibles valores: verdadero o falso.
 
-Clonar: crear una copia local (en tu computadora) de un repositorio manteniendo una conexión remota con el mismo.
+**Bucle (loop)**: es una herramienta de programación que permite repetir un set de instrucciones hasta llegar a una condición de corte.
 
-Comando: una orden o instrucción que un usuario le da a un sistema para que realice determinada tarea.
+## C
 
-Condición: o una sentencia condicional es una expresión que puede evaluarse a verdadero o falso con el fin de permitir que cierto fragmento de código se ejecute solo cuando se cumpla o no dicha condición.
+**Callbacks:** es una función que se pasa como argumento a otra función para ser invocada por la última.
 
-Consola (del navegador): es una herramienta que nos permite interactuar con el código de una página web usando JavaScript.
+**Clases (class):** son una plantilla para crear objetos. Un tipo especial de funciones.
 
-Console.log: es un método que muestra un mensaje en la consola. Tiene múltiples usos como por ejemplo “ver” el valor asignado a una variable o todo el contenido de un array así como también el resultado de la ejecución de una función.
+**Clonar:** crear una copia local (en tu computadora) de un repositorio manteniendo una conexión remota con el mismo.
 
-Constructor: es un tipo especial de función que actúa a modo de molde para crear nuevos objetos.
+**Comando:** una orden o instrucción que un usuario le da a un sistema para que realice determinada tarea.
 
-Dato: cualquier objeto manipulable por la computadora, puede ser letras, números, caracteres especiales que ocupa un lugar en memoria.
+**Condición:** o una sentencia condicional es una expresión que puede evaluarse a verdadero o falso con el fin de permitir que cierto fragmento de código se ejecute solo cuando se cumpla o no dicha condición.
 
-Declarar: crear una variable, sin asignarle un valor.
+**Consola (del navegador)**: es una herramienta que nos permite interactuar con el código de una página web usando JavaScript.
 
-Editor de texto: es un programa que te permite crear y editar archivos en diferentes lenguajes de programación. (Es donde escribimos nuestro código!)
+**Console.log:** es un método que muestra un mensaje en la consola. Tiene múltiples usos como por ejemplo “ver” el valor asignado a una variable o todo el contenido de un array así como también el resultado de la ejecución de una función.
 
-Expression (Expresión): es cualquier unidad de código válida que se resuelve en un valor.
+**Constructor:** es un tipo especial de función que actúa a modo de molde para crear nuevos objetos.
 
-Flujos de control (Control Flow): El flujo de control es el orden en que la computadora ejecuta las sentencias en un script.
+## D
 
-Forkear: crear una copia independiente de un repositorio del cual eres dueño y puedes modificar, aunque los cambios no se verán reflejados en el repositorio original.
+**Dato:** cualquier objeto manipulable por la computadora, puede ser letras, números, caracteres especiales que ocupa un lugar en memoria.
 
-Función: es un bloque de código diseñado para que realice una tarea en particular.
+**Declarar:** crear una variable, sin asignarle un valor.
 
-Git: es una herramienta que permite trabajar colaborativamente en un código ya que mantiene un récord de todos los cambios hechos en un código.
+## E
 
-GitHub: es una herramienta que permite crear, almacenar y compartir repositorios.
+**Editor de texto:** es un programa que te permite crear y editar archivos en diferentes lenguajes de programación. (Es donde escribimos nuestro código!)
 
-Hoisting (elevación de variables y funciones): es el comportamiento por defecto de JavaScript que parece mover las declaraciones de las variables, funciones y clases a la parte de arriba del código antes de su ejecución.
+**Expression (Expresión):** es cualquier unidad de código válida que se resuelve en un valor.
 
-IDE (entorno de desarrollo integrado): es una herramienta que combina en una sola interfaz las más necesarias para los desarrolladores.
+## F
 
-IIFE (Expresión de función ejecutadas inmediatamente): es una manera de ejecutar funciones inmediatamente, ya que las mismas se ejecutan al momento en que se declaran.
+**Flujos de control (Control Flow)**: El flujo de control es el orden en que la computadora ejecuta las sentencias en un script.
 
-Inicializar: La asignación inicial de un valor a una variable.
+**Forkear:** crear una copia independiente de un repositorio del cual eres dueño y puedes modificar, aunque los cambios no se verán reflejados en el repositorio original.
 
-Interprete: es un software que lee, analiza y ejecuta el código escrito en algunos lenguajes de programación.
+**Función:** es un bloque de código diseñado para que realice una tarea en particular.
 
-Invocar (llamar): es simplemente ejecutar o “correr” una función.
+## G
 
-Iterar: realizar un proceso repetidas veces con el fin de llegar al resultado deseado.
+**Git:** es una herramienta que permite trabajar colaborativamente en un código ya que mantiene un récord de todos los cambios hechos en un código.
 
-Método: es una función que pertenece a un objeto. Por ejemplo, el .push() en los arrays.
+**GitHub:** es una herramienta que permite crear, almacenar y compartir repositorios.
 
-Node: es un entorno de ejecución de JavaScript. Se utiliza para poder ejecutar código del lado del servidor.
+## H
 
-NPM: es un sistema de gestión de paquetes para Node.js, sirve para acomodar los módulos para que Node los encuentre y pueda utilizarlos al ejecutar el código.
+**Hoisting (elevación de variables y funciones):** es el comportamiento por defecto de JavaScript que parece mover las declaraciones de las variables, funciones y clases a la parte de arriba del código antes de su ejecución.
 
-Objeto: es un tipo que dato que se utiliza para guardar colecciones de pares clave-valor.
+## I
 
-Operador: es un símbolo especial que representa una acción. Por ejemplo, el “=” es el operador utilizado para asignar un valor a una variable.
+**IDE (entorno de desarrollo integrado):** es una herramienta que combina en una sola interfaz las más necesarias para los desarrolladores.
 
-Palabra reservada/ keyword: son palabras dentro de un lenguaje de programación que se guardan para su uso funcional ya que tienen un significado y una función. Por ejemplo, var, let y const.
+**IIFE (Expresión de función ejecutadas inmediatamente):** es una manera de ejecutar funciones inmediatamente, ya que las mismas se ejecutan al momento en que se declaran.
 
-Parámetro: el nombre que se establece para el futuro argumento, cuando se define la función.
+**Inicializar:** La asignación inicial de un valor a una variable.
 
-Prototype: el mecanismo por el cual los objetos de JavaScript heredan características unos de otros.
+**Interprete:** es un software que lee, analiza y ejecuta el código escrito en algunos lenguajes de programación.
 
-Repositorio: es un espacio virtual donde se almacena información, generalmente los archivos que conforman un programa, página web o aplicación
+**Invocar (llamar):** es simplemente ejecutar o “correr” una función.
 
-Return: es una palabra reservada que se utiliza para terminar o “cortar” con la ejecución de una función o bloque de código. Un statement(sentencia) que comienza con return especifica el valor que debe retornar dicha función o bloque de código.
+**Iterar:** realizar un proceso repetidas veces con el fin de llegar al resultado deseado.
 
-Saltos (jumps): son formas de “salir” de un bucle(loop). Por ejemplo, usando las palabras reservadas return, break, continue.
+## M
 
-Script: es un conjunto de comando o instrucciones escritos en algún lenguaje de programación para que algún programa u ordenador luego lo ejecute.
+**Método:** es una función que pertenece a un objeto. Por ejemplo, el .push() en los arrays.
 
-Scope (Ambito de una variable): los limites en el cual existe una variable.
+## N
 
-Statement (sentencia): es una línea de código que ordena una tarea.
+**Node:** es un entorno de ejecución de JavaScript. Se utiliza para poder ejecutar código del lado del servidor.
 
-String(cadena): es uno de los tipos de datos primitivos de JavaSript. Son variables en donde se almacena texto, es decir cualquier combinación o cantidad de caracteres.
+**NPM:** es un sistema de gestión de paquetes para Node.js, sirve para acomodar los módulos para que Node los encuentre y pueda utilizarlos al ejecutar el código.
 
-Terminal: otro termino que hace referencia a la consola. (ejemplo: la terminal integrada en visual studio code)
+## O
 
-This: es un keyword que hace referencia al objeto (en JavaScript básicamente todo es en el fondo un objeto) que está ejecutando la función o bloque de código. Es una especie de puntero.
+**Objeto:** es un tipo que dato que se utiliza para guardar colecciones de pares clave-valor.
 
-Tipos de datos: es una clasificación de los datos. Un atributo que tienen que ayuda al interprete a saber cómo procesarlo correctamente.
+**Operador:** es un símbolo especial que representa una acción. Por ejemplo, el “=” es el operador utilizado para asignar un valor a una variable.
 
-Variable: contenedor en los que puedes almacenar valores.
+## P
+
+**Palabra reservada/ keyword:** son palabras dentro de un lenguaje de programación que se guardan para su uso funcional ya que tienen un significado y una función. Por ejemplo, var, let y const.
+
+**Parámetro:** el nombre que se establece para el futuro argumento, cuando se define la función.
+
+**Prototype:** el mecanismo por el cual los objetos de JavaScript heredan características unos de otros.
+
+## R
+
+**Repositorio:** es un espacio virtual donde se almacena información, generalmente los archivos que conforman un programa, página web o aplicación
+
+**Return:** es una palabra reservada que se utiliza para terminar o “cortar” con la ejecución de una función o bloque de código. Un statement(sentencia) que comienza con return especifica el valor que debe retornar dicha función o bloque de código.
+
+## S
+
+**Saltos (jumps):** son formas de “salir” de un bucle(loop). Por ejemplo, usando las palabras reservadas return, break, continue.
+
+**Script:** es un conjunto de comando o instrucciones escritos en algún lenguaje de programación para que algún programa u ordenador luego lo ejecute.
+
+**Scope (Ambito de una variable):** los limites en el cual existe una variable.
+
+**Statement (sentencia):** es una línea de código que ordena una tarea.
+
+**String(cadena):** es uno de los tipos de datos primitivos de JavaSript. Son variables en donde se almacena texto, es decir cualquier combinación o cantidad de caracteres.
+
+## T
+
+**Terminal:** otro termino que hace referencia a la consola. (ejemplo: la terminal integrada en visual studio code)
+
+**This:** es un keyword que hace referencia al objeto (en JavaScript básicamente todo es en el fondo un objeto) que está ejecutando la función o bloque de código. Es una especie de puntero.
+
+**Tipos de datos:** es una clasificación de los datos. Un atributo que tienen que ayuda al interprete a saber cómo procesarlo correctamente.
+
+## V
+
+**Variable:** contenedor en los que puedes almacenar valores.
