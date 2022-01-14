@@ -8,7 +8,7 @@
 
 **Array (Arreglo):** es un tipo especial de variable que se utiliza para almacenar múltiples elementos. A su vez es un tipo de objeto.
 
-**Asignar:** Dar un valor a una variable, es decir guardar algo (dato) en un contenedor.
+**Asignar:** dar un valor a una variable, es decir guardar algo (dato) en un contenedor.
 
 ## B
 
@@ -50,7 +50,7 @@
 
 ## F
 
-**Flujos de control (Control Flow)**: El flujo de control es el orden en que la computadora ejecuta las sentencias en un script.
+**Flujos de control (Control Flow)**: es el orden en que la computadora ejecuta las sentencias en un script.
 
 **Forkear:** crear una copia independiente de un repositorio del cual eres dueño y puedes modificar, aunque los cambios no se verán reflejados en el repositorio original.
 
@@ -72,7 +72,7 @@
 
 **IIFE (Expresión de función ejecutadas inmediatamente):** es una manera de ejecutar funciones inmediatamente, ya que las mismas se ejecutan al momento en que se declaran.
 
-**Inicializar:** La asignación inicial de un valor a una variable.
+**Inicializar:** la asignación inicial de un valor a una variable.
 
 **Interprete:** es un software que lee, analiza y ejecuta el código escrito en algunos lenguajes de programación.
 
@@ -124,7 +124,7 @@
 
 ## T
 
-**Terminal:** otro termino que hace referencia a la consola. (ejemplo: la terminal integrada en visual studio code)
+**Terminal:** otro término que hace referencia a la consola. (ejemplo: la terminal integrada en visual studio code)
 
 **This:** es un keyword que hace referencia al objeto (en JavaScript básicamente todo es en el fondo un objeto) que está ejecutando la función o bloque de código. Es una especie de puntero.
 
