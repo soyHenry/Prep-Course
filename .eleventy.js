@@ -40,6 +40,23 @@ module.exports = function (eleventyConfig) {
     ul: true,
   })
 
+  eleventyConfig.addLinter(
+    'Spelling check',
+    function (content, inputPath, outputPath) {
+      let words = 'lenght, .lenght, .rigth'.split(',')
+
+      // Eleventy 1.0+: use this.inputPath and this.outputPath instead
+      if (inputPath.endsWith('.md')) {
+        for (let word of words) {
+          let regexp = new RegExp('\\b(' + word + ')\\b', 'gi')
+          if (content.match(regexp)) {
+            console.warn(`Spelling check (${inputPath}) Found: ${word}`)
+          }
+        }
+      }
+    }
+  )
+
   eleventyConfig.addPassthroughCopy('_src/assets')
   // eleventyConfig.addPassthroughCopy("_src/styles")
 
