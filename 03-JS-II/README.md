@@ -203,7 +203,7 @@ Un par de cosas a tener en cuenta sobre los operadores lógicos.
 
 Dentro de la función ***esDiezOCinco*** escribe un algoritmo que retorne `true` si "num" es 10 o 5. De lo contrario, debe retornar `false`.
 
-<div class="sanboxContainer">
+<div class="sandboxContainer">
 <iframe src="https://codesandbox.io/embed/focused-proskuriakova-cifyh?fontsize=14&view=split&previewwindow=tests&theme=dark&codemirror=1&hidedevtools=1&eslint=0&autoresize=1&highlights=3"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="focused-proskuriakova-cifyh"
