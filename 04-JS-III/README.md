@@ -22,7 +22,7 @@ En esta lección cubriremos:
 * Bucles ***for*** con arrays
 
 <div class="iframeContainer">
-<iframe src="https://player.vimeo.com/video/424916422" allow="autoplay; fullscreen"></iframe>
+<iframe src="https://player.vimeo.com/video/424916422?h=c1ea37841e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="03 - JS III - Arrays"></iframe>
 </div>
 
 ## Introducción a los arrays (matrices/arreglos)
