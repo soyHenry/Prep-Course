@@ -27,7 +27,7 @@ En esta lección cubriremos:
 * Introducción a Node y NPM
 
 <div class="iframeContainer">
-<iframe src="https://player.vimeo.com/video/423852829" allow="autoplay; fullscreen"></iframe>
+<iframe src="https://player.vimeo.com/video/423852829?h=fd22fd70c6&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Clase 01 Introducci&amp;oacute;n JS"></iframe>
 </div>
 
 JavaScript es un lenguaje de programación que fue creado originalmente para ser usado en el front-end de una pǻgina web. La idea original era poder dar dinamismo a las páginas webs, que en un principio eran estáticas. La introducción del "motor V8" de Google ha mejorado la velocidad y el funcionamiento de JS. Haciendo que JS (javascript) sea la lengua franca de la web, llegando inclusive al Back-End a través de NodeJs.
