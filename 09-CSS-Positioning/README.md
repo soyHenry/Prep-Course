@@ -24,7 +24,7 @@ En esta lección cubriremos:
 * Recursos adicionales.
 
 <div class="iframeContainer">
-  <iframe src="https://player.vimeo.com/video/425169846" allow="autoplay; fullscreen"></iframe>
+<iframe src="https://player.vimeo.com/video/425169846?h=e525f529ea&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1282" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Prep-Lesson03-CSS"></iframe>
 </div>
 
 ## Introducción al posicionamiento
