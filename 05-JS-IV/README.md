@@ -25,7 +25,7 @@ En esta lección cubriremos:
 * Objetos en Javascript
 
 <div class="iframeContainer">
-<iframe src="https://player.vimeo.com/video/424936732" allow="autoplay; fullscreen"></iframe>
+<iframe src="https://player.vimeo.com/video/424936732?h=a800057660&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="04 - JS IV - Objetos"></iframe>
 </div>
 
 ## Introducción a los Objetos
