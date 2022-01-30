@@ -79,21 +79,26 @@ favicon: 'https://d31uz8lwfmyn8g.cloudfront.net/Assets/favicon.png'
           </div>
         </div>
 
-        <div class='lesson'>
-          <div class='rightBox'>
-            {% if homeworkUrl %}
-              <div class='homeworkBox'>
-                <a href={{homeworkUrl}} target='blank'>Homework 📝</a>
-              </div>
-            {% endif %}
-            <div class="readingTime">
+        <div class='rightBox'>
+          <div class="readingTime">
                     Tiempo de lectura {{ content | readingTime }}
+          </div>
+          {% if quizzID %}
+            <div class='quizzBox'>
+              <a href='https://quiz.soyhenry.com/evaluation/new/{{quizzID}}' target='blank'>Quizz 📚</a>
             </div>
-          </div>
-          <div>
-            {# Lesson (markdown content) #}
-            {{ content | safe }}
-          </div>
+          {% endif %}
+
+          {% if homeworkUrl %}
+            <div class='homeworkBox'>
+              <a href={{homeworkUrl}} target='blank'>Homework 📝</a>
+            </div>
+          {% endif %}
+        </div>
+
+        <div class='lesson'>
+          {# Lesson (markdown content) #}
+          {{ content | safe }}
         </div>
 
       </main>
