@@ -1,8 +1,3 @@
----
-lessonTitle: Challenge
-permalink: false
-eleventyNavigation:
-  key: Challenge
-  url: https://challenge.prep.soyhenry.com
-  order: 99
----
+![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
+
+Aca va el contenido del challenge
