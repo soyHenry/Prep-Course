@@ -51,6 +51,8 @@ y así.
 
 > Gracias [Nico Constantin (FT#12)](https://github.com/NicoConstantin) por el video y la explicación!
 
+- Para ingresar al espacio de Slack del Prep Course de Henry, por favor revisa el los mails que recibiste al avanzar con el proceso de admisión dado que ahí encontrarás el link de acceso.
+
 ## Editores de Texto
 
 Para poder escribir código que pueda ser interpretado por un lenguaje de programación, necesitamos utilizar un editor de texto.
