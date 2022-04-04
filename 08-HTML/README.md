@@ -452,3 +452,7 @@ Ahora que tenemos nuestra hoja de estilo externa vinculada a nuestro archivo HTM
     </td>
   </tr>
 </table>
+
+---
+
+#### Si tienes dudas sobre este tema, puedes consultarlas en el canal ***html-y-css*** de Slack

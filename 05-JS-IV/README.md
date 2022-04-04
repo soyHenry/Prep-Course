@@ -30,7 +30,7 @@ En esta lección cubriremos:
 
 ## Introducción a los Objetos
 
-En la anterior lección aprendimos sobre _arrays_ o matrices. Las matrices son contenedores que sostienen colecciones de datos. En esta lección, introduciremos otro contenedor de datos, el _Objeto_. Los objetos y las matrices son similares en ciertas cosas, y muy diferentes en otras. Mientras que los array pueden contener múltiples elementos relacionados unos con otros, los objetos contienen mucha información sobre una sola cosa. Los objetos se instancian usando llaves (`{}`).
+En la anterior lección aprendimos sobre *arrays* o matrices. Las matrices son contenedores que sostienen colecciones de datos. En esta lección, introduciremos otro contenedor de datos, el *Objeto*. Los objetos y las matrices son similares en ciertas cosas, y muy diferentes en otras. Mientras que los array pueden contener múltiples elementos relacionados unos con otros, los objetos contienen mucha información sobre una sola cosa. Los objetos se instancian usando llaves (`{}`).
 
 ```javascript
 const nuevoObjeto = {};
@@ -117,7 +117,7 @@ nuevoObjeto.decirHola(); //Hola a todo el mundo!
 
 ## Bucles ***for…in***
 
-A veces queremos iterar sobre cada par clave-valor en nuestro objeto. Con las matrices, utilizamos un estándar para el bucle y una variable de número de índice. Los objetos no contienen índices numéricos, por lo que el bucle estándar no funcionará para los objetos. Javascript tiene un segundo tipo de bucle for integrado llamado "_for ... in loop_". Es una sintaxis ligeramente diferente, comienza igual pero entre paréntesis declararemos una variable, la palabra clave `in` y el nombre del objeto. Esto recorrerá cada clave del objeto y finalizará cuando se hayan iterado todas las claves. Podemos usar esta clave, y la notación de corchetes, en nuestro bucle for para acceder al valor asociado con esa clave.
+A veces queremos iterar sobre cada par clave-valor en nuestro objeto. Con las matrices, utilizamos un estándar para el bucle y una variable de número de índice. Los objetos no contienen índices numéricos, por lo que el bucle estándar no funcionará para los objetos. Javascript tiene un segundo tipo de bucle for integrado llamado "*for ... in loop*". Es una sintaxis ligeramente diferente, comienza igual pero entre paréntesis declararemos una variable, la palabra clave `in` y el nombre del objeto. Esto recorrerá cada clave del objeto y finalizará cuando se hayan iterado todas las claves. Podemos usar esta clave, y la notación de corchetes, en nuestro bucle for para acceder al valor asociado con esa clave.
 
 ```javascript
 const usuario = {
@@ -181,7 +181,7 @@ Este es el caso cuando ejecutamos código en el contexto global (afuera de cualq
 
 * #### En el contexto de una función
 
-Cuando estamos dentro de una función, el valor de `this` va a depender de _cómo sea invocada la función_.
+Cuando estamos dentro de una función, el valor de `this` va a depender de *cómo sea invocada la función*.
 
 ``` javascript
 > function f1(){
@@ -197,11 +197,11 @@ Cuando estamos dentro de una función, el valor de `this` va a depender de _cóm
 
 En este ejemplo la función es invocada por el objeto global por lo tanto this hará referencia a `window`.
 
-> Si usamos el modo `strict` de Javascript, el ejemplo de arriba va a devolver `undefined`, ya que no le deja al interprete _asumir_ que `this` es el objeto global.
+> Si usamos el modo `strict` de Javascript, el ejemplo de arriba va a devolver `undefined`, ya que no le deja al interprete *asumir* que `this` es el objeto global.
 
 * #### Como método de un objeto
 
-Cuando usamos el _keyword_ `this` dentro de una función que es un método de un objeto, `this` toma hace referencia al objeto sobre el cual se llamó el método:
+Cuando usamos el *keyword* `this` dentro de una función que es un método de un objeto, `this` toma hace referencia al objeto sobre el cual se llamó el método:
 
 ``` javascript
 > var o = {
@@ -216,7 +216,7 @@ Cuando usamos el _keyword_ `this` dentro de una función que es un método de un
 // this hace referencia a `o`
 ```
 
-En este caso, _no depende_ donde hayamos definido la función, lo único que importa es que la función haya sido invocada como método de un objeto. Por ejemplo, si definimos la función afuera:
+En este caso, *no depende* donde hayamos definido la función, lo único que importa es que la función haya sido invocada como método de un objeto. Por ejemplo, si definimos la función afuera:
 
 ``` javascript
 > var o = {prop: 37};
@@ -253,8 +253,9 @@ De todos modos, hay que tener cuidado con el keyword `this`, ya que pueden apare
   }
 ```
 
-Si ejecutamos el código de arriba, vamos a notar que después de ejecutar el código, la propiedad `nombre` de `obj` contiene el valor `Cambiado` y no `'Hoola!!'`. Esto se debe a que el keyword `this` dentro de la función cambia __NO hace referencia a `obj`__, si no que hace referencia al objeto global. No podemos considerar al `this` como obj porque la función no es método de este Objeto, fíjense que no podemos hacer obj.cambia.
-De hecho, si buscamos dentro del objeto global la variable `nombre`, vamos a encontrar con el valor `'Hoola!!'` que seteamos con la función `cambia`. Esto quiere decir que no importa en donde estuvo declarada la función, si no __cómo la invocamos__.
+Si ejecutamos el código de arriba, vamos a notar que después de ejecutar el código, la propiedad `nombre` de `obj` contiene el valor `Cambiado` y no `'Hoola!!'`. Esto se debe a que el keyword `this` dentro de la función cambia **NO hace referencia a `obj`**, si no que hace referencia al objeto global. No podemos considerar al `this` como obj porque la función no es método de este Objeto, fíjense que no podemos hacer obj.cambia.
+
+De hecho, si buscamos dentro del objeto global la variable `nombre`, vamos a encontrar con el valor `'Hoola!!'` que seteamos con la función `cambia`. Esto quiere decir que no importa en donde estuvo declarada la función, si no **cómo la invocamos**.
 
 > Prácticamente, no podemos saber a ciencia cierta que valor va a tomar el keyword hasta el momento de ejecución de una función. Porque depende fuertemente de cómo haya sido ejecutada.
 
@@ -306,3 +307,7 @@ Completa la tarea descrita en el archivo [README](https://github.com/soyHenry/Pr
     </td>
   </tr>
 </table>
+
+---
+
+#### Si tienes dudas sobre este tema, puedes consultarlas en el canal ***05_js-iv*** de Slack

@@ -31,7 +31,7 @@
 
 ## Undefined y null
 
-Hay un par de objetos Javascript que realmente no encajan en ningún tipo de dato. Esos son los valores `undefined` y `null`. Obtendrás `undefined` cuando busques _algo_ que no existe, como una variable que aún no tiene un valor. `undefined` simplemente significa que lo que estás pidiendo no existe.
+Hay un par de objetos Javascript que realmente no encajan en ningún tipo de dato. Esos son los valores `undefined` y `null`. Obtendrás `undefined` cuando busques *algo* que no existe, como una variable que aún no tiene un valor. `undefined` simplemente significa que lo que estás pidiendo no existe.
 
 ```javascript
 console.log(variableInexistente); // undefined
@@ -50,7 +50,7 @@ Una última cosa a tener en cuenta, ni `undefined` ni `null` son cadenas, están
 
 ## Veracidad
 
-En estas lecciones hemos hablado sobre los valores booleanos, `true` y `false`. Cuando se usa una declaración `if` u otra declaración que espera un valor booleano (como `!`, _NOT_), y la expresión dada no es un valor booleano, Javascript hará algo llamado "coerción de tipo" y transformará lo que sea que se le entregue a un valor booleano. Esto se conoce como "truthy" y "falsey". Cada tipo de datos tiene una veracidad. Acá hay unos ejemplos:
+En estas lecciones hemos hablado sobre los valores booleanos, `true` y `false`. Cuando se usa una declaración `if` u otra declaración que espera un valor booleano (como `!`, *NOT*), y la expresión dada no es un valor booleano, Javascript hará algo llamado "coerción de tipo" y transformará lo que sea que se le entregue a un valor booleano. Esto se conoce como "truthy" y "falsey". Cada tipo de datos tiene una veracidad. Acá hay unos ejemplos:
 
 ```javascript
 // Datos que son forzados a verdaderos/"true"
@@ -242,7 +242,7 @@ Como vimos anteriormente, las funciones son objetos invocables, y podemos hacerl
 < 'hola!'
 ```
 
-Si sabemos las variables a tomar, como en el ejemplo `str`, podemos darle nombre a este parámetro. Sino hay una propiedad _**arguments**_ , propia de todas las funciones, que contiene los parámetros pasados como argumento.
+Si sabemos las variables a tomar, como en el ejemplo `str`, podemos darle nombre a este parámetro. Sino hay una propiedad **arguments** , propia de todas las funciones, que contiene los parámetros pasados como argumento.
 
 ``` javascript
 > function args() {
@@ -253,7 +253,7 @@ Si sabemos las variables a tomar, como en el ejemplo `str`, podemos darle nombre
 < ["hola!", "otro parametro", 3, callee: 'function', Symbol(Symbol.iterator): 'function']
 ```
 
-_arguments_ nos da acceso a la **n** cantidad como parámetros, pero tengamos en cuenta que **no es un Arreglo**.
+*arguments* nos da acceso a la **n** cantidad como parámetros, pero tengamos en cuenta que **no es un Arreglo**.
 
 ``` javascript
 > function args() {
@@ -297,3 +297,7 @@ Te invitamos a buscar en Google información de estos conceptos para poder desar
 ## Homework
 
 Abre la carpeta "homework" y completa la tarea descripta en el archivo [README](https://github.com/soyHenry/Prep-Course/tree/main/03-JS-II/homework)
+
+---
+
+#### Si tienes dudas sobre este tema, puedes consultarlas en el canal ***03_js-ii*** de Slack
