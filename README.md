@@ -51,7 +51,7 @@ Puedes encontrar el calendario con las clases aquí: [calendario](https://challe
 Te compartimos esta grabación del último Open House que hicimos en nuestro canal de Youtube. En este video podrás concoer más sobre Henry, la carrera y el proceso de admisión:
 
 <div class="iframeContainer">
-<iframe src="https://www.youtube.com/watch?v=p_Hb0_v8SAc&ab_channel=Henry" allow="autoplay; fullscreen"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/p_Hb0_v8SAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## ¿Quieres conocer más sobre la carrera de Desarrollo Web Full Stack en Henry?
