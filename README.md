@@ -10,13 +10,13 @@ En este curso introductorio podrás aprender todo el contenido que luego será e
 
 ## ¿Qué es el Prep Course?
 
-El Prep Course, o curso preparatorio, es un curso que diseñamos desde Henry con la finalidad de nivelar a todos nuestros aplicantes. La idea es que con este curso puedas dar tus primeros pasos en tecnología y así aprender esos conceptos básicos que serán necesarios para cuando estés dentro de la carrera. 
+El Prep Course, o curso preparatorio, es un curso que diseñamos desde Henry con la finalidad de nivelar a todos nuestros aplicantes. La idea es que con este curso puedas dar tus primeros pasos en tecnología y así aprender esos conceptos básicos que serán necesarios para cuando estés dentro de la carrera.
 
 #### ¿En qué consiste el Prep Course?
 
 El curso consiste en una serie de videos, material escrito y ejercicios para que puedas ir aprendiendo estos conceptos básicos de Javascript, HTML y CCS. Todo el material se encuentra aquí, en este repositorio (prep.soyhenry.com).
 
-Podrás ir avanzando con el contenido a tu ritmo y de manera asincrónica (es decir, en los horarios y tiempos que tu prefieras). Cuando hayas finalizado, podrás inscribirte para realizar el Henry Challenge. 
+Podrás ir avanzando con el contenido a tu ritmo y de manera asincrónica (es decir, en los horarios y tiempos que tu prefieras). Cuando hayas finalizado, podrás inscribirte para realizar el Henry Challenge.
 
 ## ¿Qué es el Henry Challenge?
 
@@ -44,7 +44,7 @@ Para poder acompañarte en esta etapa, ponemos a disposición las “Clases de a
 
 Las clases son de lunes a viernes, por la tarde. Cada día se establece una temática distinta a trabajar. Deberás llegar a la clase habiendo visto los videos sobre ese tema e intentado resolver los ejercicios, dado que en las clases no se explicará los temas desde cero sino que se resolverán dudas puntuales.
 
-Puedes encontrar el calendario con las clases aquí: [calendario](https://challenge.prep.soyhenry.com/calendar)
+Si no puedes asistir al espacio en vivo, podrás ver la grabación. Puedes encontrar el calendario con las clases, el link de acceso y el link de la grabación, aquí:  [calendario](https://challenge.prep.soyhenry.com/calendar)
 
 ## Open House
 
