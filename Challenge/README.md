@@ -22,7 +22,9 @@ En caso de aprobar, ya estarás listo para comenzar la carrera. Pasarás a la et
 
 ¡Muchos éxitos!
 
-Para inscribirte al challenge haz click aqui: [Challenge](challenge.prep.soyhenry.com)
+## Inscripción
+
+Para inscribirte al challenge haz click aquí: [Challenge](challenge.prep.soyhenry.com)
 
 ---
 

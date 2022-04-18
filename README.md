@@ -20,14 +20,15 @@ Podrás ir avanzando con el contenido a tu ritmo y de manera asincrónica (es de
 
 ## ¿Qué es el Henry Challenge?
 
-Es un examen donde evaluamos los conceptos que se aprenden en el Prep Course. El examen tiene la finalidad de asegurarnos que realmente se han aprendido estos conceptos, dado que tenerlos bien claro es la clave de éxito para que puedas avanzar bien dentro de la carrera.
+Es un examen donde evaluamos los conceptos que se aprenden en el Prep Course. El examen tiene la finalidad de asegurarnos que realmente se han aprendido estos conceptos, dado que tenerlos bien claros es la clave de éxito para que puedas avanzar bien dentro de la carrera.
 El examen se realiza los días sábados cada dos semanas, previa inscripción en el siguiente link. Podrás rendirlo todas las veces que quieras. Para más información, puedes ir a la sección del challenge de este repositorio (prep.soyhenry.com/challenge).
 
 ## ¿Qué puedo hacer si tengo dudas?
 
 Contamos con dos herramientas de apoyo:
 
-**Slack:** es una plataforma de comunicación, donde podrás ponerte en contacto con nuestra comunidad que siempre te ayudará a resolver todas tus dudas. Habrás recibido acceso a la plataforma en el mail del proceso de admisión donde recibiste acceso al Prep Course. Más adelante te explicaremos cómo usar la herramienta.
+**Slack:** es una plataforma de comunicación, donde podrás ponerte en contacto con nuestra comunidad que siempre te ayudará a resolver todas tus dudas. Encontrarás acceso a Slack desde la [plataforma de admisión](https://www.admissions.soyhenry.com/)  o desde los mails que recibiste al momento de aplicar.
+Más adelante te explicaremos cómo usar la herramienta.
 
 **Clases de apoyo en vivo:** de lunes a viernes hay un espacio en vivo via Zoom con estudiantes avanzados que se postulan para responder todas tus consultas.
 

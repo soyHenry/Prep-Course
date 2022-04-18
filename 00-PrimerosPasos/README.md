@@ -51,7 +51,7 @@ y así.
 
 > Gracias [Nico Constantin (FT#12)](https://github.com/NicoConstantin) por el video y la explicación!
 
-- Para ingresar al espacio de Slack del Prep Course de Henry, por favor revisa el los mails que recibiste al avanzar con el proceso de admisión dado que ahí encontrarás el link de acceso.
+- Para ingresar al espacio de Slack del Prep Course de Henry, por favor ingresa a la [plataforma de admisión](https://www.admissions.soyhenry.com/) donde encontrarás el link de acceso al mismo.
 
 ## Editores de Texto
 
