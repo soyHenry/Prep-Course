@@ -12,7 +12,7 @@ Consiste en una serie de ejercicios que deberás resolver, de manera muy similar
 
 ## ¿Cuándo lo puedo realizar?
 
-El challenge se realiza los sábados, cada dos semanas. Para poder ver las próximas fechas puedes inscribirte aquí: [Challenge](http://challenge.prep.soyhenry.com)
+El challenge se realiza los sábados, cada dos semanas. Para poder ver las próximas fechas puedes inscribirte aquí: [Challenge](https://challenge.prep.soyhenry.com)
 
 El Challenge debe resolverse de manera individual. Si lo realizas con ayuda te estarás perjudicando a ti mismo, dado que si no puedes resolverlo significa que aún no tienes los conocimientos básicos para ingresar y eso te generará muchos problemas durante la carrera.
 
@@ -24,7 +24,7 @@ En caso de aprobar, ya estarás listo para comenzar la carrera. Pasarás a la et
 
 ## Inscripción
 
-Para inscribirte al challenge haz click aquí: [Challenge](http://challenge.prep.soyhenry.com)
+Para inscribirte al challenge haz click aquí: [Challenge](https://challenge.prep.soyhenry.com)
 
 ---
 
