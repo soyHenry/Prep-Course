@@ -28,13 +28,9 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  console.log(`hola, ${str}`)
+  return str;
 }
 
-
-function newFunction() {
-  devolverString(miNomre);
-}
 
 function suma(x, y) {
   // "x" e "y" son números
@@ -79,8 +75,8 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  let len1 = tienenMismaLongitud.length(str1);
-  let len2 = tienenMismaLongitud-length(str2);
+  let len1 = str1.length;
+  let len2 = str2.length;
 
   if (len1 === len2) {
     return true;
@@ -153,8 +149,8 @@ function elevarAlCubo(num) {
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  let exponent = Math.pow(num, exponent);
-  return exponent;  
+  let exp = Math.pow(num, exponent);
+  return exp;  
 }
 
 function redondearNumero(num) {
@@ -167,13 +163,14 @@ function redondearNumero(num) {
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  
+  let roundUp = Math.ceil(num);
+  return roundUp;
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  
+  return Math.random() ;
 }
 
 function esPositivo(numero) {
@@ -181,6 +178,13 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
+  if (Math.sign(numero)) {
+    console.log("Es positivo");
+  } else if(!(Math.sign(numero))) {
+    console.log("Es negativo");
+  } else if(numero === 0){
+    console.log(false);
+  }
   
 }
 
