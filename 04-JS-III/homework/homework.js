@@ -58,7 +58,11 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  
+  let res = '';
+  for (let i = 0; i < array.length-1; i+2) {
+    res = palabras[i] + palabras[i+1];    
+  }
+  return res;
 }
 
 
@@ -66,6 +70,8 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+  let b = array.includes(elemento);
+  return b;
 }
 
 
@@ -73,6 +79,15 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+
+  let res = 0;
+
+  if (numeros.length < 2) {
+    return numero[0];
+  } else {
+    res += numeros[i];  
+  }
+  return res;
 }
 
 
@@ -80,6 +95,7 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+ 
 }
 
 
