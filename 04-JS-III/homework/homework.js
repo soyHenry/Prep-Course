@@ -67,6 +67,8 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+  let b = array.includes(elemento);
+  return b;
 }
 
 
@@ -74,6 +76,18 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+  //https://ungs-prog.github.io/prog2/rec1.html
+  //https://www.freecodecamp.org/espanol/news/como-entender-recursividad-en-javascript/
+  //https://code.tutsplus.com/es/tutorials/understanding-recursion-with-javascript--cms-30346
+
+  let res = 0;
+
+  if (numeros.length < 2) {
+    return numero[0];
+  } else {
+    res += numeros[i];  
+  }
+  return res;
 }
 
 
@@ -81,6 +95,7 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+  
 }
 
 
@@ -88,13 +103,15 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
+
 }
 
 
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
-  // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
+  // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
+
 }
 
 
