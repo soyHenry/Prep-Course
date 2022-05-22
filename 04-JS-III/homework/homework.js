@@ -58,7 +58,13 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  
+  let res = '';
+  if (palabras.length < 3 ) {
+    return palabras[0] + '' + palabras[1];
+  } else {
+    let db = palabras.splice(0,2);
+    return db + ' ' + dePalabrasAFrase(palabras);
+  }
 
 }
 
@@ -76,18 +82,15 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
-  //https://ungs-prog.github.io/prog2/rec1.html
-  //https://www.freecodecamp.org/espanol/news/como-entender-recursividad-en-javascript/
-  //https://code.tutsplus.com/es/tutorials/understanding-recursion-with-javascript--cms-30346
-
+ 
   let res = 0;
 
   if (numeros.length < 2) {
-    return numero[0];
+    return numeros[0];
   } else {
-    res += numeros[i];  
+    let ab = numeros.shift();
+    return ab + agregarNumeros(numeros) ;  
   }
-  return res;
 }
 
 
