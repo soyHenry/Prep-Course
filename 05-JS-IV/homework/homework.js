@@ -6,14 +6,14 @@ function crearGato (nombre, edad) {
   // Agrega un método (funcion) llamado "meow" que devuelva el string "Meow!"
   // Devuelve el objeto
   // Tu código:
-   let objeto = {
-     nombre: nombre,
-     edad: edad,
-     meow: function () {
-       return "Meow!";
-     },
-   };
-   return objeto;
+  let objeto = {
+    nombre: nombre,
+    edad: edad,
+    meow: () => {
+      return "Meow!";
+    },
+  };
+  return objeto;
 }
 
 function agregarPropiedad (objeto, property) {
@@ -140,10 +140,11 @@ function sumarLikesDeUsuario (usuario) {
   // Devuelve la suma
   // Tu código:
   let suma = 0
-  for (let i = 0; i < usuarios.length; i++) {
-    suma = suma + usuario.post[i].likes; 
+  for (let i = 0; i < usuario.posts.length; i++) {
+    suma = suma + usuario.posts[i].likes; 
     
   }
+  return suma;
 }
 
 function agregarMetodoCalculoDescuento (producto) {
@@ -155,16 +156,14 @@ function agregarMetodoCalculoDescuento (producto) {
   // producto.precio -> 20
   // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
-  // Tu código:
-  let producto = {
-    precio: 8,
-    porcentaDeDescuento: .15,
-    calcularPrecioDescuento (){
-      
-    },
+  // Tu código: 
+  producto.calcularPrecioDescuento =  () => {
+    return producto.precio - (producto.precio * producto.porcentajeDeDescuento);
   }
-  return producto;
-}
+    return producto;
+}  
+  
+  
 
 // No modificar nada debajo de esta línea
 // --------------------------------
