@@ -7,7 +7,6 @@ const {
   eliminarPropiedad,
   nuevoUsuario,
   tieneEmail,
-  tienePropiedad,
   verificarPassword,
   actualizarPassword,
   agregarAmigo,
@@ -104,16 +103,6 @@ describe('tieneEmail(user)', function() {
     expect(tieneEmail({ usernombre: 'Samuel', email: 'samuel@email.com' })).toEqual(true);
     expect(tieneEmail({ usernombre: 'Jhon', email: null })).toEqual(false);
     expect(tieneEmail({ usernombre: 'Antonio' })).toEqual(false);
-  });
-});
-
-describe('tienePropiedad(object, property)', function() {
-  it('should return true if the object has the property that is passed in', function() {
-    const obj = {
-      x: true,
-    };
-    expect(tienePropiedad(obj, 'x')).toEqual(true);
-    expect(tienePropiedad(obj, 'y')).toEqual(false);
   });
 });
 

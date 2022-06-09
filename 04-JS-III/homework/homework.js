@@ -17,7 +17,7 @@ function devolverUltimoElemento(array) {
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
-  return array[array.length];
+  return array.length;
 }
 
 
@@ -37,7 +37,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-  return array.push(elemento);
+  array.push(elemento);
+  return array;
 }
 
 
@@ -46,7 +47,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
-  return array.unshift(elemento);
+  array.unshift(elemento);
+  return array;
 }
 
 
@@ -64,7 +66,9 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-  return array.includes(elemento);
+  if(array.includes(elemento)) 
+  {return true;}
+  else {return false;}
 }
 
 
@@ -73,7 +77,7 @@ function agregarNumeros(numeros) {
   // Suma todos los enteros y devuelve el valor
   // Tu código:
   let suma = 0;
-  for(let i = 0; i < numeros.length-1; i++){
+  for(let i = 0; i < numeros.length; i++){
     suma = suma + numeros[i];
   }
   return suma;
@@ -101,7 +105,7 @@ function multiplicarArgumentos() {
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
   let prod = 1;
-  if(arguments < 1) return 0;
+  if(arguments.length < 1) return 0;
   else {
     for(let i = 0; i < arguments.length; i++){
       prod = prod * arguments[i];
@@ -179,7 +183,7 @@ function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
-  let newArray = [];
+  var newArray = [];
   for(let i = 0; i < array.length; i++){
     if (array[i] > 100) newArray.push(array[i]);
   }
@@ -195,15 +199,15 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
-  let newArray = [];
-  let suma = numero;
+  var newArray = [];
+  var suma = numero;
   for(var i = 0; i < 10; i++){
     suma += 2;
     if (suma === i) break;
     else  newArray.push(suma);
   }
-  if(i<10) return newArray;
-  return "Se interrumpió la ejecución";
+  if(i<10) return "Se interrumpió la ejecución";
+  return newArray;
 }
 
 
@@ -214,8 +218,8 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
-  let newArray = [];
-  let suma = numero;
+  var newArray = [];
+  var suma = numero;
   for(var i = 0; i < 10; i++){
     if (i === 5) continue;
     else{
