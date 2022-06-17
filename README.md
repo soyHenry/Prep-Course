@@ -49,7 +49,7 @@ Si no puedes asistir al espacio en vivo, podrás ver la grabación. Puedes encon
 
 ## Open House
 
-Te compartimos esta grabación del último Open House que hicimos en nuestro canal de Youtube. En este video podrás concoer más sobre Henry, la carrera y el proceso de admisión:
+Te compartimos esta grabación del último Open House que hicimos en nuestro canal de Youtube. En este video podrás conocer más sobre Henry, la carrera y el proceso de admisión:
 
 <div class="iframeContainer">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/p_Hb0_v8SAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
