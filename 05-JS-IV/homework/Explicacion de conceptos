@@ -1,0 +1,9 @@
+Objetos: Son contenedores de datos, guardan informacion sobre una misma cosa en propiedades
+
+Propiedades: Son una asociacion entre una clave (nombre) y un valor
+
+Métodos: Es la forma en que se llama a una funcion cuando esta dentro de una propiedad
+
+Bucle For... in: Es un bucle que itera sobre todas las claves de un objeto
+
+Notación de puntos vs notación de corchetes: La ventaja de la notacion de puntos es que es mas facil de escribir y mas clara a la hora de leerla, mientras que la notacion de corchetes aunque sea un poco mas compleja la momento de la escritura nos permite la utilizacion de caracteres que no pueden ser utilizados en las notaciones por punto, intercalar con variables o recorrer objetos
