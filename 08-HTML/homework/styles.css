@@ -1,10 +1,31 @@
+body{
+    background-color: rgb(113, 113, 113);
+}
+
 h1{
     color:blue;
 }
 img{
     width:400px;
+    border: 5px solid black;
+    border-radius: 15px;
+}
+.divClass1{
+   text-align: center;
+   width: 300px;
+   background-color: greenyellow;
+   border: 5px solid black;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+/* margin-right: auto;
+margin-left: auto; */
 }
 #thirdDiv{
+    justify-content: center;
     height: 900px;
     width: 500px;
     background-color: cornflowerblue;
@@ -12,8 +33,18 @@ img{
     border-radius: 10px;
     border: 5px solid;
     border-color:black ;
+    background-image: 
+    url("https://us.123rf.com/450wm/golubovy/golubovy1906/golubovy190600326/124399924-fondo-de-arte-abstracto-de-textura-de-fieltro-azul-oscuro-superficie-de-cart%C3%B3n-de-color-copie-el-esp.jpg?ver=6");
 }
 #spanId{
-    font-size: 18px;
-    margin: 50px;
+    font-size: 25px;
+    color: white;
+}
+.divClass{
+    margin: 3px 0px;
+    width: 600px;
+    background-color: rgb(34, 65, 158);
+    border: 5px solid rgb(28, 28, 69);
+    padding: 20px 15px;
+    text-align: center;
 }
