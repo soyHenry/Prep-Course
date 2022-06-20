@@ -161,7 +161,7 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  Math.round(Math.random() * 1);
+  return Math.round(Math.random() * 1);
 }
 
 function esPositivo(numero) {
@@ -242,7 +242,7 @@ function esVocal(letra){
     if (letra==='a'|| letra==='e' ||letra==='i'||letra==='o'||letra==='u'){
       return 'Es vocal';
     }else{
-      return ' Dato incorrecto';
+      return 'Dato incorrecto';
     }
   }
 }
