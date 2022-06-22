@@ -1,0 +1,12 @@
+variables = Es una forma de almacenar un valor de algo para usarlo mas tarde.
+            si se quiere que no sea sobreescrita se usa const
+
+Strings = es un tipo de dato. los strings son letras o palabras
+
+funciones = sirve para no escribir el mismo codigo dos veces
+
+return = te devuelve datos que "escapan" de una funcion
+
+declaracion if = si una condicion se cumple el programa va a llevar a cabo una accion , sino ninguna o otra accion distinta a la primera
+
+booleanos = true o false, en vez de usar str o numero se puede usar un booleanos para saber si algo es verdadero o falso
