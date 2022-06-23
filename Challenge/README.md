@@ -28,4 +28,4 @@ Para inscribirte al challenge haz click aquí: [Challenge](https://www.admission
 
 ---
 
-#### Si tienes dudas sobre este tema, puedes consultarlas en el canal **_henry_challenge_** de Slack
+#### Si tienes dudas sobre este tema, puedes consultarlas en el canal ***henry_challenge*** de Slack
