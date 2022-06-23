@@ -14,7 +14,7 @@ El Prep Course, o curso preparatorio, es un curso que diseñamos desde Henry con
 
 #### ¿En qué consiste el Prep Course?
 
-El curso consiste en una serie de videos, material escrito y ejercicios para que puedas ir aprendiendo estos conceptos básicos de Javascript, HTML y CCS. Todo el material se encuentra aquí, en este repositorio (prep.soyhenry.com).
+El curso consiste en una serie de videos, material escrito y ejercicios para que puedas ir aprendiendo estos conceptos básicos de Javascript, HTML y CSS. Todo el material se encuentra **aquí en la parte superior de la página**, iniciando por la sección de **"Intro"** y finalizando en la sección del **"Challenge"**.
 
 Podrás ir avanzando con el contenido a tu ritmo y de manera asincrónica (es decir, en los horarios y tiempos que tu prefieras). Cuando hayas finalizado, podrás inscribirte para realizar el Henry Challenge.
 
@@ -49,7 +49,7 @@ Si no puedes asistir al espacio en vivo, podrás ver la grabación. Puedes encon
 
 ## Open House
 
-Te compartimos esta grabación del último Open House que hicimos en nuestro canal de Youtube. En este video podrás concoer más sobre Henry, la carrera y el proceso de admisión:
+Te compartimos esta grabación del último Open House que hicimos en nuestro canal de Youtube. En este video podrás conocer más sobre Henry, la carrera y el proceso de admisión:
 
 <div class="iframeContainer">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/p_Hb0_v8SAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
