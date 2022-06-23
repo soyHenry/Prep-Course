@@ -176,7 +176,7 @@ if (10 === 9 || 1 > 9) {
 }
 ```
 
-### !
+###
 
 El último operador lógico es el operador "NOT" ("NO"). Está escrito como un solo signo de exclamación (`!`). Vimos este operador antes al determinar la igualdad (`!==`). Como antes, el operador NOT devolverá el valor booleano opuesto de lo que se le pasa:
 
@@ -190,6 +190,7 @@ if (!(1 === 1)) {
 }
 ```
 
+
 ### Notas sobre operadores lógicos
 
 Un par de cosas a tener en cuenta sobre los operadores lógicos.
@@ -197,6 +198,19 @@ Un par de cosas a tener en cuenta sobre los operadores lógicos.
 * Las expresiones se evalúan en orden, y la computadora omitirá cualquier expresión redundante. En una declaración `&&`, si la primera expresión es `false`, la segunda expresión no se evaluará porque AMBAS expresiones deben ser `true`. Lo mismo para la declaración `||`. Si la primera expresión es `verdadero`, la segunda no se evaluará porque solo debe haber una declaración `verdadero` para cumplir con los requisitos del operador.
 
 * Usá paréntesis. Como vimos en el segundo ejemplo de operador `!`, usamos paréntesis para evaluar PRIMERO lo que estaba dentro de los paréntesis, luego aplicamos el operador `!`. Podemos ajustar cualquier expresión entre paréntesis y se evaluará antes de evaluar la expresión como un todo.
+
+#### Ahora hagamos un ejercicio:
+
+Dentro de la función ***esDiezOCinco*** escribe un algoritmo que retorne `true` si "num" es 10 o 5. De lo contrario, debe retornar `false`.
+
+<div class="sandboxContainer">
+<iframe src="https://codesandbox.io/embed/focused-proskuriakova-cifyh?fontsize=14&view=split&previewwindow=tests&theme=dark&codemirror=1&hidedevtools=1&eslint=0&autoresize=1&highlights=3"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="focused-proskuriakova-cifyh"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+</div>
 
 ## Bucles ***for***
 
