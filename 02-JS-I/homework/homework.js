@@ -76,7 +76,9 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(length.str1===length.str2){
+  var a=str1.length;
+  var b= str2.length;
+  if(a===b){
     return true;
   }else{
     return false;
@@ -171,7 +173,8 @@ function redondearNumero(num) {
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  return Math.round(num);
+  var a=Math.ceil(num);
+  return a;
   
 }
 
@@ -189,7 +192,8 @@ function esPositivo(numero) {
   //Si el número es 0, devuelve false
   if(numero>0){
     return 'Es positivo';
-  }else{
+  }
+  if(numero<0){
     return 'Es negativo';
   }
   if(numero===0){
@@ -209,7 +213,8 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  return nombre + apellido;
+  var combinacion= nombre +' ' + apellido;
+  return combinacion;
   
 }
 
@@ -217,7 +222,8 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return 'Hola' + nombre;
+  var combinacion2= 'Hola '+nombre+'!';
+  return combinacion2;
   
 }
 
@@ -262,7 +268,7 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   if(letra==='a' || letra==='e' || letra==='i' || letra==='o' || letra==='u'){
-    return 'Dato correcto';
+    return 'Es vocal';
   }else{
     return 'Dato incorrecto';
   }
