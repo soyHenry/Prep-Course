@@ -152,7 +152,7 @@ git remote add origin <URL>
 ```
 
 - **Segundo**: Verificar que la URL se haya guardado correctamente
-
+//nose
 ```bash
 git remote
 git remote -v
