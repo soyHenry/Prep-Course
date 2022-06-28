@@ -103,7 +103,7 @@ En este ejercicio, añadiremos un archivo a nuestro proyecto y crearemos un comm
 
 A continuación, escribe lo siguiente en tu terminal:
 
-```bash
+```bash 
   $ cd repositorio-henry
   
   $ touch archivo-ejemplo.js
