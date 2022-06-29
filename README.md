@@ -27,7 +27,7 @@ El examen se realiza los días sábados cada dos semanas, previa inscripción en
 
 Contamos con dos herramientas de apoyo:
 
-**Slack:** es una plataforma de comunicación, donde podrás ponerte en contacto con nuestra comunidad que siempre te ayudará a resolver todas tus dudas. Encontrarás acceso a Slack desde la [plataforma de admisión](https://www.admissions.soyhenry.com/)  o desde los mails que recibiste al momento de aplicar.
+**Slack:** es una plataforma de comunicación, donde podrás ponerte en contacto con nuestra comunidad que siempre te ayudará a resolver todas tus dudas. Encontrarás acceso a Slack desde la [plataforma de admisión](https://www.admissions.soyhenry.com/) o desde los mails que recibiste al momento de aplicar.
 Más adelante te explicaremos cómo usar la herramienta.
 
 **Clases de apoyo en vivo:** de lunes a viernes hay un espacio en vivo via Zoom con estudiantes avanzados que se postulan para responder todas tus consultas.
@@ -45,7 +45,7 @@ Para poder acompañarte en esta etapa, ponemos a disposición las “Clases de a
 
 Las clases son de lunes a viernes, por la tarde. Cada día se establece una temática distinta a trabajar. Deberás llegar a la clase habiendo visto los videos sobre ese tema e intentado resolver los ejercicios, dado que en las clases no se explicará los temas desde cero sino que se resolverán dudas puntuales.
 
-Si no puedes asistir al espacio en vivo, podrás ver la grabación. Puedes encontrar el calendario con las clases, el link de acceso y el link de la grabación, aquí:  [calendario](https://challenge.prep.soyhenry.com/calendar)
+Si no puedes asistir al espacio en vivo, podrás ver la grabación. Puedes encontrar el calendario con las clases, el link de acceso y el link de la grabación, aquí: [calendario](/Calendario)
 
 ## Open House
 
