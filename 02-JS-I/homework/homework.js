@@ -1,22 +1,22 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const firstName = "Jonathan";
+const nuevaString = 'Hola Mundo';
 
 // Crea una variable numérica, puede ser cualquier número:
-const age = 26;
+const nuevoNum = 7;
 
 // Crea una variable booleana:
-const developer = true;
+const nuevoBool = true;
 
 // Resuelve el siguiente problema matemático:
-const timeDeveloping = age - 2 === 24;
+const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
-const devExpertAge = age * 2 === 52 ;
+const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const randomModule = 21 % 5 === 1;
+const nuevoModulo = 21 % 5 === 1;
 
 
 // En los próximos 22 problemas, deberás completar la función.
