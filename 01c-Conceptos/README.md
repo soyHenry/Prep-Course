@@ -75,6 +75,8 @@ Nos podemos dar cuenta que algo es un statement, porque si lo *pegamos* en la co
 
 > El **operador ternario**, es una expresión o un statement? ej: (numero > 10 ? 'mayor' : 'menor');
 
+`Es una expresión porque retorna un valor falso o verdaro`
+
 ## Expressions
 
 Cómo dijimos arriba, una *expression* es cualquier pedazo de código **que pueda ser evaluado a un valor**. Justamente por esto, las vamos a usar en lugares donde JavaScript *espera un valor*. Por ejemplo, cómo cuando pasamos una expresión como argumento de una función.
