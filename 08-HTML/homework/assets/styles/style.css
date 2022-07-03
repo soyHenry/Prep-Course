@@ -1,0 +1,53 @@
+:root {
+    background-image: url(https://user-images.githubusercontent.com/59540565/177045424-c157ce74-326d-4caa-a42f-03eaa6aecb24.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+h1 {
+    color: burlywood;
+}
+
+img {
+    width: 400px;
+    border-radius: 20px;
+}
+
+#thirdDiv {
+    height: 600px;
+    width: 500px;
+    background-color: rgb(67, 68, 68);
+    padding: 50px;
+    border-radius: 30px;
+    border-color:antiquewhite
+}
+
+#spanId {
+    font-size: 18px;
+    margin: 50px;
+}
+
+.divClass {
+    text-align: center;
+}
+
+.container {
+    border: 2px solid cornsilk;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    width: 20%;  
+}
+
+ul {
+    display: table;
+    margin: 10px auto;
+  }
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: rgb(255, 160, 160);
+}
