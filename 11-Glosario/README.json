@@ -1,9 +1,0 @@
-{
-  "lessonTitle": "Glosario",
-  "permalink": "/Glosario/",
-  "layout": "intro",
-  "eleventyNavigation": {
-    "key": "Glosario",
-    "order": 90
-  }
-}

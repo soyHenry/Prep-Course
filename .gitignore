@@ -1,8 +1,0 @@
-node_modules
-package-lock.json
-.temp
-
-# Eleventy
-_dist
-_cache
-/_src/localStyles
