@@ -79,8 +79,9 @@ function operadoresLogicos(num1, num2, num3) {
 }
 
 function esPrimo(numero) {
-  // Devuelve "true" si "numero" es primo
-  // De lo contrario devuelve "falso"
+  // Devuelve "true" si "numero" es primo   Lineas 81 y 82: No esta claro si se requiere un booleano o string,ojo esta escrito "falso" y no "false". 
+  // Los test no pasan si se escribe como se pide aqui
+  // De lo contrario devuelve "falso"        
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
