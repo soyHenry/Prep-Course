@@ -51,7 +51,7 @@ Iniciaremos creando una carpeta desde la consola llamada: "CarpetaHenry"
 Para ello primero iremos a la carpeta de nivel superior, escribe en la consola:
 
 ```bash
-  cd ~
+  cd ~ 
 ```
 
 y presiona Enter. Una vez estés en el nivel superior, escribe:
@@ -66,7 +66,7 @@ y presiona Enter. ¡Felicitaciones, has creado un directorio!
 
 Entra a github.com y logueate con tu usuario. Luego en la parte de arriba a la derecha buscá el signo '+' y elegí 'new repository'.
 
-![alt](../img/repo-create.png)
+![altG](../img/repo-create.png)
 
 En la nueva pantalla, vas a tener que seleccionar el nombre de tu nuevo repo. Crea un repo que se llame: `repositorio-henry`. Podes agregarle una descripción también, pero no es obligatoria.
 
