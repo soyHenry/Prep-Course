@@ -346,7 +346,7 @@ Completa la tarea descrita en el archivo [README](https://github.com/soyHenry/Pr
         <img src="https://static.thenounproject.com/png/204643-200.png" width="100"/>
         <br>
         Hacé click acá para dejar tu feedback sobre esta clase.
-      </a>
+      </a>//
     </td>
   </tr>
 </table>

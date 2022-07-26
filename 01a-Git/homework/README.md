@@ -29,8 +29,6 @@ Dentro de nuestra terminal podemos: revisar nuestra estructura de archivos, aña
 "Make Directory": Crea una nueva carpeta en el directorio donde nos encontramos actualmente.
 ```bash
   $ mkdir [nombre de la carpeta]
-```
-
 "Touch" creará un nuevo archivo.
 ```bash
   $ touch [nombre del archivo]
