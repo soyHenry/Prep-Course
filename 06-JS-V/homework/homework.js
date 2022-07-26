@@ -8,26 +8,30 @@ function crearUsuario() {
   // {{nombre}} debe ser el nombre definido en cada instancia
   // Devuelve la clase
   // Tu código:
-  function usuario ( opciones){
-    esto_usuario = opciones.usuario;
-    esto_nombre = opciones.nombre;
-    esto_email = opciones.email;
-    esto_password = opciones.password;
+  function Usuario(opciones) {
+    this.usuario = opciones.usuario;
+    this.nombre = opciones.nombre;
+    this.email = opciones.email;
+    this.password = opciones.password;
   }
-  usuario.prototype.saludar = function(){
-    return "Hola, mi nombre es " + esto_nombre;
+
+  Usuario.prototype.saludar = function() {
+    return 'Hola, mi nombre es ' + this.nombre;
   };
-  return usuario;
+
+  return Usuario;
+
 }
 
-function agregarMetodoPrototipo ( Constructor )  {
-  // Agrega un método al Constructor del `prototipo`
-  // El método debe llamarse "saludar" y debe devolver la cadena "Hello World!"
-  // Tu codigo:
+function agregarMetodoPrototype(Constructor) {
+  // Agrega un método al Constructor del `prototype`
+  // El método debe llamarse "saludar" y debe devolver la string "Hello World!"
+  // Tu código:
   Constructor.prototype.saludar = function() {
     return 'Hello World!';
   };
 }
+
 function agregarStringInvertida() {
   // Agrega un método al prototype de String que devuelva la misma cadena de caracteres, pero invertida.
   // El método debe llamarse "reverse"
@@ -84,10 +88,9 @@ function agregarMetodo() {
   //La función agrega un método "datos" a la clase Persona que toma el nombre y la edad de la persona y devuelve: 
   //Ej: "Juan, 22 años"
   Persona.prototype.datos = function() {
-    return   esto . nombre  +  ","  +  esto . edad  +  "años" ;
+    return this.nombre + ", " + this.edad + " años";
   }
 }
-
 // No modificar nada debajo de esta línea
 // --------------------------------
 
