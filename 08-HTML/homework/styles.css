@@ -1,0 +1,44 @@
+#body{
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin-right: center;
+    line-height: 1.5em;
+}
+.divClass {
+    background-color: #f00;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+/*Agregue una regla de estilo al elemento img dándole un ancho de 400px*/
+img{
+    width: 350px;
+    height: 350px;
+}
+.span{
+    color: rgb(59, 178, 207);
+}
+/*Agregue una regla de estilo a su elemento h1 cambiando el color del texto*/
+.h1{
+    color: rgb(9, 168, 44);
+}
+/*Asignar al id 'thirdDiv' un borde con cualquier ancho de color y estilo que elija.*/
+/*Asignar al id 'thirdDiv' un relleno (padding) de 50px.*/
+/*Agregue una regla de estilo a 'thirdDiv' cambiando la altura a 600px y el ancho a 500px.*/
+/*Agregue una regla de estilo a 'thirdDiv' cambiando el color de fondo por el que quiera.*/
+#thirdDiv{
+    border: 5px solid #000;
+    padding: 50px;
+    height: 600px;
+    width: 500px;
+    background-color: #00f;
+}
+/*Cambie el tamaño de la fuente para 'spanId' a 18px.*/
+/*Asignar al id 'spanId' un margen de 50px.*/
+#spanId{
+    font-size: 18px;
+    margin: 50px;
+}
