@@ -212,7 +212,7 @@ if (condicion) { // condicion puede ser cualquier expression!!
   // ejecuta este bloque de código si condicion y condicion2 no son true.
 }
 ```
-
+//
 ### Loops (bucles) y Jumps (saltos)
 
 Estos statements también controlan el flujo de ejecución del código, pero hacen que un bloque se ejecute N veces (ej: `for`), o que la ejecución salte a otro contexto (ej: `return`). Por ejemplo:
