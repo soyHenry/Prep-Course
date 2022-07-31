@@ -6,6 +6,9 @@ const nuevaString = null;
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = null;
 
+//Prueba de git
+const prueba = "Prueba de Constante"
+
 // Crea una variable booleana:
 const nuevoBool = null;
 
