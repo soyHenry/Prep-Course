@@ -1,0 +1,6 @@
+VARIABLES
+las variables son datos que no son constantes y se pueden almacenar en los tipos de dato existentes
+String: Son un tipo de dato que alamacena unicamente variables de tipo de texto
+Funciones: Son codigo que tiene una tarea en especifico y contiene argumentos que modifican el comportamiento al momento que realizar la tarea
+Declaraciones: Son variables que no han sido inicializadas(no tienen un valor o dato aun)
+Valores boleanos: son tipos de dato que retornan valores true(verdaderos) o false(falso)
