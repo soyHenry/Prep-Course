@@ -1,5 +1,7 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
+const { stringify } = require("git-url-parse");
+
 // Crea una variable "string", puede contener lo que quieras:
 const nuevaString = "String es igual a texto";
 
@@ -239,7 +241,18 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  
+  if (letra.length >= 1) {
+  return "Dato incorrecto";
+  }
+
+  if (la){
+    return "Dato incorrecto";
+  }
+  if (e){
+    return "es vocal";
+  }
+ 
+
 }
 
 
