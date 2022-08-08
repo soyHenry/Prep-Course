@@ -1,0 +1,10 @@
+
+/*`for` = ES Una estructura condicional que solo accede si se cumplen las condiciones
+//
+//"&&" = Es una operacion como la suma, pero de la programacion
+//para que se cumpla la condicion de && ambas expreciones deben ser true
+//
+// "||" = Es una operacion, para que se cumpla la condicion ||
+// por lo menor una expresion se tiene que ser true
+// ! sirve para negar una true o hacer true una negacion
+*/
