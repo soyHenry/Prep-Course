@@ -25,10 +25,10 @@ const nuevoModulo = 21 % 5 === 1;
 // Pista: "console.log()" NO fucionará.
 // No cambies los nombres de las funciones.
 
-function devolverString("HOLA A TODOS") {
+function devolverString(String) {
   // "Return" la string provista: str
   // Tu código:
-  return String;
+  return "hola";
 }
 
 function suma(x, y) {
