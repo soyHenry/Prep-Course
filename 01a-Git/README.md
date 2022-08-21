@@ -116,4 +116,8 @@ Sabiendo esto, el flujo de trabajo básico en Git sería algo así:
 
 ---
 
+## Homework
+
+Completa la tarea descrita en el archivo [README](https://github.com/soyHenry/Prep-Course/tree/main/01a-Git/homework)
+
 #### Si tienes dudas sobre este tema, puedes consultarlas en el canal ***01b_git*** de Slack
