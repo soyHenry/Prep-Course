@@ -27,8 +27,8 @@ function incrementarPorUno(array) {
   // y devuelve el array
   // Tu código:
   let arrayMas1 = [];
-  for (var i = 0; i < array.length; i++){
-    arrayMas1.push(array[i]+1);
+  for (const element of array){
+    arrayMas1.push(element+1);
   }
   return arrayMas1;
 }
@@ -107,12 +107,10 @@ function multiplicarArgumentos() {
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
   if(arguments.length === 0) return 0;
-  else if(arguments.length === 1) return arguments[0];
   else{
     let producto = 1;
-    for (let i = 0; i < arguments.length; i++){
-      producto *= arguments[i];
-
+    for (const element of arguments){
+      producto *= element;
     }
     return producto;
   }
@@ -123,9 +121,9 @@ function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
   let mayor18 = [];
-  for (let i = 0; i<arreglo.length; i++){
-    if(arreglo[i] > 18){
-      mayor18.push(arreglo[i]);
+  for (const element of arreglo){
+    if(element > 18){
+      mayor18.push(element);
     }
   }
   return mayor18.length
@@ -157,8 +155,8 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
-  for(var i =0; i < arreglo.length;i++){
-    if(arreglo[0] !== arreglo[i]){
+  for(const element of arreglo){
+    if(arreglo[0] !== element){
       return false;
     }
   }
@@ -172,9 +170,9 @@ function mesesDelAño(array) {
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
   let mesElegido = [];
-  for(var i = 0;i <array.length; i++){
-    if((array[i] === "Enero") || (array[i] === "Noviembre") || (array[i] === "Marzo")){
-      mesElegido.push(array[i]);
+  for(const element of array){
+    if((element === "Enero") || (element === "Noviembre") || (element === "Marzo")){
+      mesElegido.push(element);
     }
   }
 
@@ -189,9 +187,9 @@ function mayorACien(array) {
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
   let mayores100 = [];
-  for(var i  = 0; i < array.length ; i++){
-    if(array[i] > 100){
-      mayores100.push(array[i]);
+  for(const element of array){
+    if(element > 100){
+      mayores100.push(element);
     }
   }
   return mayores100;
@@ -208,7 +206,7 @@ function breakStatement(numero) {
   //Pista: usá el statement 'break'
   // Tu código:
   let numeros = [];
-  for(var i = 0; i < 10; i++){
+  for(let i = 0; i < 10; i++){
     numero += 2;
     numeros.push(numero);
     if (numero === i){
@@ -228,7 +226,7 @@ function continueStatement(numero) {
   //Pista: usá el statement 'continue'
   // Tu código:
   let numeros = [];
-  for(var i = 0; i < 10; i++){
+  for(let i = 0; i < 10; i++){
     if (5 !== i){
       
       numero += 2;
