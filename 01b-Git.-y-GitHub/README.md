@@ -1,5 +1,28 @@
 ![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
 
+- [Git y GitHub](#git-y-github)
+  - [Comenzando a usar Git](#comenzando-a-usar-git)
+    - [Comandos básicos](#comandos-básicos)
+    - [Ciclos de vida o estados de los archivos en Git](#ciclos-de-vida-o-estados-de-los-archivos-en-git)
+    - [Comandos para mover archivos entre los estados de Git](#comandos-para-mover-archivos-entre-los-estados-de-git)
+  - [Qué es un Branch y cómo funciona un Merge?](#qué-es-un-branch-y-cómo-funciona-un-merge)
+  - [Crea un repositorio de Git y haz tu primer commit](#crea-un-repositorio-de-git-y-haz-tu-primer-commit)
+  - [Analizar cambios en los archivos de tu proyecto](#analizar-cambios-en-los-archivos-de-tu-proyecto)
+  - [Reset y checkout](#reset-y-checkout)
+  - [Ramas o branches](#ramas-o-branches)
+    - [Fusión de ramas con Git Merge](#fusión-de-ramas-con-git-merge)
+    - [Resolución de conflictos al hacer un Merge](#resolución-de-conflictos-al-hacer-un-merge)
+  - [Uso de GitHub](#uso-de-github)
+    - [Manejo de ramas en GitHub](#manejo-de-ramas-en-github)
+      - [Configurar múltiples colaboradores en un repositorio de GitHub](#configurar-múltiples-colaboradores-en-un-repositorio-de-github)
+      - [Flujo de trabajo profesional con ***pull requests***](#flujo-de-trabajo-profesional-con-pull-requests)
+      - [Ignorar archivos en el Repositorio con ***.gitignore***](#ignorar-archivos-en-el-repositorio-con-gitignore)
+      - [Reconstruir commits en Git con ***amend***](#reconstruir-commits-en-git-con-amend)
+      - [Git ***reset*** y ***reflog***: úsese en caso de emergencia](#git-reset-y-reflog-úsese-en-caso-de-emergencia)
+      - [Buscar en archivos y commits de Git con ***grep*** y ***log***](#buscar-en-archivos-y-commits-de-git-con-grep-y-log)
+      - [Si tienes dudas sobre este tema, puedes consultarlas en el canal ***01b_git*** de Slack](#si-tienes-dudas-sobre-este-tema-puedes-consultarlas-en-el-canal-01b_git-de-slack)
+
+
 <table class="hide" width="100%" style='table-layout:fixed;'>
   <tr>
     <td>

@@ -1,5 +1,20 @@
 ![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
 
+- [JavaScript III](#javascript-iii)
+      - [Continuación de bucles ***for*** y ***arrays***](#continuación-de-bucles-for-y-arrays)
+  - [Introducción a los arrays (matrices/arreglos)](#introducción-a-los-arrays-matricesarreglos)
+    - [***.length***](#length)
+    - [Acceso a elementos en una matriz](#acceso-a-elementos-en-una-matriz)
+    - [Asignación](#asignación)
+    - [***.push*** y ***.pop***](#push-y-pop)
+    - [***.unshift*** y ***.shift***](#unshift-y-shift)
+    - [Notas sobre las matrices](#notas-sobre-las-matrices)
+  - [Utilizando bucles ***for*** en arrays](#utilizando-bucles-for-en-arrays)
+  - [Recursos adicionales](#recursos-adicionales)
+  - [Homework](#homework)
+      - [Si tienes dudas sobre este tema, puedes consultarlas en el canal ***04_js-iii*** de Slack](#si-tienes-dudas-sobre-este-tema-puedes-consultarlas-en-el-canal-04_js-iii-de-slack)
+
+
 <table class="hide" width="100%" style='table-layout:fixed;'>
   <tr>
     <td>

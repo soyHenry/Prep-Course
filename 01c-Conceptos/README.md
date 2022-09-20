@@ -1,5 +1,20 @@
 ![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
 
+- [Conceptos](#conceptos)
+      - [Expresiones vs Statements](#expresiones-vs-statements)
+  - [Expressions](#expressions)
+    - [Expresiones Aritméticas](#expresiones-aritméticas)
+    - [Expresiones de Strings](#expresiones-de-strings)
+  - [Expresiones lógicas](#expresiones-lógicas)
+  - [Expresiones primarias](#expresiones-primarias)
+  - [Expresiones de asignación](#expresiones-de-asignación)
+  - [Expresiones con efectos secundarios (side effects)](#expresiones-con-efectos-secundarios-side-effects)
+  - [Statements (sentencias)](#statements-sentencias)
+    - [Declaration Statements](#declaration-statements)
+      - [Function expressions vs function declarations](#function-expressions-vs-function-declarations)
+    - [Conditional Statements](#conditional-statements)
+    - [Loops (bucles) y Jumps (saltos)](#loops-bucles-y-jumps-saltos)
+    - [Expression Statements](#expression-statements)
 <table class="hide" width="100%" style='table-layout:fixed;'>
   <tr>
     <td>

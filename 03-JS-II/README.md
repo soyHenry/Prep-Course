@@ -1,5 +1,24 @@
 ![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
 
+- [JavaScript II](#javascript-ii)
+      - [Flujos de control, operadores lógicos, bucles ***for***](#flujos-de-control-operadores-lógicos-bucles-for)
+  - [Undefined y null](#undefined-y-null)
+  - [Veracidad](#veracidad)
+  - [Operadores de comparación (continuación)](#operadores-de-comparación-continuación)
+  - [Flujos de control (continuación)](#flujos-de-control-continuación)
+  - [Operadores lógicos](#operadores-lógicos)
+    - [&&](#)
+    - [||](#-1)
+    - [!](#-2)
+    - [Notas sobre operadores lógicos](#notas-sobre-operadores-lógicos)
+  - [Bucles ***for***](#bucles-for)
+    - [El operador ++](#el-operador-)
+    - [Bucles infinitos](#bucles-infinitos)
+  - [Arguments](#arguments)
+  - [La mejor herramienta del programador](#la-mejor-herramienta-del-programador)
+  - [Recursos adicionales](#recursos-adicionales)
+  - [Homework](#homework)
+      - [Si tienes dudas sobre este tema, puedes consultarlas en el canal ***03_js-ii*** de Slack](#si-tienes-dudas-sobre-este-tema-puedes-consultarlas-en-el-canal-03_js-ii-de-slack)
 <table class="hide" width="100%" style='table-layout:fixed;'>
   <tr>
     <td>

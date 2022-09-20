@@ -1,5 +1,20 @@
 ![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
 
+- [Uso de Git](#uso-de-git)
+  - [Version Control System](#version-control-system)
+    - [Locales](#locales)
+    - [Centralizados](#centralizados)
+    - [Distribuido](#distribuido)
+  - [Historia de Git](#historia-de-git)
+  - [Conceptos de Git](#conceptos-de-git)
+  - [Integridad](#integridad)
+    - [Estados](#estados)
+    - [Github](#github)
+  - [Lectura recomendada](#lectura-recomendada)
+  - [Homework](#homework)
+      - [Si tienes dudas sobre este tema, puedes consultarlas en el canal ***01b_git*** de Slack](#si-tienes-dudas-sobre-este-tema-puedes-consultarlas-en-el-canal-01b_git-de-slack)
+
+
 <table class="hide" width="100%" style='table-layout:fixed;'>
   <tr>
     <td>

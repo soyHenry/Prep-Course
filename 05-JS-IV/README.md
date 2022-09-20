@@ -1,5 +1,22 @@
 ![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
 
+- [JavaScript IV](#javascript-iv)
+      - [Objetos](#objetos)
+  - [Introducción a los Objetos](#introducción-a-los-objetos)
+    - [Pares Clave:Valor (***Key:Value***)](#pares-clavevalor-keyvalue)
+    - [Acceder a los valores](#acceder-a-los-valores)
+    - [Asignación de valores](#asignación-de-valores)
+  - [Eliminando propiedades](#eliminando-propiedades)
+  - [Métodos](#métodos)
+  - [Bucles ***for…in***](#bucles-forin)
+  - [La palabra clave ***this***](#la-palabra-clave-this)
+    - [***This*** y el Execution Context](#this-y-el-execution-context)
+  - [Objetos en Javascript](#objetos-en-javascript)
+  - [Recursos adicionales](#recursos-adicionales)
+  - [Homework](#homework)
+      - [Si tienes dudas sobre este tema, puedes consultarlas en el canal ***05_js-iv*** de Slack](#si-tienes-dudas-sobre-este-tema-puedes-consultarlas-en-el-canal-05_js-iv-de-slack)
+
+
 <table class="hide" width="100%" style='table-layout:fixed;'>
   <tr>
     <td>

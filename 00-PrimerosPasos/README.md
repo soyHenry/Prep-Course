@@ -1,7 +1,7 @@
 ![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
 
 - [Primeros Pasos](#primeros-pasos)
-      - [Preparando tu compu](#preparando-tu-compu)
+  - [Preparando tu compu](#preparando-tu-compu)
   - [Homeworks](#homeworks)
   - [Cómo usar SLACK](#cómo-usar-slack)
   - [Editores de Texto](#editores-de-texto)
@@ -21,7 +21,7 @@
   - [GitHub](#github)
     - [¿Qué es GitHub?](#qué-es-github)
     - [Comenzando](#comenzando)
-      - [Si tienes dudas sobre este tema, puedes consultarlas en el canal ***01a-primeros-pasos*** de Slack](#si-tienes-dudas-sobre-este-tema-puedes-consultarlas-en-el-canal-01a-primeros-pasos-de-slack)
+      - [Si tienes dudas sobre este tema, puedes consultarlas en el canal ***00-primeros-pasos*** de Slack](#si-tienes-dudas-sobre-este-tema-puedes-consultarlas-en-el-canal-00-primeros-pasos-de-slack)
 
 
 <table class="hide" width="100%" style='table-layout:fixed;'>
@@ -38,7 +38,7 @@
 
 # Primeros Pasos
 
-#### Preparando tu compu
+## Preparando tu compu
 
 <div class="iframeContainer">
   <iframe src="https://player.vimeo.com/video/638636752" title="Instructivo de Primeros Pasos" allow="autoplay; fullscreen"></iframe>
@@ -319,4 +319,4 @@ Ya tenemos todo para empezar... Éxitos!!! 🍀
 
 ---
 
-#### Si tienes dudas sobre este tema, puedes consultarlas en el canal ***01a-primeros-pasos*** de Slack
+#### Si tienes dudas sobre este tema, puedes consultarlas en el canal ***00-primeros-pasos*** de Slack

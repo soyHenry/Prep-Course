@@ -1,5 +1,17 @@
 ![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
 
+- [JavaScript VI](#javascript-vi)
+      - [Callbacks](#callbacks)
+  - [Callbacks](#callbacks-1)
+  - [Más métodos de Arrays](#más-métodos-de-arrays)
+    - [**.forEach**](#foreach)
+    - [**.reduce**](#reduce)
+    - [**.map**](#map)
+  - [Recursos adicionales](#recursos-adicionales)
+  - [Homework](#homework)
+      - [Si tienes dudas sobre este tema, puedes consultarlas en el canal ***07_js-vi*** de Slack](#si-tienes-dudas-sobre-este-tema-puedes-consultarlas-en-el-canal-07_js-vi-de-slack)
+
+
 <table class="hide" width="100%" style='table-layout:fixed;'>
   <tr>
     <td>

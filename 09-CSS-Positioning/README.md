@@ -1,5 +1,30 @@
 ![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
 
+- [CSS Intermedio](#css-intermedio)
+  - [Introducción al posicionamiento](#introducción-al-posicionamiento)
+    - [La propiedad ***display***](#la-propiedad-display)
+      - [Elementos ***block***](#elementos-block)
+      - [Elementos ***inline***](#elementos-inline)
+      - [***none***](#none)
+      - [***flex***](#flex)
+      - [***grid***](#grid)
+    - [La propiedad ***position***](#la-propiedad-position)
+      - [***static***](#static)
+      - [***relative***](#relative)
+      - [***fixed***](#fixed)
+      - [***absolute***](#absolute)
+    - [Propiedades de posición](#propiedades-de-posición)
+      - [***top***, ***left***, ***right*** y ***bottom***](#top-left-right-y-bottom)
+  - [Introducción a Flexbox](#introducción-a-flexbox)
+    - [***display: flex*** e ***inline-flex***](#display-flex-e-inline-flex)
+    - [***justify-content*** y ***align-items***](#justify-content-y-align-items)
+    - [***flex-direction***](#flex-direction)
+    - [***align-self***](#align-self)
+  - [Recursos adicionales](#recursos-adicionales)
+  - [Homework](#homework)
+      - [Si tienes dudas sobre este tema, puedes consultarlas en el canal ***html-y-css*** de Slack](#si-tienes-dudas-sobre-este-tema-puedes-consultarlas-en-el-canal-html-y-css-de-slack)
+
+
 <table class="hide" width="100%" style='table-layout:fixed;'>
   <tr>
     <td>

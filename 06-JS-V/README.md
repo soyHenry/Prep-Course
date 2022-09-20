@@ -1,5 +1,21 @@
 ![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
 
+- [JavaScript V](#javascript-v)
+      - [Clases y prototype](#clases-y-prototype)
+  - [Clases](#clases)
+    - [Class e instanciación pseudo-clásica](#class-e-instanciación-pseudo-clásica)
+    - [***this*** en las clases](#this-en-las-clases)
+  - [***Prototype***](#prototype)
+    - [Object.create](#objectcreate)
+    - [Object.assign](#objectassign)
+  - [Herencia Clásica](#herencia-clásica)
+  - [Herencia en JavaScript](#herencia-en-javascript)
+    - [Constructores Anidados](#constructores-anidados)
+  - [Recursos adicionales](#recursos-adicionales)
+  - [Homework](#homework)
+      - [Si tienes dudas sobre este tema, puedes consultarlas en el canal ***06_js-v*** de Slack](#si-tienes-dudas-sobre-este-tema-puedes-consultarlas-en-el-canal-06_js-v-de-slack)
+
+
 <table class="hide" width="100%" style='table-layout:fixed;'>
   <tr>
     <td>

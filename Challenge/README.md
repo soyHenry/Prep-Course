@@ -1,5 +1,13 @@
 ![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
 
+- [Henry Challenge](#henry-challenge)
+  - [¿Qué es el Henry Challenge?](#qué-es-el-henry-challenge)
+  - [¿Cuándo lo puedo realizar?](#cuándo-lo-puedo-realizar)
+  - [¿Cómo sigue el proceso?](#cómo-sigue-el-proceso)
+  - [Inscripción](#inscripción)
+      - [Si tienes dudas sobre este tema, puedes consultarlas en el canal ***henry_challenge*** de Slack](#si-tienes-dudas-sobre-este-tema-puedes-consultarlas-en-el-canal-henry_challenge-de-slack)
+
+
 # Henry Challenge
 
 ¡Felicitaciones, llegaste a la última etapa del proceso de admisión: realizar el Henry Challenge!

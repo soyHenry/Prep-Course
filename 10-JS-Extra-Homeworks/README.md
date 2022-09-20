@@ -1,3 +1,7 @@
+- [Homework: Javascript X - Ejercicios Extras](#homework-javascript-x---ejercicios-extras)
+  - [Instrucciones](#instrucciones)
+
+
 # Homework: Javascript X - Ejercicios Extras
 
 ## Instrucciones
