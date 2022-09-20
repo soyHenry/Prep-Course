@@ -1,5 +1,29 @@
 ![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
 
+- [Primeros Pasos](#primeros-pasos)
+      - [Preparando tu compu](#preparando-tu-compu)
+  - [Homeworks](#homeworks)
+  - [Cómo usar SLACK](#cómo-usar-slack)
+  - [Editores de Texto](#editores-de-texto)
+    - [Sublime Text](#sublime-text)
+      - [En Windows o en OS X](#en-windows-o-en-os-x)
+      - [En Linux, en la distribución Ubuntu y derivados](#en-linux-en-la-distribución-ubuntu-y-derivados)
+    - [Atom](#atom)
+      - [En Windows](#en-windows)
+      - [En Ubuntu y derivados](#en-ubuntu-y-derivados)
+    - [Visual Studio Code](#visual-studio-code)
+  - [Instalando Node.JS](#instalando-nodejs)
+  - [Git](#git)
+    - [¿Qué es Git?](#qué-es-git)
+    - [Instalación](#instalación)
+      - [Para Mac y Linux](#para-mac-y-linux)
+      - [Para Windows](#para-windows)
+  - [GitHub](#github)
+    - [¿Qué es GitHub?](#qué-es-github)
+    - [Comenzando](#comenzando)
+      - [Si tienes dudas sobre este tema, puedes consultarlas en el canal ***01a-primeros-pasos*** de Slack](#si-tienes-dudas-sobre-este-tema-puedes-consultarlas-en-el-canal-01a-primeros-pasos-de-slack)
+
+
 <table class="hide" width="100%" style='table-layout:fixed;'>
   <tr>
     <td>
