@@ -22,6 +22,13 @@
       - [Buscar en archivos y commits de Git con ***grep*** y ***log***](#buscar-en-archivos-y-commits-de-git-con-grep-y-log)
       - [Si tienes dudas sobre este tema, puedes consultarlas en el canal ***01b_git*** de Slack](#si-tienes-dudas-sobre-este-tema-puedes-consultarlas-en-el-canal-01b_git-de-slack)
 
+## Interesting commands
+- `git rm --force`: Elimina los archivos de Git y del disco duro. Git guarda el registro de la existencia de los archivos, por lo que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados).
+- `git reset HEAD`: nos ayuda a sacar los archivos del estado Staged para devolverlos a su estado anterior. Si los archivos venian de Unstaged, vuelven alli. Y lo mismo si venian de Untracked.
+- Recuerda que podemos ver gráficamente nuestro entorno y flujo de trabajo local con Git usando el comando `gitk`. (Pseudo GUI for GIT)
+- `git commit --amend -m "new message"` instead of making another commit, you can just modify your las commit and add all the changes into a single commit
+- `git commit --amend --no-edit`: same as above, but whit the same message
+
 
 <table class="hide" width="100%" style='table-layout:fixed;'>
   <tr>
