@@ -32,29 +32,39 @@ function devolverString(str) {
 
 }
 
-function sumar(x, y) {
+
+function sumar(x , y) {
   // "x" e "y" son números
-  // Suma "x" e "y" juntos y devuelve el valor
+  // Sumar "x" e "y" juntos y devuelve el valor
   // Tu código:
-  return sumar a,b;
+  var num1 = Math.random ();
+  var num2 = Math.random ();
+  var num3 = Math.random ();
+  var num4 = Math.random ();
+  sumar2 = num3 + num4;
+  sumar1 = num1 + num2;
+  return sumar1;
+  return sumar2;
 }
 
-function resta(x, y) {
+function restar (x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  return resta x,b;
+  var restar ;
+  restar = x - y; 
+   return restar;
 }
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
-  return  multiplica x*y;
+  return  multiplica (x,y);
 }
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
-  return divide x/y;
+  return divide (x ,y );
 }
 
 function sonIguales(x, y) {
@@ -210,14 +220,12 @@ function obtenerAreaRectangulo(alto, ancho) {
  return alto * ancho; 
 }
 
-
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
   return lado * 4;
 
 }
-
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
@@ -226,14 +234,12 @@ return (Base * altura) /2;
 
 }
 
-
 function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
 return euro *1.2  
 }
-
 
 function esVocal(letra){
   //Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”. 
