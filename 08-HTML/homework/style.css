@@ -1,0 +1,31 @@
+!DOCTYPE html> 
+ <Html> 
+  <Head>
+     <title>Tarea HTML de Fran </title>
+     <link rel="stylesheets" href=".styles.css">
+     <style>
+     </style>
+      </head>
+       <body>
+            <div class="divClass">
+            <h1 style="color:blueviolet;"> Fran</h1>
+            <h3>Henry</h3>
+            <h4>tarea de HTML / CSS</h4>
+        </div>
+        <div class="divClass">
+            <span id="spanId" style="font-size: 18px;" style="margin: 50px;">
+                Mi comida favorita es el pastel de papas
+            </span>
+            <a href="https://tiendas-naturales.com.ar/nuestros-establecimientos/rosario-centro/"></a>
+        </div>
+            <div id="thirdDiv" style="height: 600px;" style="width:500px ;" style="background-color: rgb(216, 68, 68) ;" style="padding: 50px;" style="border: 20px red ;"> 
+            <ul>
+                <li>
+                    <img style="width: 400px;" src="https://resizer.glanacion.com/resizer/BQRJY3kXPoQReiJreEFu8T4NN20=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/64RCEDBW6VBB5PRK7PTUZBS3LU.jpg" alt="">
+                </li>
+                <li> <img src="https://www.gastrotradicional.com/wp-content/uploads/2020/12/pastel-de-papa-3.jpg" alt=""></li>
+            </ul>
+        </div>
+
+    </body
+    </style>;<
