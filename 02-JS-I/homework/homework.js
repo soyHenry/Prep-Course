@@ -1,22 +1,22 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = null;
+const nuevaString = 'hola';
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = null;
+const nuevoNum = 1;
 
 // Crea una variable booleana:
-const nuevoBool = null;
+const nuevoBool = true;
 
 // Resuelve el siguiente problema matemático:
-const nuevaResta = 10 - null === 5;
+const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * null === 40 ;
+const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === null;
+const nuevoModulo = 21 % 5 === 1.05;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -25,23 +25,37 @@ const nuevoModulo = 21 % 5 === null;
 // Pista: "console.log()" NO fucionará.
 // No cambies los nombres de las funciones.
 
-function devolverString(str) {
+function devolverString(nombre) { 
   // "Return" la string provista: str
   // Tu código:
-  
-}
+   function  logHola(nombre){
+    colosole.log ('hola, ${nombre}');
+     }
+
+     var minombre = 'jesid';
+     loghola(minombre);
+     return
+  }
 
 function suma(x, y) {
+
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
+  function sumaDosnumeros(x, y){
+    var suma = x + y;
+    return suma;
+  }
+sumaDosnumeros() 
   
 }
 
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  
+  var resta = x - y;
+    return resta;
+    resta
 }
 
 function multiplica(x, y) {
