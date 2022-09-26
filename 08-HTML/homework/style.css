@@ -1,12 +1,17 @@
-.thirdDiv {
-    height: 600px;
-    width: 500px;
-    padding: 50px;
-    border-color: blue;
-    border-width: 5px;
-    border-style: solid;
+body{
+  background-color:silver ;
 }
-.spanId {
-    font-size: 18px;
-    margin: 50px;
+.div{
+  margin :auto
+}
+#thirdDiv {
+  border-width: 600px;
+  border-width: 500px;
+  padding: 50px;
+  border-color: blue;
+  border-width: 5px;
+  border-style: solid;
+}
+#spanID {
+  font-size: 18px;
 }    
