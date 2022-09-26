@@ -94,8 +94,7 @@ Existen muchas otras configuraciones de Git que puedes encontrar en el comando g
 
 ## Reset y checkout
 
-- `git checkout + Id del commit`: podemos volver a cualquier versión anterior de un archivo específico o incluso
-  de nuestro proyecto entero. Esta es también es la forma de movernos entre ramas.
+- `git checkout + Id del commit`: podemos volver a cualquier versión anterior de un archivo específico o incluso de nuestro proyecto entero. Esta es también es la forma de movernos entre ramas.
 
 - `git log --stat`: commit descriptivo con cantidad de líneas agregadas y removidas por archivo.
 
