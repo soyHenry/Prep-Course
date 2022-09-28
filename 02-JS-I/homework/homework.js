@@ -61,7 +61,9 @@ function resta(x, y) {
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
-  
+  var multiplica = x * y;
+    return multiplica;
+    multiplica
 }
 
 function divide(x, y) {
