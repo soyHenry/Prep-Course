@@ -1,0 +1,37 @@
+h1{
+    color: rgb(82, 37, 37);
+    
+}
+
+img{
+    width: 400px;
+}
+
+.thirdDiv{
+    width: 500px;
+    height: 600px;
+    color:rgb(82, 37, 37);
+}
+
+#spanId{
+    font-size: 18px;
+    margin: 50px;
+}
+
+.thirdDiv{
+    padding: 50px;
+    border: 3px, solid;
+    color: aqua;
+}
+
+
+
+body {
+    background-image: url("../img/fondo3.jpg");
+    width: 900px; /* Definir de acuerdo al ancho de la imagen */
+    height: 1200px; /* Definir de acuerdo al alto de la imagen */
+    background-repeat: no-repeat;
+    margin: auto;
+}
+  
+  
