@@ -169,22 +169,22 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:var resto = num % 1
-  var resto = num % 1;
-   var entero = num - resto;
-   if (resto >= 0.5) {
-     return entero + 1;
-   }
-    else {
-    return Match.round (entero)
-  }
   
+    var resto = num % 1;
+  var entero = num - resto;
+  if (resto >= 0.5) {
+  return entero + 1;
+   } else {
+   return entero;
+      }
+   return Math.round(entero);
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
-  // Tu código:
-  return Match.ceil(num);
+  // Tu código: 
 
+  return Match.ceil(2.3); // 3
 }
 
 function numeroRandom() {
@@ -203,12 +203,11 @@ function esPositivo(numero) {
     return false;
   }
   else if(numero > 0){
-    return "es positivo";
+    return "Es positivo";
   }
   else {
-    return"es negativo";
+    return"Es negativo";
   }
-
 }
 
 function agregarSimboloExclamacion(str) {
