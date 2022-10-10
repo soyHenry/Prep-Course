@@ -62,7 +62,7 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  return x==y;
+  if (x==y){return true; }else {return false;}
 }
 
 function tienenMismaLongitud(str1, str2) {
@@ -70,12 +70,14 @@ function tienenMismaLongitud(str1, str2) {
   // De lo contrario, devuelve "false"
   // Tu código:
   
+  return str1.length == str2.length;
 }
 
 function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
+  if(num < 90){return true;}  else {return false;}
   
 }
 
@@ -83,58 +85,60 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if(num >50 ){return true;}else{return false;}
 }
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  
+  return x % y ;
 }
 
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if (num % 2 == 0){return true; }else{return false;}
 }
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if(num % 2){return true}else{return false;}
 }
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  
+ // alternative resultado  return num **2 ;
+  return Math.pow(num, 2);
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  
+ // alternative resultado  return num*num*num;
+    return Math.pow(num, 3); 
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  
+  return Math.pow(num,exponent);
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  
+  return Math.round(num);
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  
+  return Math.ceil(num);
 }
 
 function numeroRandom() {
