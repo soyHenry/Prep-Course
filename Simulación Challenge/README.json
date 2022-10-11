@@ -1,0 +1,9 @@
+{
+    "lessonTitle": "Simulación Challenge",
+    "permalink": "/SimulacionChallenge/",
+    "layout": "intro",
+    "eleventyNavigation": {
+      "key": "SimulacionChallenge",
+      "order": 95
+    }
+  }
