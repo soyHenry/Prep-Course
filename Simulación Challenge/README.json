@@ -3,7 +3,7 @@
     "permalink": "/SimulacionChallenge/",
     "layout": "intro",
     "eleventyNavigation": {
-      "key": "Simulacion HC",
+      "key": "Simulación HC",
       "order": 95
     }
   }
