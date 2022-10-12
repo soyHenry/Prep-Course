@@ -19,9 +19,11 @@ else if (numero == 0){ return false} }console.log(esPositivo(0));
 function longitud(str1, str2) {return str1.length == str2.length;}console.log(longitud('hola','hula'));
 function con(euro){return  euro * 1.2000} console.log(con(5));
 
-function vocal (letra){
+function vocales (letras)
+{  if(letras.length > 1){return "Dato incorrecto"}
+     else if (letras == "a"||letras == "e"||letras == "i"||letras == "o"||letras == "u" ){return " vocal" }
+    return "ingresa dato correcto"}
+    console.log(vocales("e"));
 
-var vocales = ["a","e","i","o","u"];
-for (vocales = 0; vocales <5 ; vocales ++){
-if(vocales > 1 == 'a'){ return 'Es vocal'} ;if(vocales > 0 == 0 ){return false } vocales++;
-}} console.log(vocal('a'));
+
+
