@@ -47,11 +47,11 @@ function colors(color) {
   //Usar el statement Switch.
   switch (color){
 
-    case 'blue'     : console.log('This is blue');break;
-    case 'red'      : console.log('This is red');break;
-    case 'green'    : console.log('This is green');break;
-    case 'orange'   : console.log('This is orange');break;
-    default         : console.log('Color not found');
+    case "blue"     : console.log("This is blue");break;
+    case "red"      : console.log("This is red");break;
+    case "green"    : console.log("This is green");break;
+    case "orange"   : console.log("This is orange");break;
+    default         : console.log("Color not found");
     }
 }
 
@@ -59,10 +59,14 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-  switch (numero){  case '10' :  
+ /* switch (numero){  case '10' :  
                     case '5'  : console.log("true"); break;
                     default   : console.log("false");
-}}
+}*/
+
+if (numero == 10 || numero == 5){return true}else {return false}
+}
+
 
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
