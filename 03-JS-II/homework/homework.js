@@ -151,7 +151,7 @@ function tieneTresDigitos(numero){
   //for (let i = 0; i<100; i++ )d ;
  if (numero >= 100 || numero <= -100 ) return true ; return false; 
 
-} //console.log (tieneTresDigitos(001));
+} //console.log (tieneTresDigitos(001));frrvcec
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
