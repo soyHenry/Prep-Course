@@ -13,8 +13,11 @@ function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
-  if (edad >= 18){return "Allowed"}else {return "Not allowed"}
-}
+  //if (edad >= 18){return "Allowed"}else {return "Not allowed"}
+  let condicion = (edad >= 18) ? "Allowed":"Not allowed" 
+  return condicion 
+  
+} console.log(mayoriaDeEdad(19));
   
 function conection(status) {
   //Recibimos un estado de conexión de un usuario representado por un valor numérico. 
@@ -23,7 +26,7 @@ function conection(status) {
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
   if(status === 1){return "Online"}else if(status === 2){return "Away"}else{return "Offline"}
-
+  
 }
 
 function saludo(idioma) {
@@ -160,7 +163,7 @@ function doWhile(numero) {
   //Retornar el valor final.
   //Usar el bucle do ... while.
   var a = numero;
-  var i = 0;
+  let i = 0;
   do {
     i++
     a += 5

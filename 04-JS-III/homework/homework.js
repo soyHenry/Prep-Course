@@ -1,21 +1,33 @@
 // No cambies los nombres de las funciones.
+//https://www.freecodecamp.org/espanol/news/el-manual-de-arreglos-en-javascript/ 
+//https://www.freecodecamp.org/espanol/news/foreach-en-javascript-como-recorrer-un-arreglo-en-js/
 
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
-}
+ let n = [10,10,16,12]; return (n[0])
+ //console.log(n[0]);
 
+} console.log(devolverPrimerElemento())
+//console.log(`Element at index ${i} is ${salad[i]}`);
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-}
+
+  const arre = ['🙂', '😍', '🙄', '😟']
+  return (arre[arre.length -1])
+} //console.log(devolverUltimoElemento());
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
-}
+  const arre =["Hola", "Soy","Tepes"]
+   //  console.log (arre.length)
+   return (arre.length)
+
+} //console.log(obtenerLargoDelArray())
 
 
 function incrementarPorUno(array) {
@@ -23,6 +35,9 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  var suma =[1,2,3,4]
+
+
 }
 
 
