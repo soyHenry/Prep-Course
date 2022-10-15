@@ -111,7 +111,7 @@ function operadoresLogicos(num1, num2, num3) {
    else if (num3>num1 && num3>num2)                return ++num3
    
   else                                             return false
-       }console.log(operadoresLogicos(10,10,0));
+       }//console.log(operadoresLogicos(10,10,0));
 
 function esPrimo(numero) {
   // Devuelve "true" si "numero" es primo
@@ -126,6 +126,8 @@ function esPrimo(numero) {
 	// Si no se pudo dividir por ninguno de los de arriba, sí es primo
 	return true;
 } console.log(esPrimo(19));
+
+
 
 function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
@@ -142,21 +144,29 @@ function tablaDelSeis(){
   var tabla = [];
   for (let i = 0; i < 11; ++i) tabla.push (6 * i); return tabla
   
-} //console.log(tablaDelSeis());
+} console.log(tablaDelSeis());
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  //var digitos = [];
-  //for (let i = 0; i<100; i++ )d ;
- if (numero >= 100 || numero <= -100 ) return true ; return false; 
-
-} //console.log (tieneTresDigitos(001));frrvcec
+  if(numero > 99 && numero < 1000  || numero < -99  &&  numero > -1000){
+    return true
+  }
+  return false
+} console.log(tieneTresDigitos(-99));
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+  var a = numero;
+  var i = 0;
+  do {
+    i++
+    a += 5
+  }
+  while(i < 8);
+  return a;
 }
 
 
