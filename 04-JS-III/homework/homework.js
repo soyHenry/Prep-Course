@@ -5,27 +5,29 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
- let n = [10,10,16,12]; return (n[0])
- //console.log(n[0]);
-
-} console.log(devolverPrimerElemento())
+ //let n = [10,10,16,12]; return (n[0])
+ //console.log(n[0]); 
+return array[0]
+} //console.log(devolverPrimerElemento())
 //console.log(`Element at index ${i} is ${salad[i]}`);
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
 
-  const arre = ['🙂', '😍', '🙄', '😟']
-  return (arre[arre.length -1])
+ // const arre = ['🙂', '😍', '🙄', '😟']
+//  return (arre[arre.length -1]) 
+return array[array.length - 1]
 } //console.log(devolverUltimoElemento());
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
-  const arre =["Hola", "Soy","Tepes"]
+ // const arre =["Hola"]
    //  console.log (arre.length)
-   return (arre.length)
+  // arre.forEach(a => console.log(a.length))
+  return (array.length)
 
 } //console.log(obtenerLargoDelArray())
 
@@ -35,9 +37,12 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  var suma =[1,2,3,4]
-
-
+  var suma =[1,2,4,4] ;var total =0
+ for (let i= 0; i<suma.length; i++)
+ /*total =*/ 
+ 
+ //i = suma +1
+console.log(total);
 }
 
 
