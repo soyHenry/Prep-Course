@@ -16,7 +16,7 @@ Voy a probar si funciona con este repo.
 Dentro de nuestra terminal podemos: revisar nuestra estructura de archivos, añadir, eliminar y modificar archivos, y muchas cosas más. La terminal es una herramienta muy poderosa para los desarrolladores y vas a usarla mucho en tu carrera profesional. Al principio puede parecer aterrador, pero con el tiempo terminarás disfrutando su uso, así que es mejor acostumbrarse ahora. Para comenzar, aprenderemos los comandos "básicos":
 
 "List": Nos permite ver el contenido de la carpeta donde nos encontramos.
-```bashd
+```bash
   $ ls
 ```
 
