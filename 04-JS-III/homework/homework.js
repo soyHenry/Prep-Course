@@ -1,6 +1,9 @@
 // No cambies los nombres de las funciones.
 //https://www.freecodecamp.org/espanol/news/el-manual-de-arreglos-en-javascript/ 
 //https://www.freecodecamp.org/espanol/news/foreach-en-javascript-como-recorrer-un-arreglo-en-js/
+//https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+
+
 
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
@@ -76,7 +79,7 @@ function dePalabrasAFrase(palabras) {
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
   return  palabras.join(' ');
-  }
+}
 
 
 function arrayContiene(array, elemento) {
@@ -127,13 +130,17 @@ function multiplicarArgumentos() {
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
 
+
 }
 
 
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
-  if (arreglo.length>18 ) return arreglo.length > 18 
+  //let arreglo = [1,20,21,20,2,15]
+  var result = arreglo.filter(arreglo => arreglo > 18);
+  result = result.length
+  return result
 
 }
 
@@ -143,6 +150,20 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
+  //let numeroDeDia=[3,2,3,4,5,6,4] //= new
+   let numeroDeDia = ['Domingo','Lunes','Martes','Miercoles','Jueves','Viernes','Sabado']
+  // var r = numeroDeDia.filter(arreglo => arreglo.includes('Domingo')  )
+   //var ri = numeroDeDia.filter(arreglo => arreglo.includes('Sabado')  )
+   /*console.log(r)
+   console.log(ri)*/
+   for (let letter of numeroDeDia) {
+    console.log(letter);
+  }
+
+   // if(r[0] === 'Domingo' || r1 [0] === 'Sabado')console.log("Fin de semana") ;else return "Es dia Laboral"
+   //  return 'Es fin de semana' ; else return "Es dia Laboral";
+   
+  //console.log("Es fin de semana") ;else console.log("Es dia laboral")
   
 } 
 

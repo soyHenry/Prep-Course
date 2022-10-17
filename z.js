@@ -27,89 +27,192 @@ function vocales (letras)
 
 
 
-const arr = [ 5, 3, 2, 7, 8 ];
-const last = arr[arr.length-1];
-console.log(last);
- 
-/*
-    Resultado: 8
-*/
+    function fizzBuzz(numero) {
+     // Si "numero" es divisible entre 3, devuelve "fizz"
+     // Si "numero" es divisible entre 5, devuelve "buzz"
+     // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
+     // De lo contrario, devuelve el numero
+     if(numero % 15 === 0) return 'fizzbuzz';
+     if(numero % 3 === 0) return 'fizz';
+     if(numero % 5 === 0) return 'buzz';
+     return numero;
+   } console.log(fizzBuzz(27));
 
-
-function incrementarPorUno(array) {
-     // "array" debe ser una matriz de enteros (int/integers)
-     // Aumenta cada entero por 1
-     // y devuelve el array
-     // Tu código:
-     array =[1,2,3,4,5]
-   let   nuevoArray = [];
-     for(var i = 0; i < array.length; i++) {
-       nuevoArray[i] = array[i] + 1;
-       //console.log(`Element at index ${i} is ${nuevoArray[i]}`);
-       console.log(`${i} ${nuevoArray[i]}`)
+   function operadoresLogicos(num1, num2, num3) {
+     //La función recibe tres números distintos. 
+     //Si num1 es mayor a num2 y a num3 y además es positivo, retornar ---> "Número 1 es mayor y positivo"
+     //Si alguno de los tres números es negativo, retornar ---> "Hay negativos"
+     //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
+     //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
+     //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
+     if(num1 < 0 || num2 < 0 || num3 < 0) {
+       return "Hay negativos";
      }
-      
-     console.log(nuevoArray)
-    /*total =*/ 
-   }
-    
+     else if(num1 === 0 || num2 === 0 || num3 === 0) {
+       return "Error";
+     }
+     else if(num1 > 0 && num1 > num2 && num1 > num3) {
+       return "Número 1 es mayor y positivo";
+     }
+     else if(num3 > num1 && num3 > num2) {
+       return num3 + 1;
+     }
+     else {
+       return false;
+     }
+   } console.log(operadoresLogicos(-5,0,1))
 
-   const base = [25,56,36,89]
-  const uno =[], dos=[],tres =[];
-  
-  for(let i =0 ; i <base.length; i++)
-  {uno [i] = base[i] + 1}console.log(uno)
-uno.push(5);console.log(uno)
- for (let f = 0; f<uno.length;    f++)
- {dos[f] = uno[f]*2}
- console.log(dos)
-
-
- const bas = [1,2,3];
-
-
- bas.forEach(element = base + 1 => console.log(element));
-
-var palabras = ["hello","wolrds!"]
-  console.log(  palabras.join(' '));
-
-  function arrayContiene(array, elemento) {
-     // Comprueba si el elemento existe dentro de "array"
-     // Devuelve "true" si está, o "false" si no está
-     // Tu código:
-   }
-
-   let frutas = ['🍈', '🍍', '🍌', '🍉', ['🍅', '🍄', '🥕']];
-   const veg = frutas[4]; // returns the array ['🍅', '🍄', '🥕']
-    console.log(veg)
-    const zanahoria = veg[2]; // returns '🥕'
-     console.log(zanahoria)
-     console.log(frutas[4][2])
-
-/*            */
-     let numeros = [1, 2, 3, 4, 5];
-     let total = numeros.reduce((a, b) => a + b, 0); 
-
-              console.log(total);   /// suna de un arreglo foreach
-
-let consolas = [1,2,3,4,5]
-
-console.info( consolas.includes( 'donna' ) ); 
-console.info( consolas.includes( 3 ) ); 
-console.info( consolas.indexOf( 'donna' ) ); // 1
-console.info( consolas.indexOf( 3 ) ); // -1
-
-if ( consolas.includes( 0 ) ) console.log("existe"); else console.log("no existe")
-     /* OK, value exists! */
+var foo = 12;
+var bar = { id : '12' };
  
+console.log( foo.length ); // undefined
+console.log( bar.length ); // undefined
 
-     let totall=0,numeross = [1, 2, 3, 4, 5];
-     numeross.forEach(function(a){totall = totall + a;});
-     console.log(totall);
 
-     
-     let v=0; let alfa =[4,8,8,8,8]
-     alfa.forEach(function(b,index,arr){arr[alfa]=b*10})
-     console.log(b)   //sumar un arreglo foreach
+let total = 0, cuenta = 1;
+while (cuenta <= 10) {
+total += cuenta;
+cuenta += 1;
+}
+console.log(total);
+// → 55
 
-    // https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce#:~:text=prototype.-,reduce(),como%20resultado%20un%20%C3%BAnico%20valor.
+console.log(`la mitad de 100 es ${100 / 2}`)
+console.log("Aardvark" > "Zoroaster")
+
+prompt("Introducir contraseña");
+
+
+function min(numero){
+
+const numero =[];
+ Math.max
+
+}
+
+let elNumero = Number(prompt("Elige un numero"));
+console.log("Tu número es la raiz cuadrada de " +
+elNumero * elNumero);
+
+function dow(num){
+
+  let i = 0;
+  do{
+   const rest = num + i 
+  console.log(false ? i : num);
+
+  i++
+  }
+  while (i < 5)
+  
+  } console.log(dow(2));
+
+  var o4 = false || (3 == 4);
+
+  let text = "";
+let b = 0;
+do {
+  text += i + "<br>";
+  i++;
+}
+while (i < 5); 
+
+// program to display numbers
+let i = 1;
+const n = 5;
+
+// do...while loop from 1 to 5
+do {
+    console.log(i);
+    i++;
+} while(i <= n);
+
+function tieneTresDigitos(numero){
+  //Leer un número entero y determinar si tiene 3 dígitos.
+  //Escribe tu código aquí
+  if(numero > 99 && numero < 1000){
+    return true
+  }
+  return false
+} console.log(tieneTresDigitos(100));
+
+
+
+function doWhile(numero) {
+  //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
+  //Retornar el valor final.
+  //Usar el bucle do ... while.
+  var a = numero;
+  var i = 0;
+  do {
+    i = i + 1;
+    a = a + 5;
+  }
+  while(i < 8);
+  return a;
+}
+
+function doWhile(numero) {
+  //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
+  //Retornar el valor final.
+  //Usar el bucle do ... while.
+  var a = numero;
+  var i = 0;
+  do {
+    i++
+    a += 5
+  }
+  while(i < 8);
+  return a;
+}
+
+function prueba(x,y){
+var status = (x >= y) ? 'true' : 'false';
+return  status
+} console.log(prueba(8,9));
+
+
+for (let i = 1; i<11; i++){
+console.log(i)
+
+}
+
+let frutas = [45, 3,2]
+frutas.forEach(function(elemento, indice, array) {
+//console.log(elemento,indice)
+})
+
+let eliminar = frutas.pop()
+console.log (frutas)
+let agregar = frutas.push(7,8,9,10,11)
+console.log(frutas)
+let pos =1 , doc=3;  let eliminator =  frutas.splice(pos,doc)
+console.log (frutas)
+
+
+var filtro = [2,3,4,78,96,74]
+var re = filtro.filter(acumulador => acumulador >50)
+console.log(re)
+
+// create an array
+const names = ['John', 'Peter', 'James', 'Pammy'];
+
+// Filter the array for names having 'am'
+//https://medium.com/@cristi.nord/javascript-array-filter-method-f3d3e5d3af7d foro metodo filter
+const myName = names.filter(name => name.includes('am'));
+
+// Output new array
+console.log(myName)
+
+// Create array of continents
+const places = ['Africa', 'Asia', 'Europe', 'Australia','malasia','danes'];
+// Filter array for continents beyond the array index of 1
+const overIndex = places.filter(function(place, index){ return index > 1;})
+// Display new Array
+console.log(overIndex);
+
+ 
+let [Domingo,Lunes,Martes,Miercoles,Jueves,Vieres,Sabaddo] =
+    [1,      2,    3,     4,        5,     6,     7]
+
+    
