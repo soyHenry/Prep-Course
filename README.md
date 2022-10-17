@@ -35,7 +35,7 @@ Más adelante te explicaremos cómo usar la herramienta.
 #### Entonces, ¿qué debo hacer ahora para avanzar con el proceso?
 
 Debes comenzar a ver todos los videos, el material escrito y a hacer los ejercicios, siguiendo el orden postulado aquí en el curso. Una vez que hayas finalizado, podrás realizar el Henry Challenge.
-
+adsdsad
 Cualquier duda, nos puedes escribir a admisiones@soyhenry.com
 ¡Muchos éxitos!
 
