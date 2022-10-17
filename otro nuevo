@@ -1,1 +1,8 @@
-jajaja
+
+
+var l =[1,2,3,4,5,6]
+for(let i =0 ;i<l.length; i++){
+
+     if(i==3) console.log(i)
+
+}console.log(l)
