@@ -3,6 +3,8 @@
 //https://www.freecodecamp.org/espanol/news/foreach-en-javascript-como-recorrer-un-arreglo-en-js/
 //https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
 
+const { arrayReplaceAt } = require("markdown-it/lib/common/utils");
+
 
 
 function devolverPrimerElemento(array) {
@@ -10,7 +12,7 @@ function devolverPrimerElemento(array) {
   // Tu código:
  //let n = [10,10,16,12]; return (n[0])
  //console.log(n[0]); 
-return array[0]
+return array.at()
 } //console.log(devolverPrimerElemento())
 //console.log(`Element at index ${i} is ${salad[i]}`);
 
@@ -20,7 +22,7 @@ function devolverUltimoElemento(array) {
 
  // const arre = ['🙂', '😍', '🙄', '😟']
 //  return (arre[arre.length -1]) 
-return array[array.length - 1]
+return array.at(-1)
 } //console.log(devolverUltimoElemento());
 
 
@@ -150,20 +152,8 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
-  //let numeroDeDia=[3,2,3,4,5,6,4] //= new
-   let numeroDeDia = ['Domingo','Lunes','Martes','Miercoles','Jueves','Viernes','Sabado']
-  // var r = numeroDeDia.filter(arreglo => arreglo.includes('Domingo')  )
-   //var ri = numeroDeDia.filter(arreglo => arreglo.includes('Sabado')  )
-   /*console.log(r)
-   console.log(ri)*/
-   for (let letter of numeroDeDia) {
-    console.log(letter);
-  }
+    
 
-   // if(r[0] === 'Domingo' || r1 [0] === 'Sabado')console.log("Fin de semana") ;else return "Es dia Laboral"
-   //  return 'Es fin de semana' ; else return "Es dia Laboral";
-   
-  //console.log("Es fin de semana") ;else console.log("Es dia laboral")
   
 } 
 
@@ -172,6 +162,10 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
+//  const word = 'hello';
+    let empiezaConNueve= 9
+    
+   let a = largo =(a=>a )
   
 }
 
