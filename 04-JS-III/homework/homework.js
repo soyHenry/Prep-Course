@@ -57,7 +57,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-   array.push(elemento)  
+ 
+  array.push(elemento)  
   //console.log( array = array[array.length - 1]) 
  // array[array.length] = elemento;
   return array
@@ -176,7 +177,7 @@ function empiezaConNueve(n) {
 //  const word = 'hello'
 let num = n.toString()
 if(num.charAt(0) === "9"){
-  return true
+return true
 }
 return false
 }
@@ -203,13 +204,12 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
- // let array= ['Enero','Febrero','Marzo','Noviembre']
+  //  let array= ['Enero','Febrero','Marzo','Noviembre']
   
     let mes = array.filter(a=>a === 'Enero')
     let mesa = array.filter(a=>a === 'Marzo')
     let mesb = array.filter(a=>a === 'Noviembre')
-
-    let meses = mes.concat(mesa,mesb)
+    let meses = mesa.concat(mesb,mes)
     if ( meses.includes( 'Enero' ) && meses.includes( 'Marzo' ) && meses.includes( 'Noviembre' ) )
      return meses ; else return "No se encontraron los meses pedidos"
    

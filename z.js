@@ -212,7 +212,83 @@ const overIndex = places.filter(function(place, index){ return index > 1;})
 console.log(overIndex);
 
  
-let [Domingo,Lunes,Martes,Miercoles,Jueves,Vieres,Sabaddo] =
-    [1,      2,    3,     4,        5,     6,     7]
+let viejo = ['Domingo','Lunes','Martes','Miercoles','Jueves','Viernes','Sabado']
+    var busqueda = 'D'
+let nueva = viejo.findIndex(a => a === 'Domingo' )   
+    console.log(nueva)//
+   if(viejo.startsWith('D')) console.log
 
-    
+  //
+   var accountlist = [{
+    "value": "000555 - TEST ACCOUNT NAME1",
+    "data": "184"
+}, {
+    "value": "006666 - TEST ACCOUNT NAME2",
+    "data": "450"
+}, {
+    "value": "007777 - TEST ACCOUNT NAME2",
+    "data": "451"
+}];
+var searchString = '000555';
+var result = accountlist.findIndex((account) => { return account.value.startsWith(searchString);}, searchString)
+console.log(result)  //
+const fruits = ["apple", "banana", "cantaloupe", "blueberries", "grapefruit"];
+
+const index = fruits.findIndex(fruit => fruit === "blueberries");
+
+console.log(index); // 3
+console.log(fruits[index]); // blueberries
+ 
+let a = []
+a.push('1','2','3',4)
+//console.log (a)
+let be = a [Symbol.iterator]()
+for (let inicial of be)console.log("valor del for "+inicial)
+
+console.log(a.at(3))// sirve para recorrer array positivo y negativo
+
+function abcd(ava){
+
+ let arreglo = ['Domingo','Lunes','Martes','Miercoles','Jueves','Viernes']
+ //var result = arreglo.filter(arreglo => arreglo > 18);
+ var result = arreglo.find(array => array === 'Domingo')
+
+ if(result==='Domingo' || result === 'Sabado') 
+ return 'Fin de semana'; else return 'Dia normal'
+}
+console.log(abcd(2))
+function arre(arreglu){
+var arreglu = ['1','2','3','4']
+return arreglu.at()}
+console.log(arre())
+
+
+
+console.log(arreglu.at(-1))
+arreglu.forEach(arre =>{arre * arreglu })
+console.log(arreglu)
+
+console.log(Math.pow(2,10))
+
+
+for(let i=0;i<10 ;i++){
+ if(i===3) break; console.log(i); 
+
+} 
+
+for (let actual = 20; ; actual = actual + 1) {
+  if (actual % 7 == 0) {
+ 
+  break;
+  }
+  }
+
+  
+  for(let x = 1; x <= 6; x++){
+    console.log(' '.repeat(6 - x) + '$'.repeat(x))
+  }
+
+for (let inicial =0 ; inicial < 7 ; inicial ++){
+ console.log('#'.repeat(inicial))
+}
+//https://eloquentjs-es.thedojo.mx/Eloquent_JavaScript.pdf
