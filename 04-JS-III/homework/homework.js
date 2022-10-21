@@ -42,12 +42,7 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  /*var nuevoArray = [];
-  for(var i = 0; i < array.length; i++) {
-    nuevoArray[i] = array[i] + 1;
-  }
- return nuevoArray;*/
- //var array=[1,2,3,4]
+ 
  let arrayi = array.map( x=> x+1 )
  return arrayi
  }
@@ -82,7 +77,8 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  return  palabras.join(' ');
+  let namestwo = palabras.reduce((a,b)=>  a+' '+b)
+  return namestwo
 }
 
 
@@ -230,13 +226,23 @@ function breakStatement(numero) {
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
   //Guardar cada nuevo valor en un array. 
   //Devolver el array
-  //Si en algún momento el valor de la suma y la cantidad de iteraciones coinciden, debe interrumpirse la ejecución y 
-  //devolver: "Se interrumpió la ejecución"
+  //Si en algún momento el valor de la suma 
+  //y la cantidad de iteraciones coinciden, debe interrumpirse la ejecución y 
+  //devolver:
   //Pista: usá el statement 'break'
-  // Tu código:
-}
+  // Tu código: 
+  var array = [];
+  //var suma = numero;
+  for (var i = 0; i < 10; i++) {
+    numero = numero + 2;
+    if (numero === i) break;
+    else  array.push(numero);
+   }
 
-
+  if (i < 10) return "Se interrumpió la ejecución";
+   else return array;
+  }
+  
 function continueStatement(numero) {
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
   //Guardar cada nuevo valor en un array.    
@@ -244,7 +250,18 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
-}
+  // https://uniwebsidad.com/libros/javascript/capitulo-4/sentencias-break-y-continue
+
+  var array = [];
+   for(var i= 0; i<10; i++) {
+    if(i === 5) continue;
+    else {
+      numero = numero + 2;
+      array.push(numero);
+    }
+  }
+  return array;
+ }
 
 
 // No modificar nada debajo de esta línea
