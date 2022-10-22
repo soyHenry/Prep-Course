@@ -292,3 +292,51 @@ for (let inicial =0 ; inicial < 7 ; inicial ++){
  console.log('#'.repeat(inicial))
 }
 //https://eloquentjs-es.thedojo.mx/Eloquent_JavaScript.pdf
+let arreteus =[8,9,7,1,2,5,6]
+let arraigo=[]
+for (let i=0; i<arreteus.length; i++){
+arraigo[i]= arreteus[i]+1
+
+}console.log(arraigo)
+
+
+let namess = ["Hello","World"]
+let namestwo = namess.reduce((a,b)=>  a+' '+b)
+console.log (namestwo)
+
+var cadena = "En un Augur de la Mancha de cuyo nombre no quiero acordarme...";
+var letras = cadena.split("");
+var resultado = "";
+
+for(i in letras) {
+  if(letras[i] == 'a')  break;
+  else resultado += letras[i] 
+}
+console.log(resultado);
+
+var myCar = {
+  make: 'Ford',
+  model: 'Mustang',
+  year: 1969
+}
+
+if(myCar.make === "Fod") console.log(true) ; else console.log(false)
+
+console.log(myCar)
+myCar.color = 'azul'
+console.log(myCar.make )
+
+var user = {  name: 'Pepe',  suma: function(a,b){ console.log( this.name +" Suma "+ a+ b)}}
+//console.log(user.name)
+user.apellido = "Tepes"
+//console.log(user.apellido)
+user['Password'] = '12345'
+//console.log(user)
+//delete user.apellido
+user.suma(4,6)
+//console.log(user.suma(6,7))
+//console.log(user)
+
+for (let usuario in user){ 
+  //console.log(usuario);
+  //console.log(user[usuario])

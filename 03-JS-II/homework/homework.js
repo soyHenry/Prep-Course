@@ -50,7 +50,7 @@ function colors(color) {
   //Usar el statement Switch.
   switch (color){
 
-    case "blue"     : return "This is blue"
+    case "blue"     : return "This is blue" 
     case "red"      : return "This is red"
     case "green"    : return "This is green"
     case "orange"   : return "This is orange"
