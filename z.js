@@ -1,5 +1,8 @@
 function suma (a,b)       {return a+b}console.log(suma(5,88));
 
+https://lenguajejs.com/javascript/number/variables-numericas/
+https://www.freecodecamp.org/espanol/news/arreglos-de-objetos-en-javascript-actualizar/
+
 function resta(a,b)       {return a-b}console.log(resta(88,5));
 
 function multiplica(a,b)  {return a*b}console.log(multiplica(25,3));
@@ -340,3 +343,43 @@ user.suma(4,6)
 for (let usuario in user){ 
   //console.log(usuario);
   //console.log(user[usuario])
+
+  var objetivo ={
+
+  nombre   : ["Soma","Tepes"],
+  edad     : "17",
+  domicilio: "Tijuana",
+  Empleo   : ""
+}
+
+console.log(objetivo.nombre.push("Traps"))
+console.log(objetivo.nombre)
+
+console.log( Object.keys(objetivo.nombre).length === 0 )
+
+
+function Gato(nombre) {
+  // El nuevo operador crea un objeto, "this"
+  this.nombre = nombre;
+  this.maullar = function() {
+      return 'Mi nombre es ' + this.nombre + ' ... Meow!';
+  }
+  // Devuelve el objeto "this"
+}
+
+const sam = new Gato('Sam');
+const kitty = new Gato('Kitty');
+console.log(sam.maullar()); // 'Mi nombre es Sam ... Meow!'
+console.log(kitty.maullar()); // 'Mi nombre es Kitty ... Meow!'
+
+
+var a=1
+function b(){
+  var a=5
+ console.log("hello world "+ a)
+ console.log ("El valor fuera de esta variable es "+ window.a)
+//return "hello world"
+
+}
+b();
+console.log(b())

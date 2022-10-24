@@ -1,8 +1,41 @@
 
 
-var l =[1,2,3,4,5,6]
-for(let i =0 ;i<l.length; i++){
 
-     if(i==3) console.log(i)
+const fA = function (callback, callbackError) {
+     const n = (Math.random() * 5);
+     if (n > 2) callback();
+     else callbackError();
+   };
+   
+   fA(
+     function () {
+       console.log("Función B ejecutada.");
+     },
+     function () {
+       console.error("Error");
+     }
+   );
 
-}console.log(l)
+   (function () {
+     console.log("Hola!!");
+   })();
+   
+
+   (function (name) {console.log(`¡Hola, ${name}!`); })("Manz");
+
+   const f = (function (name) {
+     return `¡Hola, ${name}!`;
+   })("Manz");
+   
+   f; 
+   var a =f 
+   console.log(a)// '¡Hola, Manz!`
+
+   const funciona =((a,b)=> {  return a-b })(6,2)
+   
+  console.log (funciona)
+
+   function suma(a,b){
+    let c=   a+b 
+    console.log (c)
+   }   suma(6,2)
