@@ -18,7 +18,6 @@ const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
 const nuevoModulo = 21 % 5 === 1;
->>>>>>> e124bcb9393bcab923420b0ce62a7d5a34e54e6b
 
 // En los próximos 22 problemas, deberás completar la función.
 // Todo tu código irá dentro de las llaves de la función.
