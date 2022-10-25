@@ -3,9 +3,6 @@
 
 // Crea una variable "string", puede contener lo que quieras:
 const nuevaString = 'hola';
-=======
-
->>>>>>> 84b2a6f7d395835d9ebc0adabe02989331bf1850
 
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 5;
