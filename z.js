@@ -344,42 +344,24 @@ for (let usuario in user){
   //console.log(usuario);
   //console.log(user[usuario])
 
-  var objetivo ={
+function problem(ok,nopasa){ let a=Math.random(),b=Math.random(); if (a>b) ok();else nopasa();}
+ function ok(){console.log("Si paso")}
+ function nopasa(){console.log("No paso")}
 
-  nombre   : ["Soma","Tepes"],
-  edad     : "17",
-  domicilio: "Tijuana",
-  Empleo   : ""
-}
+ problem(ok,nopasa)
+ (function (a,b) {console.log("Hola", Number(`${a}`)+Number(`${b}`) );})(25,5);
 
-console.log(objetivo.nombre.push("Traps"))
-console.log(objetivo.nombre)
-
-console.log( Object.keys(objetivo.nombre).length === 0 )
-
-
-function Gato(nombre) {
-  // El nuevo operador crea un objeto, "this"
-  this.nombre = nombre;
-  this.maullar = function() {
-      return 'Mi nombre es ' + this.nombre + ' ... Meow!';
-  }
-  // Devuelve el objeto "this"
-}
-
-const sam = new Gato('Sam');
-const kitty = new Gato('Kitty');
-console.log(sam.maullar()); // 'Mi nombre es Sam ... Meow!'
-console.log(kitty.maullar()); // 'Mi nombre es Kitty ... Meow!'
+ const exac = (a, b) => a + b;
+ console.log(exac(6,2))
+suma(6,7)
+ const suma= (a,b,e,f)=>{  resultado= a+b; resultado > 50 ? e() : f() }
+ suma(
+       (5,6),
+       
+       ()=> console.log("Si pasa"),
+       ()=>console.log("Error")
+ )
 
 
-var a=1
-function b(){
-  var a=5
- console.log("hello world "+ a)
- console.log ("El valor fuera de esta variable es "+ window.a)
-//return "hello world"
-
-}
-b();
-console.log(b())
+ 
+ console.log(suma(6,7))
