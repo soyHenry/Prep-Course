@@ -1,14 +1,18 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 const nuevaString = var primera = 'prueba';
+=======
+const nuevaString = 'prueba';
+>>>>>>> Stashed changes
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = var Cinco = 5;
+const nuevoNum = 5;
 
 // Crea una variable booleana:
-const nuevoBool = var aprendereprogramacion = true;
+const nuevoBool = true;
 
 
 // Resuelve el siguiente problema matemático:
@@ -20,7 +24,7 @@ const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === 32.8;
+const nuevoModulo = 21 % 5 === 1;
 
 =======
 const nuevaString = 'primera;
