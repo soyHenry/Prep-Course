@@ -3,10 +3,8 @@
 // Crea una variable "string", puede contener lo que quieras:
 <<<<<<< Updated upstream
 <<<<<<< HEAD
-const nuevaString = var primera = 'prueba';
-=======
 const nuevaString = 'prueba';
->>>>>>> Stashed changes
+
 
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 5;
