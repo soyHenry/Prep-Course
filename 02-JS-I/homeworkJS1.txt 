@@ -1,0 +1,11 @@
+Definiciones:
+Variable: Es parecido a una caja a donde se almacenan valores, que pueden usarse mas tarde.
+Strings: Bloques de texto, definidos entre comillas. Ej: 'Hola, soy Aylen'
+Funciones:
+Argumentos: 
+return: Esa declaracion, le indica al navegador que devuelva el resultado de la variable, fuera de la funcion. Para que este disponible para usar.
+Declaraciones:
+If: Palabra clave usada para verificar si algo es true. 
+Valores Booleanos: Son los valores que indican dos opciones. V o F ; 0 o 1; activar o desactivar. Escencialmente significa que tienes dos opciones para elegir.
+
+
