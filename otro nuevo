@@ -1,41 +1,27 @@
+const Productos ={
+Papas       : 7,
+Ruffles     : 90,
+Triangulo   : 9,
+Pop_Corn    : 78,
+ Name       : 'Tepes ' }
+
+let suma = Object.values(Productos).filter(x=> {return Number.isInteger(x)}).reduce((a,b)=> {return a+b})
+
+function mensajesalida(){
+return Productos.Name +'Paga esto por favor '+suma
+}
+
+console.log(mensajesalida())
 
 
 
-const fA = function (callback, callbackError) {
-     const n = (Math.random() * 5);
-     if (n > 2) callback();
-     else callbackError();
-   };
-   
-   fA(
-     function () {
-       console.log("Función B ejecutada.");
-     },
-     function () {
-       console.error("Error");
-     }
-   );
+let a =[1,2,3,4,5,'Soma','F']
 
-   (function () {
-     console.log("Hola!!");
-   })();
-   
+let b = a.filter(x=>{ return  Number.isInteger(x)  })
 
-   (function (name) {console.log(`¡Hola, ${name}!`); })("Manz");
+console.log(b)
 
-   const f = (function (name) {
-     return `¡Hola, ${name}!`;
-   })("Manz");
-   
-   f; 
-   var a =f 
-   console.log(a)// '¡Hola, Manz!`
 
-   const funciona =((a,b)=> {  return a-b })(6,2)
-   
-  console.log (funciona)
-
-   function suma(a,b){
-    let c=   a+b 
-    console.log (c)
-   }   suma(6,2)
+let z = ['lucas']
+let v= z.map(x=>{ return charAt(0).toUpperCase(x);})
+console.log(v)
