@@ -1,11 +1,11 @@
-# Homework: HTML
+ # Homework: HTML
 
 Ahora que nos ha visto crear un archivo HTML y una hoja de estilo externa, crearas una propia.
 
 ## Ejercicio I
 
 Crear un nuevo archivo dentro de la carpeta `homework` llamado `homework.html` donde deberás realizar lo siguiente:
-```
+```☻
 I. Cree una página HTML básica.
   A. Cree el diseño básico para una página HTML usando html, head y body.
   B. Agregue un elemento de título y asigne a su página el título de "Tarea HTML de [Su nombre]".
@@ -22,7 +22,7 @@ I. Cree una página HTML básica.
       * una etiqueta img en cada elemento de la lista que se vincula a su comida favorita. (Use la búsqueda de imágenes de Google para encontrar una foto y copiar la dirección de la misma o sino puede usar esta: "https://i.picsum.photos/id/1080/400/200.jpg").
 ```
 
-```
+```☻
 II Añade un poco de estilo
   A. Agregue la etiqueta de estilo a su documento HTML.
   B. Asignar al tercer div el id "thirdDiv".
@@ -38,7 +38,7 @@ II Añade un poco de estilo
   L. Asignar al id 'thirdDiv' un borde con cualquier ancho de color y estilo que elija.
 ```
 
-```
+```☻
 III. Cree una hoja de estilo externa y mueva todas las reglas de estilo anteriores a la nueva hoja de estilo.
   A. Cree un archivo llamado styles.css en esta carpeta.
   B. COPIE todas sus reglas de estilo en este nuevo archivo.
@@ -49,7 +49,7 @@ III. Cree una hoja de estilo externa y mueva todas las reglas de estilo anterior
 IV. Suba su trabajo a su repositorio de github`
 ```
 
-### Crédito adicional:
+### Crédito adicional:☻
 >   Para hacer los extra credits, generalmente será necesario que investigue algunas cosas por su cuenta en Internet.
 
   * Establecer una imagen como fondo de toda la página
@@ -63,13 +63,13 @@ IV. Suba su trabajo a su repositorio de github`
 ```
 Usando lo que aprendiste de HTML vas a crear un nuevo documento dentro de la carpeta de 'homework' llamado 'cv.html'. En el mismo vas crear tu propio Curriculum, deberá tener las siguientes secciones:
 
-* Titulo
-* Descripción Personal
-* Educación
-* Experiencias Laborales
-* Skills
-* Tu foto
-* Hobbies
+* Titulo☻
+* Descripción Personal☻
+* Educación☻
+* Experiencias Laborales☻
+* Skills☻
+* Tu foto☻
+* Hobbies☻
 
 Además agregá una sección más donde expliques por qué estás estudiando esta carrera y cuáles son tus expectativas al finalizar la carrera.
 

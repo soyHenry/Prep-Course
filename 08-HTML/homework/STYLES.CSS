@@ -1,0 +1,52 @@
+        
+body{
+    width: 600px;
+    margin:0px auto;
+    padding: 0px auto;
+    line-height: 0 auto;
+    font-family: "Noto Sans JP", sans-serif;
+    position: center center;
+
+    background-image: url(./fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 500px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+H1{
+     color: darkolivegreen;
+ }
+
+ div{
+    width: 450px;
+ }
+ 
+ img{
+     width: 400px;
+ }
+ 
+ #thirdDiv{
+     height: 600px;
+     width: 500px;
+     background-color: olivedrab;
+     padding: 50px;
+     border: 15px solid maroon;
+ }
+
+ #SPANID{
+     font-size: 18px;
+     margin: 50px;
+     background-color: limegreen;
+ }
+
+.flex-container{
+    display: flex;
+    background-color: rgb(247, 244, 244);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
+
+}
