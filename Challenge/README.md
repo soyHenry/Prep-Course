@@ -12,9 +12,9 @@ Consiste en una serie de ejercicios que deberás resolver, de manera muy similar
 
 ## ¿Cuándo lo puedo realizar?
 
-El challenge se realiza los sábados, cada dos semanas. Para poder ver las próximas fechas puedes inscribirte aquí: [Challenge](https://challenge.prep.soyhenry.com)
+El challenge se realiza los sábados, cada dos semanas.
 
-El Challenge debe resolverse de manera individual. Si lo realizas con ayuda te estarás perjudicando a ti mismo, dado que si no puedes resolverlo significa que aún no tienes los conocimientos básicos para ingresar y eso te generará muchos problemas durante la carrera.
+El challenge debe resolverse de manera individual. Si lo realizas con ayuda te estarás perjudicando a ti mismo, dado que si no puedes resolverlo significa que aún no tienes los conocimientos básicos para ingresar y eso te generará muchos problemas durante la carrera.
 
 ## ¿Cómo sigue el proceso?
 
@@ -24,7 +24,19 @@ En caso de aprobar, ya estarás listo para comenzar la carrera. Pasarás a la et
 
 ## Inscripción
 
-Para inscribirte al challenge haz click aquí: [Challenge](https://challenge.prep.soyhenry.com)
+La inscripción al Henry Challenge se realiza desde la Admissions Web App: <a href='https://www.admissions.soyhenry.com/' target='_blank'>Challenge</a>
+
+<b>¿Qué es la Admissions Web App?</b>
+
+Es una pagina que creamos para poder darles visibilidad sobre el estado de sus procesos de admisión.
+
+<b>¿Cómo ingreso a la Admissions App?</b>
+
+Cuando comienzan su proceso de admisión y aplican a la carrera, se crea un usuario para ingresar a la misma.
+
+Luego, si quieren volver a ingresar podrán hacerlo <a href='https://www.admissions.soyhenry.com/' target='_blank'>AQUI</a>.
+
+Quienes comenzaron su proceso de admisión antes de que pusiéramos en producción esta app, ¡no se preocupen! Pueden registrarse ahora por primera vez y, cuando ingresen, ya encontrarán completos todos los pasos que realizaron hasta el momento.
 
 ---
 
