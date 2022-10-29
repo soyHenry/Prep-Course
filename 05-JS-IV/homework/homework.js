@@ -35,8 +35,9 @@ function multiplicarNumeroDesconocidoPorCinco (objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
+  let result = Object.values(objetoMisterioso) * 5
  
-  var result = objetoMisterioso.numeroMisterioso * 5;
+  //var result = objetoMisterioso.numeroMisterioso * 5;
 
   return result;
 }
@@ -65,8 +66,7 @@ function tieneEmail (usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
-  if(usuario['email']) 
-  { return true } else { return false }
+  if(usuario['email'])   return true ; else  return false 
  
 }
 
@@ -114,7 +114,7 @@ function pasarUsuarioAPremium (usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
-  const createPremiumUsers = users => { users.map( u => u.esPremium = true)}
+  const createPremiumUsers = (users => { users.map( u => u.esPremium = true)})
   
   createPremiumUsers(usuarios)
 

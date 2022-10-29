@@ -1,27 +1,40 @@
-const Productos ={
+const productos = {
+  
 Papas       : 7,
 Ruffles     : 90,
 Triangulo   : 9,
 Pop_Corn    : 78,
- Name       : 'Tepes ' }
+name   :  'Tepes ',
+toString:  function () {return`${this.name} (${this.Papas}/${this.Ruffles})`   }};
 
-let suma = Object.values(Productos).filter(x=> {return Number.isInteger(x)}).reduce((a,b)=> {return a+b})
+ console.log(""+ productos);
+
+/*let suma = Object.values(Productos).filter(x=> {return Number.isInteger(x)}).reduce((a,b)=> {return a+b})
 
 function mensajesalida(){
-return Productos.Name +'Paga esto por favor '+suma
+//return Productos.Name +'Paga esto por favor '+suma
+let z = 'Paco'
+if(z.startsWith('P')) console.log('Es correcto'); else console.log('Es Falso')*/
+
+class Sum {
+
+  constructor (operador,operador2) {
+     this.operador  = operador
+     this.operador2 = operador2 
+  }
+ sum(){return this.operador + this.operador2}
+  }
+
+  let su = new Sum(6,45)
+  console.log(su.sum())
+
+  class Resta extends Sum{
+
+constructor(){
+super(operador,operador2)
+}
+res(){return this.operador - this.operador2}
 }
 
-console.log(mensajesalida())
-
-
-
-let a =[1,2,3,4,5,'Soma','F']
-
-let b = a.filter(x=>{ return  Number.isInteger(x)  })
-
-console.log(b)
-
-
-let z = ['lucas']
-let v= z.map(x=>{ return charAt(0).toUpperCase(x);})
-console.log(v)
+let re = new Sum (7,6)
+console.log(re.res)
