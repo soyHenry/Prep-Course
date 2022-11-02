@@ -1,0 +1,14 @@
+Explicaciones de conceptos
+for: Es un tipo de bucle, similar al if, pero con una sintaxis un poco mas compleja. 
+Luego de la palabra for, se abriran parentesis. Dentro se necesitaran tres cosas, las cuales iran separadas por punto y coma.
+- Declarar una variable (sobre lo que repetira el bucle)
+- Expresion condicional (hasta donde se va a repetir el bucle)
+- incrementar la variable.
+
+&&: Operador logico 'Y' ('AND'). ESte operador evaluara ambas expresiones y devolvera TRUE, si AMBAS son verdaderas. De lo contrario,
+si una de ellas es falsa, devolvera FALSE.
+
+||: Operador logico 'O' ('OR'). Este operador evaluara ambas expresiones y devolvera TRUE, si ambas expresiones o una de ellas es
+verdadera. Devolvera FALSE si y solo si ambas expresiones son falsas.
+
+!: Operador logico 'NO' ('NOT'). Este operador devolvera el valor booleano opuesto del que se le pasa.
