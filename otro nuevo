@@ -1,40 +1,46 @@
-const productos = {
-  
-Papas       : 7,
-Ruffles     : 90,
-Triangulo   : 9,
-Pop_Corn    : 78,
-name   :  'Tepes ',
-toString:  function () {return`${this.name} (${this.Papas}/${this.Ruffles})`   }};
 
- console.log(""+ productos);
 
-/*let suma = Object.values(Productos).filter(x=> {return Number.isInteger(x)}).reduce((a,b)=> {return a+b})
-
-function mensajesalida(){
-//return Productos.Name +'Paga esto por favor '+suma
-let z = 'Paco'
-if(z.startsWith('P')) console.log('Es correcto'); else console.log('Es Falso')*/
-
-class Sum {
-
-  constructor (operador,operador2) {
-     this.operador  = operador
-     this.operador2 = operador2 
+function capToFront(s) {
+  let arr = [];
+  for (let i in s) {
+    if (s[i] === s[i].toUpperCase()) {
+      arr.push(s[i]);
+    }
   }
- sum(){return this.operador + this.operador2}
+  for (let i in s) {
+    if (s[i] !== s[i].toUpperCase()) {
+      arr.push(s[i]);
+    }
   }
-
-  let su = new Sum(6,45)
-  console.log(su.sum())
-
-  class Resta extends Sum{
-
-constructor(){
-super(operador,operador2)
+  return arr.toString().replace(/,/g, '');
 }
-res(){return this.operador - this.operador2}
-}
+console.log(capToFront('soyHENRY'))
 
-let re = new Sum (7,6)
-console.log(re.res)
+
+let variable = 'ArraiGO';
+let variabl = variable.split('')
+let vare = []
+//let vari = variable.split() 
+//console.log(variabl)
+for(let i in variabl){
+if(variabl[i] == variabl[i].toUpperCase())
+{vare.push(variabl[i])} 
+}
+for(let i in variabl){
+  if(variabl[i] !== variabl[i].toUpperCase())
+  {vare.push(variabl[i])} 
+}
+  console.log(vare.join(''))
+//  https://stackoverflow.com/questions/1206911/why-do-i-need-to-add-g-when-using-string-replace-in-javascript
+
+
+let numero = 505
+let aa = String(numero).split('').map((x=>{ return Number(x) }))
+console.log(aa)
+let re = aa.reverse()
+let aaa = re.join('')
+
+console.log(aa)
+console.log(aaa)
+
+if(numero === aaa) { console.log('Es igual')}else console.log('No es igual')
