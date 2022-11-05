@@ -1,22 +1,50 @@
+/*https://desarrolladoresweb.org/css/la-propiedad-border-en-css/*/
 h1{
 color:   rgb(63, 14, 179);
 font-size: 60px;
 }
 div ul {color:red; }
 
+#grande .interior em { color: red; background-color: blue;}
 
-#thirdDiv {
+.spanId {font-size: 18 n px;}
 
-}
-.divClass {
+img.peq{width: 250px;
+        height: 150px;
+        border: 1px;
+        padding: 50px 300px 105px 80px; /*Crear marco  altura, anchura <- ->, */
+        background-color: blue;
+    }
 
-}
+  p {background-color: rgb(233, 223, 180);}
+  nav{background-color: rgb(39, 131, 173);}
 
-.spanId {
-    font-size: 18px;
-}
-
-img.peq{
-    width: 300px;
+  div.contenedor {
+    width:200px;
     height: 200px;
+    margin:40px;
+    padding: 15px;
+    background-color:#76e37f;
+    border: 1px solid #aaa;
+    overflow:scroll;
+    
+}
+ em{color:red;}
+/*.a*/
+
+.centro{text-align: center;}
+
+.bloque {
+    height: 200px; 
+    width: 300px;
+    background-color: red; 
+    display: inline-table;
+    
+
+}
+.tex {
+    display: table-cell;
+    vertical-align: middle;
+    overflow:scroll;  /*Sirve para no desbordar el texto de un bloque de texto */
+    text-shadow: 7px 4px 5px blue;/*Para darle sombra a los textos*/
 }
