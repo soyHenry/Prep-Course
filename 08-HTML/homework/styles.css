@@ -1,0 +1,33 @@
+img {
+  width: 400px;
+}
+#thirdDiv {
+  width: 500px;
+  height: 600px;
+  background-color: #386890;
+  padding: 50px;
+  border-radius: 2px;
+  border: 4px solid;
+  border-color: #1a9e95;
+}
+#spanId {
+  font-size: 18px;
+  margin: 50px;
+}
+body,
+html {
+display: flex;
+flex-direction: column;
+align-items: center;
+  background-image: url("https://cdn.pixabay.com/photo/2020/11/02/12/59/table-5706576_960_720.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.divClass h3{
+    color: aliceblue;
+}
+.divClass h4{
+    color: aliceblue;
+}
