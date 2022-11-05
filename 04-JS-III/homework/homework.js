@@ -43,8 +43,8 @@ function incrementarPorUno(array) {
   // y devuelve el array
   // Tu código:
  
- let arrayi = array.map( x=> x+1 )
- return arrayi
+ //let arrayi = array.map( x=> x+1 )
+ return array.map( x=> x+1 )
  }
 
 
@@ -77,8 +77,8 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  let namestwo = palabras.reduce((a,b)=>  a+' '+b)
-  return namestwo
+ 
+  return palabras.join(' ')
 }
 
 
@@ -111,7 +111,7 @@ function promedioResultadosTest(resultadosTest) {
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
 // Tu código:
 
-let sum = resultadosTest.reduce((valorb, valora) => valora + valorb);
+let sum = resultadosTest.reduce((a,b) =>a+b);
 let promedio = sum / resultadosTest.length;
   return promedio
 }
@@ -145,7 +145,7 @@ function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
   //let arreglo = [1,20,21,20,2,15]
-  var result = arreglo.filter(arreglo => arreglo > 18);
+  var result = arreglo.filter(x => x > 18)
   result = result.length
   return result
 
@@ -157,13 +157,10 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
-  if(numeroDeDia === 1 || numeroDeDia === 7 ){
-    return "Es fin de semana"
-  }
-   return "Es dia Laboral"
-
-  
-} 
+  if(numeroDeDia === 1 || numeroDeDia === 7 )
+    return "Es fin de semana" 
+    return "Es dia Laboral"
+  } 
 
 
 function empiezaConNueve(n) {
@@ -172,9 +169,8 @@ function empiezaConNueve(n) {
   //Escribe tu código aquí
 //  const word = 'hello'
 let num = n.toString()
-if(num.charAt(0) === "9"){
+if(num.charAt(0) === "9")
 return true
-}
 return false
 }
 
@@ -183,7 +179,7 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
-  let igual = true;
+ /* let igual = true;
   for (let i = 0; i < arreglo.length-1 ; i++) {
     if (arreglo[i] !== arreglo[i + 1]) {
       igual=false;
@@ -191,7 +187,15 @@ function todosIguales(arreglo) {
      
     }
   }
-  return igual;
+  return igual;*/
+ /*if (arreglo.at()==arreglo.at(-1)) return true
+ else return false*/
+
+let arreglo2 = arreglo.reduce((a,b)=> a+b)
+    arreglo2 = arreglo2/arreglo.length
+ if(arreglo2 == arreglo[0]) 
+ return true
+ else return false
 } 
 
 
@@ -202,12 +206,10 @@ function mesesDelAño(array) {
   // Tu código:
   //  let array= ['Enero','Febrero','Marzo','Noviembre']
   
-    let mes = array.filter(a=>a === 'Enero')
-    let mesa = array.filter(a=>a === 'Marzo')
-    let mesb = array.filter(a=>a === 'Noviembre')
-    let meses = mesa.concat(mesb,mes)
-    if ( meses.includes( 'Enero' ) && meses.includes( 'Marzo' ) && meses.includes( 'Noviembre' ) )
-     return meses ; else return "No se encontraron los meses pedidos"
+    let mes = array.filter(a=>a === 'Enero'||a === 'Marzo'||a === 'Noviembre')
+    if ( mes.includes( 'Enero' ) && mes.includes( 'Marzo' ) && mes.includes( 'Noviembre' ) )
+    return mes
+    else return "No se encontraron los meses pedidos"
    
 }
 

@@ -120,7 +120,7 @@ function buscoInterseccion(arreglo1, arreglo2){
 
 }
 
-
+//https://www.neoguias.com/como-encontrar-duplicados-array-javascript/
 
 // No modificar nada debajo de esta línea
 // --------------------------------

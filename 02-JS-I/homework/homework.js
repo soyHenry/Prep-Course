@@ -1,14 +1,14 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = 'SOY TEPES';
+const nuevaString = 'SOY TEPES'
 
 
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 8;
 
 // Crea una variable booleana:
-const nuevoBool = true;
+const nuevoBool = 5>1
 
 // Resuelve el siguiente problema matemático:
 const nuevaResta = 10 - 5 === 5;
@@ -29,7 +29,7 @@ const nuevoModulo = 21 % 5 == 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  return str;
+  return str
 }
 
 function suma(x, y) {
@@ -37,32 +37,33 @@ function suma(x, y) {
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
 
-    return x+y ;
+    return x+y 
 }
 
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  return x-y;
+  return x-y
 }
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
-  return x*y;
+  return x*y
 }
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
-  return x/y;
+  return x/y
 }
 
 function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (x==y){return true; }else {return false;}
+  if(x===y) return true
+  else return false
 }
 
 function tienenMismaLongitud(str1, str2) {
@@ -77,7 +78,8 @@ function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(num < 90){return true;}  else {return false;}
+  if(num < 90)return true 
+  else {return false;}
   
 }
 
@@ -227,9 +229,10 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if(letra.length > 40){return "Dato incorrecto"}
+  //if(letra.length > 40){return "Dato incorrecto"}
   if(letra == "a" || letra == "e" || letra == "i" || letra == "o" || letra == "u"){return "Es vocal"}
   return "Dato incorrecto"
+
 
 
 }

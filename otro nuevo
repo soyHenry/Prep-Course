@@ -1,42 +1,15 @@
-
-
-function capToFront(s) {
-  let arr = [];
-  for (let i in s) {
-    if (s[i] === s[i].toUpperCase()) {
-      arr.push(s[i]);
-    }
-  }
-  for (let i in s) {
-    if (s[i] !== s[i].toUpperCase()) {
-      arr.push(s[i]);
-    }
-  }
-  return arr.toString().replace(/,/g, '');
-}
-console.log(capToFront('soyHENRY'))
-
-
-let variable = 'ArraiGO';
-let variabl = variable.split('')
-let vare = []
-//let vari = variable.split() 
-//console.log(variabl)
-for(let i in variabl){
-if(variabl[i] == variabl[i].toUpperCase())
-{vare.push(variabl[i])} 
-}
-for(let i in variabl){
-  if(variabl[i] !== variabl[i].toUpperCase())
-  {vare.push(variabl[i])} 
-}
-  console.log(vare.join(''))
 //  https://stackoverflow.com/questions/1206911/why-do-i-need-to-add-g-when-using-string-replace-in-javascript
 
 
-let numero = 505
-let aa = String(numero).split('').map((x=>{ return Number(x) }))
-console.log(aa)
+let numero = 100
+let aa = String(numero).split('').map((x=>{ return Number(x) })).reverse().join('')
+console.log(numero+' '+aa)
+if(numero == aa) console.log("Es el mismo "); else console.log('No es igual')
+//console.log(aa)
+let reso = aa.map((x)=>{ if(aa.at() == aa.at(-x)){return 'es bueno'}else return 'no es' })
+console.log(reso)
+if(aa.at()==aa.at(-1)){ console.log('Es bueno')} else console.log('No es')
+
 let re = aa.reverse()
 let aaa = re.join('')
 
@@ -44,3 +17,33 @@ console.log(aa)
 console.log(aaa)
 
 if(numero === aaa) { console.log('Es igual')}else console.log('No es igual')
+
+let a=[
+{nombre:'Lucas' ,email:'a@', edad:20},
+{nombre:'Lucas' ,email:'b@', edad:25},
+{nombre:'Lucas' ,email:'c@', edad:28},
+{nombre:'Lucas' ,email:'d@', edad:26}
+]
+
+let arreglo1= [1,2,3,6,9,78,95,66,44,77,254]
+let arreglo2=[2,3,4,5,1,2]
+let general= [...arreglo1,...arreglo2]
+console.log(general)
+let soloduplicado = general.filter((x)=> general[x+1]===general[x])
+console.log(soloduplicado)
+
+
+let arre=[2,3,4,5,1,2]
+let arr = []
+for(let i=0; i<arre.length; i++)
+{
+arr[i] = 2  * arre[i]
+}console.log(arr)
+
+const array = [1, 2, 3, 4];
+let sum = 0;
+
+for (let i = 0; i < array.length; i++) {
+    sum += array[i];
+}
+console.log(sum);

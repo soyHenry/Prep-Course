@@ -210,15 +210,19 @@ console.log(myName)
 // Create array of continents
 const places = ['Africa', 'Asia', 'Europe', 'Australia','malasia','danes'];
 // Filter array for continents beyond the array index of 1
-const overIndex = places.filter(function(place, index){ return index > 1;})
+const overIndex = places.filter(function(place, index){ return index >= 1;})
 // Display new Array
 console.log(overIndex);
 
  
-let viejo = ['Domingo','Lunes','Martes','Miercoles','Jueves','Viernes','Sabado']
-    var busqueda = 'D'
-let nueva = viejo.findIndex(a => a === 'Domingo' )   
-    console.log(nueva)//
+  let array= ['Enero','Febrero','Marzo','Noviembre']
+  
+ let mes = array.filter(a=>a === 'Enero'||a === 'Marzo'||a === 'Noviembre')
+
+  if ( mes.includes( 'Enero' ) && mes.includes( 'Marzo' ) && mes.includes( 'Noviembre' ) )
+  console.log('se encontraron los 3') ; else console.log("no hay alguno de los meses")
+ 
+
    if(viejo.startsWith('D')) console.log
 
   //
@@ -363,5 +367,17 @@ suma(6,7)
  )
 
 
- 
- console.log(suma(6,7))
+ String.prototype.r = function(stringreverse){
+  var dos =stringreverse.split('').reverse().join('')
+  return dos
+}
+
+let abc = new String ()
+console.log(abc.r("Thom"))
+
+
+let stringreverse = 'hola'
+let uno = stringreverse.split('').reverse().join('')
+console.log(uno)
+
+var reves = stringreverse.reverse();

@@ -114,13 +114,10 @@ function pasarUsuarioAPremium (usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
-  const createPremiumUsers = (users => { users.map( u => u.esPremium = true)})
-  
-  createPremiumUsers(usuarios)
-
-return usuarios
-
-}
+  const premium = (users => { users.map( u => u.esPremium = true)})
+  premium(usuarios)
+  return usuarios
+  }
 
 function sumarLikesDeUsuario (usuario) {
   // "usuario" tiene una propiedad llamada "posts" que es un array

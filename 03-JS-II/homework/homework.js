@@ -14,8 +14,8 @@ function mayoriaDeEdad(edad) {
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
   //if (edad >= 18){return "Allowed"}else {return "Not allowed"}
-  let condicion = (edad >= 18) ? "Allowed":"Not allowed" 
-  return condicion 
+ // let condicion = (edad >= 18) ? "Allowed":"Not allowed" 
+  return edad >= 18 ? "Allowed":"Not allowed"
   
 } console.log(mayoriaDeEdad(19));
   
@@ -147,7 +147,7 @@ function tablaDelSeis(){
   var tabla = [];
   for (let i = 0; i < 11; ++i) tabla.push (6 * i); return tabla
   
-} console.log(tablaDelSeis());
+} 
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
@@ -156,7 +156,7 @@ function tieneTresDigitos(numero){
     return true
   }
   return false
-} console.log(tieneTresDigitos(-99));
+} 
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
