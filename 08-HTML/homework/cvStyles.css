@@ -1,0 +1,106 @@
+/* div {
+  border: 1px solid rgb(38, 29, 29);
+} */
+.cIzq {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+  background-color: #202026;
+  justify-content: space-between;
+}
+.cDer {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  max-width: 900px;
+  background-color: aliceblue;
+  
+  border: 2px solid #faf7e9;
+}
+
+#divEducatcion {
+  margin-top: 5%;
+}
+.fotoPerfil {
+  width: 100%;
+}
+.ident {
+  height: 150px;
+  width: 100%;
+  margin-top: 14%;
+  background-color: #fecb00;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ident div {
+  margin-left: 10%;
+}
+
+.cursos {
+  margin-top: 5%;
+}
+.hrNormal {
+  width: 95%;
+  color: black;
+  background-color: black;
+  margin-right: 0%;
+}
+.hrAmarillo {
+  width: 95%;
+  color: #fecb00;
+  background-color: #fecb00;
+  margin-right: 0%;
+  background:#fecb00;
+}
+.titulo {
+  font-size: 200%;
+}
+.nombre {
+  font-size: 230%;
+}
+.encabezado {
+  padding-left: 10%;
+  font-size: 150%;
+}
+.letraParrafo {
+  font-size: 120%;
+}
+
+.padd5{
+    padding-left: 5%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #292A30;
+}
+.cuadro{
+    width: 30px;
+    background-color: #fecb00;
+    height: 21px;
+    margin-left: -5px;
+}
+.cuadroSc{
+    width: 30px;
+    height: 21px;
+    margin-left: -5px;
+}
+.lineaDes{
+    display: flex;
+    align-items: center;
+}
+.cuadroText{
+    background-color: #292A30;
+    width: 100%;
+}
+.apartado{
+    width: 100%;
+}
