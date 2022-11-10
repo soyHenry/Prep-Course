@@ -12,7 +12,7 @@ Consiste en una serie de ejercicios que deberás resolver, de manera muy similar
 
 ## ¿Cuándo lo puedo realizar?
 
-El challenge se realiza los sábados, cada dos semanas.
+El challenge se realiza todos los sábados.
 
 El challenge debe resolverse de manera individual. Si lo realizas con ayuda te estarás perjudicando a ti mismo, dado que si no puedes resolverlo significa que aún no tienes los conocimientos básicos para ingresar y eso te generará muchos problemas durante la carrera.
 
