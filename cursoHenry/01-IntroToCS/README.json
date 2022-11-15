@@ -1,0 +1,11 @@
+{
+  "layout": "lesson",
+  "lessonTitle": "Computer Science",
+  "feedbackID": "00-IntroToCS",
+  "permalink": "/Intro_CS/",
+  "homeworkUrl": "https://github.com/soyHenry/FT-M1/tree/master/01-IntroToCS/homework",
+  "eleventyNavigation": {
+    "key": "Intro CS",
+    "order": 1
+  }
+}
