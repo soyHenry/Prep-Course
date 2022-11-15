@@ -14,6 +14,24 @@ function BinarioADecimal(num) {
 
 function DecimalABinario(num) {
   // tu codigo aca
+  let bin = "";
+  let resultado = "";
+  let residuo;
+  let sResiduo = "";
+  
+  while(num > 0){
+    residuo = num % 2;
+    if(num % 2 === 1) num -= 1;
+    sResiduo = residuo.toString();
+    bin += sResiduo;
+    num /= 2;
+  }
+
+  for(let i = bin.length -1; i > -1; i--){
+    resultado += bin.charAt(i);
+  }
+
+  return resultado;
 }
 
 module.exports = {
