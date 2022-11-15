@@ -21,7 +21,7 @@ Podrás ir avanzando con el contenido a tu ritmo y de manera asincrónica (es de
 ## ¿Qué es el Henry Challenge?
 
 Es un examen donde evaluamos los conceptos que se aprenden en el Prep Course. El examen tiene la finalidad de asegurarnos que realmente se han aprendido estos conceptos, dado que tenerlos bien claros es la clave de éxito para que puedas avanzar bien dentro de la carrera.
-El examen se realiza los días sábados cada dos semanas, previa inscripción en el siguiente link. Podrás rendirlo todas las veces que quieras. Para más información, puedes ir a la sección del challenge de este repositorio (prep.soyhenry.com/challenge).
+El examen se realiza todos los sábados, previa inscripción en el siguiente [link](https://www.admissions.soyhenry.com/). Podrás rendirlo todas las veces que quieras. Para más información, puedes ir a la sección del challenge de este repositorio (prep.soyhenry.com/challenge).
 
 ## ¿Qué puedo hacer si tengo dudas?
 
@@ -62,3 +62,5 @@ En este video te explicamos todo lo que debes conocer:
 <div class="iframeContainer">
 <iframe src="https://player.vimeo.com/video/426051769" allow="autoplay; fullscreen"></iframe>
 </div>
+
+Aclaración: a partir de noviembre del 2022, el Henry Challenge se realiza todos los sábados.
