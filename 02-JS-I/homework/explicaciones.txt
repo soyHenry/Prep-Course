@@ -1,0 +1,15 @@
+Variables: sirven para guardar informacion con un nombre que le asignemos 
+por ejemplo var = prueba, en este caso prueba seria la variable y la podremos usar para realizar una accion.
+
+Strings: son una cadena te texto, siempre deben usarse las "" para que se entienda que es texto
+
+Funciones (argumentos, return): las funciones sirven para poder ejecutar algo dentro de ellas usando (){} 
+y deben tener parametros dentro de los () para encontrar el resultado que buscamos, 
+hay dos tipos; las expresivas y las declarativas, las declarativas se pueden bautizar con nombres,
+las expresivas pueden ser anominas e incluso pueden ir dentro de una variable
+
+los argumentos son los valores o la informacion que se le dan a los parametros de la funcion para lograr el resultado esperado
+ el return es el resultado de la funcion 
+
+Declaraciones if: las declaraciones if sirven para generar condicionales dentro del codigo que estemos desarrollando.  
+Valores booleanos (true, false): los valores booleanos nos siven para tomar desiciones y confirmaciones dentro del codigo
