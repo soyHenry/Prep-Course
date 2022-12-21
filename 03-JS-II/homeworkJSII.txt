@@ -1,0 +1,7 @@
+for : es una estructura que permite generar atraves de una serie de instrucciones tareas repetitivas, 
+que permiten que sea mas rapido este tipo de repeticiones, segun el resultado esperado.
+
+&& es un operador que permite comparar tipos de datos, con booleanos
+|| es un operador que permite comparar y validar cualquier opcion ej: si es A, "O" B, "O" C, es true
+! es un operador que permite negar alguna afirmacion que desde el inicio es verdadera
+
