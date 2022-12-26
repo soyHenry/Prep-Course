@@ -1,0 +1,7 @@
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+* Variables: Son espacios de memoria que se guardan en una palabra que digitamos con la finalidad de recordar qué guardará
+* Strings: Los strings son cadenas de texto.
+* Funciones (argumentos, `return`): Las funciones son unas sentencias que, a través de unos parámetros establecidos en la creación de la función, servirán para que se escriban expresiones y puedan realizar acciones.
+* Declaraciones `if`: Una declaración es informar que estás creando una variable, si usas un if estás declarando que estás creando una condicional para ejecutar expresiones
+* Valores booleanos (`true`, `false`): Son aquellos valores que solo retornan un valor verdadero o uno falso.
