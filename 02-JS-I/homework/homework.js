@@ -184,7 +184,7 @@ function retornarPerimetro(lado){
 
 
 function areaDelTriangulo(base, altura){
-  //Desarrolle una función que calcule el área de un triángulo.
+  //Desarrolle una función que calcule el área de un triángulo rectangulo.
   //Escribe tu código aquí
 
 }
