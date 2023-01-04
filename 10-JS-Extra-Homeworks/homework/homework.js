@@ -18,6 +18,17 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+ 
+    const contadorDeLetras = {};
+    for (let letras of str){
+       if(contadorDeLetras[letras]){
+         contadorDeLetras[letras]++;
+       }else{
+        contadorDeLetras[letras] = 1;
+       }
+    }
+    return contadorDeLetras;
+
 }
 
 
