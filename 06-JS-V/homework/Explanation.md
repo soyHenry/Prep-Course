@@ -1,0 +1,5 @@
+## `prototype`
+Es una propiedad que contienen todos los objetos, en esta propiedad podemos definir miembros que se van a heredar al siguiente objeto, por ejemplo, al usar `create()` se crea un nuevo objeto a partir del prototipo del objeto que le demos entre parentesis. Por defecto, el prototipo de un constructor siempre comienza vacío, y tenemos que definir nosotros lo que se va a heredar.
+
+## _Constructors_ (de Clases)
+Podemos hacer constructores de clases con el metodo `constructor()`, si queremos asociar metodos con la clase, los podemos definirlas despues del constuctor, y ahora podemos usar `new` como con los objetos de funcion, ademas podemos extender la clase con `extends` para hacer una subclase basada en otra clase, permitiendonos llamar metodos y propiedades de la clase a la que nos extendimos.
