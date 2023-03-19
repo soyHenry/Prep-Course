@@ -1,0 +1,17 @@
+.divclass h1{
+    color: rgb(69, 157, 180);
+}
+.divclass #spanid{
+    font-size: 18px;
+    margin: 50px;
+}
+#thirdDiv {
+    width:400px;
+    height: 600px;
+    background-color: blue;
+    padding: 50px;
+    border: 2px crimson;
+}
+#thirdDiv ul li img{
+    width:400px;
+}
