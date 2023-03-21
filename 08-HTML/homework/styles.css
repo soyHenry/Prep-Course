@@ -1,0 +1,51 @@
+h1{
+    color:mediumblue;
+    text-align: center;
+}
+
+h2{
+    color:#3747b8;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h3{
+    color:#3747b8;
+}
+
+img{
+    width: 400px;
+}
+
+#thirdDiv{
+    position: absolute;
+    left: 25%   ;
+    height: 600px;
+    width: 500px;
+    padding: 50px;
+    text-align: center;
+    border: thick double maroon;
+
+    background-color: darkslateblue;
+}
+
+#spanId{
+    font-size: 18px;
+    margin:50px;
+}
+
+.divClass{
+    color: white;
+    text-align: center;
+}
+
+#Imagen{
+    width: 100%;
+    height: 100%;
+    background-image: url("https://www.hoyesarte.com/wp-content/uploads/2021/09/maxresdefault.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.Sub{
+    color:bisque;
+}
