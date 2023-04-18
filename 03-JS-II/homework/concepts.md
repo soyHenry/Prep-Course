@@ -1,0 +1,3 @@
+For: Nos permite repetir un proceso una cantidad de veces determinada establecida en el código. Se debe tener precaución, ya que se corre el riesgo de que el ciclo se repita hasta el infinito y más allá.
+
+Operadores Lógicos: Se utilizan para evaluar si la o las expresiones son verdadero o falso. Los operadores son `&&` "AND" (evalua si ambas o más expresiones son verdaderas, basta con que una expresión sea falsa para que devuelva `false`), `||` "OR" (basta con que una de las expresiones sea verdadera para que devuelva `true`) y `!` "NOT" (devuelve el valor opuesto (`!true` es lo mismo que `false` y `!false` es igual que `true`)).
