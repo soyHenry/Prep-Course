@@ -1,0 +1,24 @@
+{
+  "icons": [
+    {
+      "name": "bell",
+      "source": "lucide:bell",
+      "preset": "reveal,attention"
+    },
+    {
+      "name": "heart",
+      "source": "lucide:heart",
+      "preset": "heartbeat"
+    },
+    {
+      "name": "settings",
+      "source": "tabler:settings",
+      "preset": "loading"
+    },
+    {
+      "name": "rocket",
+      "source": "lucide:rocket",
+      "preset": "reveal,jump"
+    }
+  ]
+}

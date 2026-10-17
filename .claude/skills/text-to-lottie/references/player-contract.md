@@ -1,0 +1,325 @@
+# Player Contract
+
+Use this reference before creating, editing, fixing, or verifying any scene.
+
+## Setup
+
+Use the official player project. Do not verify through a custom page,
+`lottie-web`, or another renderer.
+
+If the player project is missing:
+
+```bash
+npx degit diffusionstudio/lottie my-animation
+cd my-animation
+npm install
+npm run dev
+```
+
+The dev server defaults to port `3030`, but never assume it. On `npm run dev`,
+Vite prints the URL it bound to (`Local: http://localhost:<port>/`) and falls
+back to the next free port when `3030` is taken — e.g. when another project
+folder is already serving. Treat that printed port as the source of truth and
+use it as `<port>` in every curl and navigation below; a second folder's server
+answers on a different port, so a blind request to `3030` will hit the wrong
+project.
+
+If the project already exists, use its existing setup and start `npm run dev`
+when browser verification is needed.
+
+## Scene Layout
+
+Every renderable scene lives under `public/projects/`:
+
+```text
+public/
+  canvaskit.wasm
+  projects/
+    <project-slug>/
+      <scene-N>/
+        lottie.json
+        controls.json
+        <image files>
+        <font files>
+```
+
+- `lottie.json` is required. A scene without it is ignored.
+- Project and scene slugs become URL segments: `/<project>/<scene>`.
+- Scene ordering comes from the trailing number in `scene-<N>`.
+- Put image assets next to the scene and reference them by bare filename in
+  `assets[].p`, for example `"p": "logo.svg"`.
+- Put font files (`.ttf`, `.otf`, `.ttc`) next to the scene to render native text.
+  The loader passes every scene font to Skottie; see "Native Text" below.
+
+## Target Scene Policy
+
+- Resolve target scenes by authority. A user-provided file path wins. A browser
+  URL route like `/<project>/<scene>` wins next and maps to
+  `public/projects/<project>/<scene>/lottie.json`. An already-known
+  project/scene for the task wins next.
+- Do not let the active scene from `GET /__context`, the `live` block in
+  `/__context`, or `/__context.live` override a known file path, URL, or
+  project/scene.
+- If project/scene is known, navigate directly to
+  `http://localhost:<port>/<project>/<scene>` and inspect frames there with
+  `?frame=<N>`.
+- Use the active project/scene from `GET /__context` only when the task is
+  explicitly to edit what is currently on screen and no more specific target
+  exists.
+- If creating new work without a target, create a new project/scene or the next
+  available `scene-<N>`.
+- For dropped, uploaded, or imported Lottie JSON, work on the generated scene
+  under `public/projects/<imported-project>/<scene>/lottie.json`, not the
+  original dropped/uploaded JSON context.
+- Before editing, verify the resolved file is the intended
+  `public/projects/<project>/<scene>/lottie.json`; before overwriting an
+  existing `lottie.json`, re-read the current file from disk.
+- Overwrite `public/projects/main-project/scene-1/lottie.json` only when it is
+  still the untouched placeholder. If unsure, create a new scene.
+
+Treat `main-project/scene-1` as safe to overwrite only if it has one simple
+background layer, no meaningful assets, no custom controls, and a generic name
+such as `Scene 1 - 512x512`.
+
+## Live Editor Behavior
+
+- The scene tree watches folders and updates live.
+- Editing an existing `lottie.json` may require reload or re-navigation.
+- Slot edits in the UI are written back through `/__scenes/lottie`, so re-read
+  source before applying another edit.
+
+## Context Endpoint
+
+Use the context endpoint for project-tree discovery, last-modified checks, and
+observational playback state:
+
+```bash
+curl -s http://localhost:<port>/__context
+```
+
+It reports the project tree, active project/scene, frame, total frames, fps, and
+last-modified times. Treat that active scene as observational unless the task is
+explicitly to edit what is currently on screen and no path, URL route, or known
+project/scene target exists.
+
+## Frame Pinning
+
+Inspect exact frames by navigating to:
+
+```text
+http://localhost:<port>/<project>/<scene>?frame=<N>
+```
+
+`?frame=N` seeks and pauses on load. Use frame `0`, midpoint, and `op - 1` for
+new scenes; use focused frames for small edits. The canvas is
+`<canvas id="main-canvas">`.
+
+## Slots And Controls
+
+Use slots for user-editable values that should appear in the player properties
+panel. The player discovers slots automatically through Skottie.
+
+Top-level slot pattern:
+
+```json
+{
+  "slots": {
+    "accentColor": { "p": { "a": 0, "k": [0.2, 0.5, 1, 1] } },
+    "scaleAmount": { "p": { "a": 0, "k": 100 } }
+  }
+}
+```
+
+Reference a slot with `sid` on a compatible property:
+
+```json
+{ "c": { "sid": "accentColor" } }
+```
+
+Add `controls.json` next to `lottie.json` when labels or numeric ranges matter:
+
+```json
+{
+  "controls": [
+    { "sid": "accentColor", "label": "Accent color" },
+    { "sid": "scaleAmount", "label": "Scale", "min": 40, "max": 160, "step": 1 }
+  ]
+}
+```
+
+Slot value types map to controls:
+
+| Slot value | Control |
+| --- | --- |
+| number | slider |
+| RGBA array `0..1` | color picker |
+| two-number array | two number inputs |
+| string text slot | text input |
+
+Slot types must match the properties that reference them.
+
+### One control, many slots (`targetSids`)
+
+When one value appears in several slots, first prefer a **single shared slot**:
+reference the same `sid` from every property; one control drives them all, nothing
+else needed.
+
+Use `targetSids` only when the value cannot share one slot. The control writes to its
+own `sid` plus every id in `targetSids`, and those targeted slots are hidden from the
+panel. List extra targets only, never repeat the primary `sid`; the primary and every
+target must be the same type.
+
+In practice that means native text: a text slot carries the whole text document (font,
+size, fill, stroke), so the same string at different sizes or styles cannot share one
+slot — give each copy its own slot and drive them with one control. Same-type non-text
+values (a color, a size) should usually share a single slot, so they rarely need this.
+
+```json
+{
+  "controls": [
+    { "sid": "brandName", "label": "Brand Name", "targetSids": ["heroBrandName", "lowerThirdBrandName", "endCardBrandName"] },
+    { "sid": "eventDate", "label": "Event Date", "targetSids": ["heroDate", "agendaDate", "endCardDate"] }
+  ]
+}
+```
+
+## Native Text
+
+Native Lottie text layers (`ty:5`) and text slots render in this player, as long
+as the scene supplies the font. The loader discovers every `.ttf`/`.otf`/`.ttc`
+file in the scene folder and hands all of them to `MakeManagedAnimation`
+alongside images. Skottie loads those bytes into a font manager and resolves each
+text layer by the font's **embedded family name** — so the contract is:
+
+1. Drop the font file in the scene folder (next to `lottie.json`).
+2. Declare it in the Lottie's top-level `fonts.list`, e.g.
+   `{ "fName": "Inter", "fFamily": "Inter", "fStyle": "Regular", "ascent": 75 }`.
+   `fFamily` must equal the font's real embedded family name (not the filename).
+3. Reference that font from text documents via `f` (matching `fName`).
+
+The font's **filename is irrelevant** to resolution — Skottie matches on the
+embedded family name, not the asset key — but keep it unique within the folder so
+it does not collide with an image. If no matching font is present, the text layer
+renders transparent (the classic "blank text" failure).
+
+- Text slots (editable text in the properties panel) work the same way — the slot
+  still needs the font present. Use them by default for primary scene copy:
+  headlines, hooks, titles, taglines, CTAs, closing lockups, product/feature
+  names, and short status/result callouts. Centered, self-contained copy is
+  slot-safe; let it re-center after string edits.
+- Decide slotting per text layer. Leave a layer unslotted only when that layer's
+  exact string controls layout or timing: code/terminal rows, hand-spaced lists,
+  cursor/token offsets, masks, path/morph/per-character reveals, or tiny
+  incidental labels.
+- Native editable text slots must use the keyframed text-document shape: layer
+  fallback at `layers[].t.d.k[0].s`, slot binding via `layers[].t.d.sid`, and
+  top-level slot document at `slots[id].p.k[0].s`. The editable string lives at
+  `slots[id].p.k[0].s.t`. Do not author new text slots as `slots[id].p.p.t` or as
+  a direct `slots[id].p.k` text object.
+- For keyframed text slots, the slot property must use `"a": 1`:
+  `slots[id].p = { "a": 1, "k": [{ "t": 0, "s": { ...textDocument } }] }`. With
+  `"a": 0` or a missing `a` next to a text-document keyframe array, Skottie can
+  render the text slot blank. Color/scalar slots still use `"a": 0` with a plain
+  `k` value.
+- If a text slot renders blank, check: (1) slot property is `"a": 1`; (2) font
+  file is present and `fFamily` matches the embedded family name; (3) top-level
+  slot document matches the layer fallback document.
+- Vector/shape text (baking glyphs to `ty:"sh"` outlines) is no longer required
+  for text to render. Use it only when you deliberately want path-level control
+  (stroke-on reveals, glyph morphs, handwritten traces) — not as a font
+  workaround.
+
+### Point Text vs Box Text
+
+A text document is **point text** by default (no `sz`): the box hugs the glyphs, so
+the layer grows horizontally as the string gets longer and only breaks at a literal
+`\r`. Keep point text where exact glyph or string placement is the design — single
+glyphs, tiles, countdown digits, per-character or choreographed type,
+mask/path/morph text, logos, terminal/code rows, and hand-tuned manual layouts; box
+text would fight their baseline and centering.
+
+Make it **box (paragraph) text** by adding to the text document:
+
+- `sz: [w, h]` — box size. Its presence is what switches the shaper to word-wrap.
+- `ps: [x, y]` — box origin (top-left), relative to the layer anchor.
+- `lh` — line height, i.e. spacing between the wrapped lines.
+
+The shaper wraps words automatically at the `sz[0]` width. Use box text for
+**editable multi-word slots** (headlines, subtitles, quotes, CTAs) so a longer edit
+reflows onto new lines instead of overflowing the frame. Slotted box text must carry
+the identical text document — including `sz`/`ps`/`lh` — in **both** the layer
+fallback (`layers[].t.d.k[0].s`) and the slot document (`slots[id].p.k[0].s`), same
+rule as the string itself. A slot edit changes **only** `.t`; the rest of the
+document shape (box fields, `j`, `lh`, and the slot's own `p.a`/`p.k`) is preserved
+on save.
+
+Verified in canvaskit-wasm 0.41.1: box text wraps on initial load **and re-wraps on
+live slot edits**; `j` maps `0`/`1`/`2` to left/right/center alignment within the
+box; and edit+save preserves the box fields. Two caveats are part of the contract:
+
+- **Top-aligned, no vertical-centering.** Text starts at the box top and grows
+  downward; the box does not center it vertically. Set `ps` to the intended box
+  *top-left*. To visually center a known block, offset `ps.y` by hand (≈
+  `(sz[1] - blockHeight) / 2`).
+- **Height does not clip.** Only `sz[0]` (width) governs wrapping; `sz[1]` (height)
+  neither clips nor constrains — text taller than the box spills past its bottom
+  edge. Size the height generously, or expect bottom overflow on long edits.
+
+## Vector Text Vertical Placement
+
+Vector text has no line-height or auto-centering. You place every glyph by hand,
+so compute the baseline from the font's cap height instead of eyeballing it.
+
+- Derive cap height from the font, not a guessed number:
+  `capEm = sCapHeight / unitsPerEm`, then `cap = capEm * size`. If the font lacks
+  the metric, fall back to `capEm ≈ 0.7` (use x-height `≈ 0.52em` for all-lowercase
+  runs).
+- To vertically center a run in a container whose center is `cy`:
+  `baseline = cy + cap / 2`.
+- For a row holding two runs of different sizes (for example a small label and a
+  large value), center each run on the shared center line using its **own** cap
+  height. A shared baseline makes the smaller run sink below the larger one.
+
+## Background Policy
+
+- Full-frame standalone compositions should include a visible background layer
+  with a `bgColor` slot and a `controls.json` entry.
+- Transparent-by-default outputs include logos, icons, loaders, overlays, lower
+  thirds, and SVG-derived assets unless the user asks for a background.
+- Do not add an opaque rectangle just to fill the canvas.
+- If a transparent animation needs preview contrast, use the player/canvas
+  environment for verification instead of baking unwanted pixels into the JSON.
+
+## Verification
+
+- Validate JSON before browser verification.
+- Confirm the scene appears in `/__context`.
+- Inspect pinned frames in the browser. New scenes need frame `0`, midpoint, and
+  `op - 1`.
+- Fix blank canvas, missing assets, unstyled shapes, wrong layer order, bad
+  easing, cropped content, text overflow, and SVG artifacts before finishing.
+
+## Final Review Passes
+
+Run lightweight render, design, and motion reviews before calling a scene
+complete. First, midpoint, and final frames are the minimum still-frame check,
+not a substitute for motion review.
+
+- Render review: validate JSON, confirm `/__context`, verify assets load, and
+  inspect pinned frames in the official player.
+- Design review: inspect frame `0`, midpoint, `op - 1`, and any major semantic
+  still. Check focal point, placement, spacing, hierarchy, typography, color
+  roles, object necessity, and final-frame strength.
+- Text alignment review: inspect text rows zoomed in, not only at full-frame. A
+  few pixels of vertical misalignment are invisible at composition scale. Confirm
+  that mixed-size runs sharing a row are cap-center aligned, that single runs are
+  optically centered in their container, and that stacked blocks (such as a
+  headline and its subline) follow an intentional vertical rhythm.
+- Motion review: scrub playback and inspect key beat frames: frame `0`, early
+  reveal, midpoint, settle or near-final, `op - 1`, loop seam if looping, and
+  semantic beats where a number resolves, word lands, logo lockup forms, chart
+  finishes drawing, CTA appears, or camera move settles.
+- Check beat order, stagger origin, timing, easing, settle/hold, loop seam,
+  camera/framing, and readability during motion.
+- If design or motion review fails, simplify and revise before finishing. A
+  valid render is not enough.

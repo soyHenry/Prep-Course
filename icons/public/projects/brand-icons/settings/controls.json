@@ -1,0 +1,19 @@
+{
+  "controls": [
+    {
+      "sid": "primary",
+      "label": "Primary color"
+    },
+    {
+      "sid": "secondary",
+      "label": "Secondary color"
+    },
+    {
+      "sid": "strokeWidth",
+      "label": "Stroke width",
+      "min": 0.5,
+      "max": 4,
+      "step": 0.25
+    }
+  ]
+}
