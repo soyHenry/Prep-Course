@@ -1,9 +1,0 @@
-{
-  "lessonTitle": "Challenge",
-  "permalink": "/Challenge/",
-  "layout": "intro",
-  "eleventyNavigation": {
-    "key": "Challenge",
-    "order": 99
-  }
-}
