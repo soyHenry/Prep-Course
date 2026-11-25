@@ -32,6 +32,7 @@ class Config:
     interval: str = "1h"
     capital: float = 100.0
     poll_seconds: int = 60
+    daily_report_hour: int = 13
     api_key: str = ""
     api_secret: str = ""
     strategy: StrategyParams = field(default_factory=StrategyParams)
@@ -62,6 +63,7 @@ def load_config() -> Config:
         interval=os.environ.get("INTERVAL", "1h"),
         capital=_f("CAPITAL", 100),
         poll_seconds=int(_f("POLL_SECONDS", 60)),
+        daily_report_hour=int(_f("DAILY_REPORT_HOUR", 13)),
         api_key=key,
         api_secret=secret,
         risk=RiskParams(

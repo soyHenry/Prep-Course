@@ -9,7 +9,7 @@ import logging
 import time
 from datetime import datetime, timezone
 
-from . import exchange, risk, strategy
+from . import exchange, notify, risk, strategy
 from .config import DATA_DIR, Config, load_config
 
 log = logging.getLogger("bot")
@@ -69,6 +69,8 @@ def close_position(cfg, state, broker, reason: str) -> None:
         "usdt": round(fill.quote, 2), "pnl": round(pnl, 2), "cash": round(state["cash"], 2),
     })
     log.info("VENTA (%s) a %.2f | resultado %+.2f USDT | efectivo %.2f", reason, fill.price, pnl, state["cash"])
+    notify.send(f"{'🟢' if pnl > 0 else '🔴'} [{cfg.mode}] VENTA {cfg.symbol} ({reason})\n"
+                f"Precio: {fill.price:,.2f}\nResultado: {pnl:+.2f} USDT\nCapital: {state['cash']:.2f} USDT")
 
 
 def open_position(cfg, state, broker, quote: float, stop: float) -> None:
@@ -83,6 +85,8 @@ def open_position(cfg, state, broker, quote: float, stop: float) -> None:
         "usdt": round(fill.quote, 2), "pnl": "", "cash": round(state["cash"], 2),
     })
     log.info("COMPRA %.2f USDT a %.2f | stop %.2f", fill.quote, fill.price, stop)
+    notify.send(f"🛒 [{cfg.mode}] COMPRA {cfg.symbol}\nMonto: {fill.quote:.2f} USDT a {fill.price:,.2f}\n"
+                f"Stop-loss: {stop:,.2f} (pérdida máx. ~{fill.quote * (1 - stop / fill.price):.2f} USDT)")
 
 
 def step(cfg: Config, state: dict, broker) -> None:
@@ -104,6 +108,7 @@ def step(cfg: Config, state: dict, broker) -> None:
             close_position(cfg, state, broker, "freno caída máxima")
         state["halted"] = True
         log.error("Caída máxima alcanzada (%.0f%%). Bot detenido.", rp.max_drawdown * 100)
+        notify.send(f"🛑 [{cfg.mode}] Bot DETENIDO: el capital cayó {rp.max_drawdown:.0%} desde su máximo. Requiere revisión.")
         return
 
     # 1) Stop-loss: se revisa en cada vuelta (cada minuto), no solo al cerrar la vela.
@@ -144,6 +149,38 @@ def step(cfg: Config, state: dict, broker) -> None:
         log.info("Sin señal | precio %.2f | capital %.2f", price, equity)
 
 
+def maybe_daily_summary(cfg: Config, state: dict) -> None:
+    """Un resumen por día a la hora local DAILY_REPORT_HOUR (por defecto 13 h)."""
+    now = datetime.now()
+    today = now.strftime("%Y-%m-%d")
+    if now.hour < cfg.daily_report_hour or state.get("last_summary") == today:
+        return
+    state["last_summary"] = today
+    notify.send("📊 Resumen diario\n" + summary_text(cfg, state, exchange.last_price(cfg.symbol)))
+
+
+def summary_text(cfg: Config, state: dict, price: float) -> str:
+    pos = state.get("position")
+    equity = state["cash"] + (pos["qty"] * price if pos else 0)
+    start = state["start_capital"]
+    lines = [f"Modo: {cfg.mode} | desde {state.get('started_at', '?')[:10]}",
+             f"Capital: {equity:.2f} USDT ({100 * (equity / start - 1):+.2f}%)"]
+    if state.get("start_price"):
+        lines.append(f"Comprar y guardar BTC: {100 * (price / state['start_price'] - 1):+.2f}%")
+    lines.append(f"Posición abierta: entrada {pos['entry']:,.2f}, stop {pos['stop']:,.2f}" if pos else "Posición abierta: no")
+    path = trades_path(cfg)
+    if path.exists():
+        with path.open() as f:
+            pnls = [float(r["pnl"]) for r in csv.DictReader(f) if r["side"] == "SELL"]
+        if pnls:
+            wins = sum(p > 0 for p in pnls)
+            lines.append(f"Operaciones cerradas: {len(pnls)} | ganadoras: {wins} ({100 * wins / len(pnls):.0f}%)"
+                         f" | total: {sum(pnls):+.2f} USDT")
+    if state.get("halted"):
+        lines.append("ATENCIÓN: bot detenido por caída máxima.")
+    return "\n".join(lines)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--once", action="store_true", help="hace una sola revisión y termina")
@@ -159,15 +196,22 @@ def main() -> None:
     broker = make_broker(cfg)
     state = load_state(cfg)
 
+    if not args.once:
+        notify.send(f"▶️ Bot de trading encendido [{cfg.mode}] | {cfg.symbol} | capital {state['cash']:.2f} USDT")
     errors = 0
     while True:
         try:
             step(cfg, state, broker)
+            maybe_daily_summary(cfg, state)
             save_state(cfg, state)
+            if errors >= 5:
+                notify.send("✅ El bot recuperó la conexión.")
             errors = 0
         except Exception as e:  # red caída, Binance en mantenimiento, etc.: espera y reintenta
             errors += 1
             log.exception("Error (%d seguidos): %s", errors, e)
+            if errors == 5:
+                notify.send(f"⚠️ El bot tiene problemas para conectarse (5 intentos fallidos): {e}")
         if args.once:
             break
         time.sleep(min(cfg.poll_seconds * (2 ** min(errors, 4)), 900))

@@ -90,3 +90,30 @@ def test_live_step_buys_and_stops_out(monkeypatch, tmp_path):
     assert state["position"] is None
     assert 95 < state["cash"] < 100  # perdió cerca del 2% previsto, no más
     assert (tmp_path / "trades_paper.csv").exists()
+
+
+def test_telegram_messages_on_trades(monkeypatch, tmp_path):
+    from bot import notify
+    sent = []
+    monkeypatch.setenv("TELEGRAM_TOKEN", "x")
+    monkeypatch.setenv("TELEGRAM_CHAT_ID", "1")
+
+    class R:
+        def raise_for_status(self):
+            pass
+
+    monkeypatch.setattr(notify.requests, "post", lambda url, json, timeout: sent.append(json["text"]) or R())
+    test_live_step_buys_and_stops_out(monkeypatch, tmp_path)
+    assert any("COMPRA" in m for m in sent) and any("VENTA" in m for m in sent)
+
+    cfg = Config(capital=100)
+    text = live.summary_text(cfg, live.load_state(cfg) | {"cash": 98.0, "start_price": 100.0}, 110.0)
+    assert "Capital: 98.00 USDT (-2.00%)" in text and "+10.00%" in text
+
+
+def test_telegram_failure_never_breaks_bot(monkeypatch):
+    from bot import notify
+    monkeypatch.setenv("TELEGRAM_TOKEN", "x")
+    monkeypatch.setenv("TELEGRAM_CHAT_ID", "1")
+    monkeypatch.setattr(notify.requests, "post", lambda *a, **k: (_ for _ in ()).throw(OSError("sin red")))
+    assert notify.send("hola") is False

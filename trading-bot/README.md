@@ -22,41 +22,65 @@ Bot que opera **BTC/USDT** solo, las 24 horas, siguiendo la tendencia y con fren
 - Solo usa el capital configurado (`CAPITAL`), aunque la cuenta tenga más plata.
 - El modo con dinero real no arranca sin `CONFIRMO_DINERO_REAL=si`.
 
-## Instalación (una sola vez)
+## Instalación en su PC (Windows, una sola vez)
 
-Requiere Python 3.10 o más nuevo.
+1. Instale Python desde [python.org](https://www.python.org/downloads/). En el instalador, **tilde "Add python.exe to PATH"**.
+2. Descargue el código: en GitHub, rama `claude/automated-trading-bot-xg5uvk` → botón verde *Code* → *Download ZIP*. Descomprímalo y entre a la carpeta `trading-bot`.
+3. En esa carpeta, clic en la barra de direcciones, escriba `cmd` y Enter. En la ventana negra:
+   ```
+   pip install -r requirements.txt
+   copy .env.example .env
+   python -m pytest -q tests
+   python -m bot.backtest --days 730
+   ```
+4. Configure Telegram (abajo) y arranque con **doble clic en `iniciar_bot.bat`**. Si se corta, se reinicia solo.
 
-```bash
-cd trading-bot
-pip install -r requirements.txt
-cp .env.example .env        # en Windows: copy .env.example .env
-```
+**Para que corra las 24 h:**
+- Configuración → Sistema → Energía → *Suspender: Nunca* (la pantalla sí puede apagarse).
+- Para que arranque solo al prender la PC: `Win + R` → `shell:startup` → pegue ahí un acceso directo a `iniciar_bot.bat`.
+- Si la PC se apaga o se corta internet, no pasa nada grave: al volver retoma desde el estado guardado. En modo real, eso sí, mientras la PC esté apagada el stop-loss no se vigila.
 
-## Uso
+## Avisos por Telegram
 
-```bash
-python -m bot.backtest --days 730   # 1) probar la estrategia con los últimos 2 años
-python -m bot.bot                    # 2) dejarlo corriendo (Ctrl+C para frenarlo)
-python -m bot.report                 # 3) ver cómo viene
-```
+Le llegan al celular: cada compra y venta, el resumen diario (13 h por defecto), si se activa un freno o si pierde la conexión.
 
-Todo queda guardado en `data/`: el estado (`state_paper.json`), cada operación (`trades_paper.csv`) y el registro (`bot_paper.log`). Si el bot se corta, retoma donde quedó.
+1. En Telegram, busque **@BotFather** → `/newbot` → elija nombre. Le da un *token*: péguelo en `.env` como `TELEGRAM_TOKEN=`.
+2. Abra el chat con su bot nuevo y mándele "hola".
+3. Corra `python -m bot.notify --chat-id` y pegue el número en `.env` como `TELEGRAM_CHAT_ID=`.
+4. Pruebe con `python -m bot.notify --test`.
+
+Para pedir el resumen en cualquier momento: `python -m bot.report --telegram`.
+
+## Acceso a Binance
+
+| Etapa | Qué necesita |
+|---|---|
+| **Ahora (modo `paper`)** | **Nada.** Usa los precios públicos de Binance; no hace falta cuenta ni claves |
+| Opcional (modo `testnet`) | Claves de [testnet.binance.vision](https://testnet.binance.vision) (entrar con GitHub → *Generate HMAC_SHA256 Key*) |
+| **Enero (modo `live`)** | Una clave de API de su cuenta real, creada así: |
+
+Cómo crear la clave real (solo en enero, si se aprueba):
+1. Binance → Perfil → **Gestión de API** → *Crear API* → *Generada por el sistema*.
+2. Permisos: tilde **solo "Habilitar trading spot y de margen"**. **Nunca "Habilitar retiros"**: así, aunque alguien robe la clave, no puede sacar su plata.
+3. Restricción de IP: ponga la IP de su casa (la ve en [whatismyip.com](https://www.whatismyip.com)).
+4. Pegue la clave en `.env` (`BINANCE_KEY`, `BINANCE_SECRET`), ponga `MODE=live` y `CONFIRMO_DINERO_REAL=si`.
+5. Deje en la cuenta spot solo los USDT que el bot puede usar.
+
+El archivo `.env` contiene sus claves: no lo comparta ni lo suba a ningún lado (ya está excluido de Git).
 
 ## Modos
 
-| MODE | Qué hace | Claves |
-|---|---|---|
-| `paper` (por defecto) | Simula las órdenes con precios **reales** de Binance, con comisión de 0,1 % y deslizamiento | No necesita |
-| `testnet` | Manda órdenes a la cuenta de prueba oficial de Binance (dinero ficticio) | De [testnet.binance.vision](https://testnet.binance.vision): entrar con GitHub → *Generate HMAC_SHA256 Key* |
-| `live` | **Dinero real** | De Binance, **sin permiso de retiro** y con restricción de IP |
+| MODE | Qué hace |
+|---|---|
+| `paper` (por defecto) | Simula órdenes con precios **reales**, comisión de 0,1 % y deslizamiento |
+| `testnet` | Órdenes en la cuenta de prueba oficial de Binance (dinero ficticio) |
+| `live` | **Dinero real** |
 
-Se recomienda `paper`: los precios de la testnet a veces no reflejan el mercado real.
+## Ver el progreso
 
-## Dejarlo 24 h
-
-El bot tiene que correr en una computadora siempre encendida y conectada:
-- **Su PC**, sin suspensión. Si se apaga, al volver a arrancarlo retoma desde el estado guardado.
-- **Un servidor en la nube** (VPS) por unos 5 USD al mes. Es lo más confiable para 24 h.
+- **Telegram:** avisos automáticos y resumen diario.
+- `python -m bot.report`: capital, % ganado o perdido, operaciones y comparación con comprar y guardar BTC.
+- Carpeta `data/`: estado (`state_paper.json`), cada operación (`trades_paper.csv`, se abre con Excel) y el registro (`bot_paper.log`).
 
 ## Plan hasta enero
 
