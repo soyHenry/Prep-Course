@@ -6,6 +6,7 @@ import argparse
 import csv
 import json
 import logging
+import socket
 import time
 from datetime import datetime, timezone
 
@@ -26,7 +27,7 @@ def trades_path(cfg: Config):
 def load_state(cfg: Config) -> dict:
     path = state_path(cfg)
     if path.exists():
-        return json.loads(path.read_text())
+        return json.loads(path.read_text(encoding="utf-8"))
     return {"cash": cfg.capital, "start_capital": cfg.capital, "position": None,
             "halted": False, "last_candle": None,
             "started_at": datetime.now(timezone.utc).isoformat()}
@@ -35,7 +36,7 @@ def load_state(cfg: Config) -> dict:
 def save_state(cfg: Config, state: dict) -> None:
     DATA_DIR.mkdir(exist_ok=True)
     tmp = state_path(cfg).with_suffix(".tmp")
-    tmp.write_text(json.dumps(state, indent=2))
+    tmp.write_text(json.dumps(state, indent=2), encoding="utf-8")
     tmp.replace(state_path(cfg))
 
 
@@ -43,7 +44,7 @@ def record_trade(cfg: Config, row: dict) -> None:
     DATA_DIR.mkdir(exist_ok=True)
     path = trades_path(cfg)
     new = not path.exists()
-    with path.open("a", newline="") as f:
+    with path.open("a", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=list(row))
         if new:
             w.writeheader()
@@ -63,6 +64,7 @@ def close_position(cfg, state, broker, reason: str) -> None:
     pnl = fill.quote - pos["cost"]
     state["cash"] += fill.quote
     state["position"] = None
+    save_state(cfg, state)  # se guarda ya: si la PC se apaga, no se pierde la operación
     record_trade(cfg, {
         "time": datetime.now(timezone.utc).isoformat(timespec="seconds"), "side": "SELL",
         "reason": reason, "price": round(fill.price, 2), "qty": pos["qty"],
@@ -79,6 +81,7 @@ def open_position(cfg, state, broker, quote: float, stop: float) -> None:
     state["position"] = {"qty": fill.qty, "entry": fill.price, "cost": fill.quote,
                          "stop": stop, "highest": fill.price,
                          "opened_at": datetime.now(timezone.utc).isoformat(timespec="seconds")}
+    save_state(cfg, state)
     record_trade(cfg, {
         "time": datetime.now(timezone.utc).isoformat(timespec="seconds"), "side": "BUY",
         "reason": "cruce EMA", "price": round(fill.price, 2), "qty": fill.qty,
@@ -92,7 +95,7 @@ def open_position(cfg, state, broker, quote: float, stop: float) -> None:
 def step(cfg: Config, state: dict, broker) -> None:
     """Una revisión completa: precios, frenos de riesgo, stops y señales."""
     if state.get("halted"):
-        log.warning("Bot DETENIDO por caída máxima. Revisá y borrá 'halted' del estado para reanudar.")
+        log.warning("Bot DETENIDO por caída máxima. Para reanudar: python -m bot.bot --reanudar")
         return
 
     sp, rp = cfg.strategy, cfg.risk
@@ -170,7 +173,7 @@ def summary_text(cfg: Config, state: dict, price: float) -> str:
     lines.append(f"Posición abierta: entrada {pos['entry']:,.2f}, stop {pos['stop']:,.2f}" if pos else "Posición abierta: no")
     path = trades_path(cfg)
     if path.exists():
-        with path.open() as f:
+        with path.open(encoding="utf-8") as f:
             pnls = [float(r["pnl"]) for r in csv.DictReader(f) if r["side"] == "SELL"]
         if pnls:
             wins = sum(p > 0 for p in pnls)
@@ -181,17 +184,37 @@ def summary_text(cfg: Config, state: dict, price: float) -> str:
     return "\n".join(lines)
 
 
+def single_instance_lock(port: int = 47321) -> socket.socket:
+    """Evita que corran dos bots a la vez (operarían por duplicado). Se libera solo al cerrar."""
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    try:
+        sock.bind(("127.0.0.1", port))
+    except OSError:
+        raise SystemExit("Ya hay un bot corriendo en esta PC. Cierre la otra ventana antes de abrir uno nuevo.")
+    return sock
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--once", action="store_true", help="hace una sola revisión y termina")
+    parser.add_argument("--reanudar", action="store_true", help="reactiva el bot tras el freno de caída máxima")
     args = parser.parse_args()
 
     cfg = load_config()
+    lock = single_instance_lock()  # noqa: F841 (se mantiene abierto mientras corre)
     DATA_DIR.mkdir(exist_ok=True)
     logging.basicConfig(
         level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s",
-        handlers=[logging.StreamHandler(), logging.FileHandler(DATA_DIR / f"bot_{cfg.mode}.log")],
+        handlers=[logging.StreamHandler(),
+                  logging.FileHandler(DATA_DIR / f"bot_{cfg.mode}.log", encoding="utf-8")],
     )
+    if args.reanudar:
+        state = load_state(cfg)
+        state["halted"] = False
+        state.pop("peak_equity", None)  # el máximo se vuelve a medir desde el capital actual
+        save_state(cfg, state)
+        print("Bot reactivado. Ahora arránquelo normalmente con iniciar_bot.bat")
+        return
     log.info("Arrancando en modo %s | %s %s | capital %.2f USDT", cfg.mode.upper(), cfg.symbol, cfg.interval, cfg.capital)
     broker = make_broker(cfg)
     state = load_state(cfg)

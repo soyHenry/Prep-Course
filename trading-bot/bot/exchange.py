@@ -109,12 +109,23 @@ class BinanceBroker:
         self.step = float(filters["LOT_SIZE"]["stepSize"])
         notional = filters.get("NOTIONAL") or filters.get("MIN_NOTIONAL") or {}
         self.min_notional = float(notional.get("minNotional", 5))
+        self.sync_clock()
+
+    def sync_clock(self) -> None:
+        """Binance rechaza órdenes si el reloj de la PC está corrido más de 1 s."""
+        server = _get(f"{self.base_url}/api/v3/time")["serverTime"]
+        self.time_offset = server - int(time.time() * 1000)
 
     def _signed(self, method: str, path: str, params: dict) -> dict:
-        params = {**params, "timestamp": int(time.time() * 1000), "recvWindow": 5000}
-        query = urlencode(params)
-        url = f"{self.base_url}{path}?{query}&signature={sign(query, self.secret)}"
-        r = _session.request(method, url, headers={"X-MBX-APIKEY": self.key}, timeout=15)
+        for attempt in range(2):
+            signed = {**params, "timestamp": int(time.time() * 1000) + self.time_offset, "recvWindow": 5000}
+            query = urlencode(signed)
+            url = f"{self.base_url}{path}?{query}&signature={sign(query, self.secret)}"
+            r = _session.request(method, url, headers={"X-MBX-APIKEY": self.key}, timeout=15)
+            if attempt == 0 and r.status_code == 400 and '"code":-1021' in r.text.replace(" ", ""):
+                self.sync_clock()  # reloj corrido: resincroniza y reintenta una vez
+                continue
+            break
         if r.status_code >= 400:
             raise RuntimeError(f"Binance {r.status_code}: {r.text}")
         return r.json()

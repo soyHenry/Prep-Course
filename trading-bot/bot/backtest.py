@@ -34,11 +34,8 @@ def run_backtest(df: pd.DataFrame, sp: StrategyParams = StrategyParams(), rp: Ri
         equity_open = cash + (pos["qty"] * row["open"] if pos else 0)
         risk.roll_day(state, equity_open, day)
 
-        stopped = bool(pos and row["low"] <= pos["stop"])
-        if stopped:
-            sell(min(row["open"], pos["stop"]), i, "stop")
-        if stopped:
-            pass  # no reabre en la misma vela en la que saltó el stop
+        if pos and row["low"] <= pos["stop"]:
+            sell(min(row["open"], pos["stop"]), i, "stop")  # no reabre en la misma vela
         elif pos and strategy.exit_signal(df, i):
             sell(row["close"], i, "señal")
         elif pos:
@@ -91,6 +88,8 @@ def main() -> None:
     args = ap.parse_args()
 
     df = pd.read_csv(args.csv) if args.csv else fetch_history(args.symbol, args.interval, args.days)
+    if len(df) <= strategy.warmup(StrategyParams()):
+        raise SystemExit("No hay suficientes datos para probar. Revise su conexión a internet o use más días.")
     r = run_backtest(df, capital=args.capital)
     print(f"Velas analizadas: {len(df)}")
     print(f"Resultado del bot:      {r['return_pct']:+.2f}%  ({args.capital:.0f} -> {r['final_equity']:.2f} USDT)")

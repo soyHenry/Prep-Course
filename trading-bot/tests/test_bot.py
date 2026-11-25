@@ -117,3 +117,46 @@ def test_telegram_failure_never_breaks_bot(monkeypatch):
     monkeypatch.setenv("TELEGRAM_CHAT_ID", "1")
     monkeypatch.setattr(notify.requests, "post", lambda *a, **k: (_ for _ in ()).throw(OSError("sin red")))
     assert notify.send("hola") is False
+
+
+def test_exit_even_if_crossing_candle_was_missed():
+    df = pd.DataFrame({"ema_fast": [10.0, 9.0, 8.0], "ema_slow": [9.5, 9.5, 9.5]})
+    assert strategy.exit_signal(df, 1) and strategy.exit_signal(df, 2)  # sigue en baja: vende igual
+    assert not strategy.exit_signal(df, 0)
+
+
+def test_only_one_bot_at_a_time():
+    first = live.single_instance_lock(port=47999)
+    with pytest.raises(SystemExit):
+        live.single_instance_lock(port=47999)
+    first.close()
+    live.single_instance_lock(port=47999).close()
+
+
+def test_state_saved_right_after_trade(monkeypatch, tmp_path):
+    monkeypatch.setattr(live, "DATA_DIR", tmp_path)
+    monkeypatch.setattr(exchange, "last_price", lambda s: 100.0)
+    cfg = Config(capital=100)
+    state = live.load_state(cfg)
+    live.open_position(cfg, state, exchange.PaperBroker(cfg.symbol), 50.0, 95.0)
+    saved = live.load_state(cfg)
+    assert saved["position"]["cost"] == 50.0 and saved["cash"] == 50.0
+
+
+def test_clock_resync_on_binance_timestamp_error(monkeypatch):
+    b = exchange.BinanceBroker.__new__(exchange.BinanceBroker)
+    b.base_url, b.key, b.secret, b.time_offset = "https://x", "k", "s", 0
+    calls = []
+
+    class Resp:
+        def __init__(self, code, text):
+            self.status_code, self.text = code, text
+
+        def json(self):
+            return {"ok": True}
+
+    replies = [Resp(400, '{"code":-1021,"msg":"Timestamp ahead"}'), Resp(200, "{}")]
+    monkeypatch.setattr(exchange._session, "request", lambda *a, **k: calls.append(a) or replies.pop(0))
+    monkeypatch.setattr(exchange, "_get", lambda url, *a, **k: {"serverTime": 0})
+    assert b._signed("GET", "/api/v3/account", {}) == {"ok": True}
+    assert len(calls) == 2 and b.time_offset < 0

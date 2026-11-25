@@ -5,7 +5,8 @@ Reglas (siempre sobre velas CERRADAS):
   por encima de la EMA de tendencia larga (solo opera a favor de la tendencia).
 - Stop inicial: precio de entrada - stop_atr * ATR.
 - Stop móvil: máximo alcanzado - trail_atr * ATR (solo sube, nunca baja).
-- Salida: toca el stop, o la EMA rápida cruza hacia abajo a la lenta.
+- Salida: toca el stop, o la EMA rápida queda por debajo de la lenta
+  (así no se pierde la salida aunque la PC haya estado apagada justo en el cruce).
 Solo compra y vende (spot, sin apalancamiento, sin ventas en corto).
 """
 from dataclasses import dataclass
@@ -58,10 +59,8 @@ def entry_signal(df: pd.DataFrame, i: int, p: StrategyParams) -> bool:
 
 
 def exit_signal(df: pd.DataFrame, i: int) -> bool:
-    if i < 1:
-        return False
-    row, prev = df.iloc[i], df.iloc[i - 1]
-    return bool(prev["ema_fast"] >= prev["ema_slow"] and row["ema_fast"] < row["ema_slow"])
+    row = df.iloc[i]
+    return bool(row["ema_fast"] < row["ema_slow"])
 
 
 def initial_stop(price: float, atr_value: float, p: StrategyParams) -> float:
