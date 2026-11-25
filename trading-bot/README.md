@@ -82,6 +82,15 @@ El archivo `.env` contiene sus claves: no lo comparta ni lo suba a ningún lado 
 - `python -m bot.report`: capital, % ganado o perdido, operaciones y comparación con comprar y guardar BTC.
 - Carpeta `data/`: estado (`state_paper.json`), cada operación (`trades_paper.csv`, se abre con Excel) y el registro (`bot_paper.log`).
 
+## Si algo pasa
+
+| Situación | Qué hacer |
+|---|---|
+| Telegram avisa "Bot DETENIDO" (cayó 20 %) | Revisarlo con Jarvis. Para reactivarlo: `python -m bot.bot --reanudar` y después `iniciar_bot.bat` |
+| "Ya hay un bot corriendo en esta PC" | Hay otra ventana del bot abierta. Deje una sola |
+| "python no se reconoce como comando" | Reinstale Python tildando "Add python.exe to PATH" |
+| Aviso de problemas de conexión | Revise internet. El bot reintenta solo |
+
 ## Plan hasta enero
 
 1. **Ya:** correr el backtest y arrancar el modo `paper` con 100 USD ficticios.
